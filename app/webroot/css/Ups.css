@@ -1,0 +1,142 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 778px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 33px;
+  height: 33px;
+  margin: 49px auto 0 0;
+}
+
+.u-section-1 .u-image-2 {
+  width: 660px;
+  height: 392px;
+  margin: -75px 0 0 auto;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3rem;
+  font-family: DENSO-Black;
+  margin: -359px auto 0 58px;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: DENSO-Bold;
+  font-size: 1.875rem;
+  margin: 28px 802px 60px 58px;
+}
+
+@media (max-width: 1399px) {
+  .u-section-1 .u-image-1 {
+    margin-top: 2px;
+  }
+
+  .u-section-1 .u-image-2 {
+    width: 570px;
+    height: 338px;
+    margin-top: 32px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: -365px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 622px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-2 {
+    width: 470px;
+    height: 279px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: -306px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 422px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-image-2 {
+    width: 360px;
+    height: 214px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: -241px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 202px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-image-1 {
+    margin-top: 56px;
+  }
+
+  .u-section-1 .u-image-2 {
+    width: 270px;
+    height: 161px;
+    margin-top: -28px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: -182px;
+  }
+
+  .u-section-1 .u-text-2 {
+    font-size: 1rem;
+    margin-right: 22px;
+    margin-bottom: 56px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-image-1 {
+    margin-top: -63px;
+  }
+
+  .u-section-1 .u-image-2 {
+    width: 170px;
+    height: 101px;
+    margin-top: 72px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 1.875rem;
+    font-family: DENSO-Bold;
+    margin-top: -103px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+}.distribuidor_box {
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.25);
+	border-left : 20px solid #DC0A34;
+}@font-face {
+  font-family: 'DENSO-Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/DENSO-Black.otf);
+}@font-face {
+  font-family: 'DENSO-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/DENSO-Bold.otf);
+}@font-face {
+  font-family: 'DENSO-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/DENSO-Regular.otf);
+}
