@@ -29,6 +29,14 @@ $paises = array(
 		'uy'=>'Uruguay',
 		've'=>'Venezuela',
 );
+echo $this->Html->script(
+		array(
+				'https://polyfill.io/v3/polyfill.min.js?features=default',
+				'https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js',
+				'https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js'
+		),
+		array('inline'=>false)
+);
 ?>
 <style>
 	.col-30 {
@@ -2000,7 +2008,7 @@ $paises = array(
 				<div class="u-form-group u-form-select u-label-none u-form-group-1">
 					<div class="u-form-select-wrapper">
 						<?php
-							echo $this->Form->input('estado',array('onchange'=>'javascript:buscar_estado(this.value,"mx")','empty'=>'Seleccionar Estado','type'=>'select','options'=>$paises,'class'=>'u-border-grey-5 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-grey-40 u-input-1'));
+							echo $this->Form->input('estado',array('onchange'=>'javascript:buscar_pais(this.value,"latam")','empty'=>'Seleccionar País','type'=>'select','options'=>$paises,'class'=>'u-border-grey-5 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-grey-40 u-input-1'));
 						?>
 					</div>
 				</div>
@@ -2331,6 +2339,10 @@ $paises = array(
 <script>
 	function buscar_estado(valor,region){
 		url = "./distribuidors/por_estado/"+valor+"/"+region;
+		location.assign(url);
+	}
+	function buscar_pais(valor,region){
+		url = "./distribuidores/"+valor+"/"+region;
 		location.assign(url);
 	}
 	function buscar_marca(valor,region){

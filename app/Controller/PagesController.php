@@ -211,7 +211,7 @@ class PagesController extends AppController {
 					$order=array('Distribuidor.nombre ASC');
 					break;
 			}
-			$distribuidores_marca = $this->Distribuidor->find('all',array('order'=>$order,'fields'=>array('DISTINCT(nombre)','pais'),'conditions'=>$condiciones));
+			$distribuidores_marca = $this->Distribuidor->find('all',array('order'=>$order,'fields'=>array('DISTINCT(nombre)','pais','coordenadas','direccion','ciudad','telefono'),'conditions'=>$condiciones));
 			$this->set('distribuidores_marca',$distribuidores_marca);
 
 			$this->loadModel('DistribuidoresCertificado');

@@ -10,6 +10,8 @@ class DistribuidorsController extends AppController {
     }
 
 	function donde_comprar($region = null){
+
+		//$this->layout = 'map';
 		$distribuidores = $this->Distribuidor->find('all',array('order'=>'estado ASC','fields'=>array('DISTINCT(estado)'),'conditions'=>array('Distribuidor.pais'=>$region)));
 		$this->set('distribuidores',$distribuidores);
 
