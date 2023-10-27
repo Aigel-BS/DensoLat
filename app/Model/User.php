@@ -45,6 +45,13 @@ class User extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
+		'Distribuidor' => array(
+			'className' => 'Distribuidor',
+			'foreignKey' => 'cuenta_venta_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 	);
 
 
