@@ -15,8 +15,26 @@ class DistribuidorsController extends AppController {
 		$distribuidores = $this->Distribuidor->find('all',array('order'=>'estado ASC','fields'=>array('DISTINCT(estado)'),'conditions'=>array('Distribuidor.pais'=>$region)));
 		$this->set('distribuidores',$distribuidores);
 
-		$this->loadModel('DistribuidoresCertificado');
-		$this->set('tiendas_certificadas',$this->DistribuidoresCertificado->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('region'=>$region))));
+		if ($region=='co'){
+			$this->loadModel('DistribuidoresCertificado');
+			$this->set('tiendas_certificadas',$this->DistribuidoresCertificado->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('region'=>$region))));
+		}else if ($region=='mx'){
+			$tiendas = $this->Distribuidor->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('coordenadas !='=>0,'tipo_distribuidor'=>'Mostrador','pais'=>$region)));
+			$tiendas_array = array();
+			foreach ($tiendas as $tienda){
+				$tienda_arr['DistribuidoresCertificado'] = array(
+					'nombre'=>$tienda['Distribuidor']['nombre'],
+					'direccion'=>$tienda['Distribuidor']['direccion'],
+					'zona'=>$tienda['Distribuidor']['estado'],
+					'ciudad'=>$tienda['Distribuidor']['ciudad'],
+					'telefono'=>$tienda['Distribuidor']['telefono'],
+					'coordenadas'=>$tienda['Distribuidor']['coordenadas']
+				);
+				array_push($tiendas_array,$tienda_arr);
+			}
+			$this->set('tiendas_certificadas',$tiendas_array);
+		}
+
 
 		switch ($region){
 			case "car":
@@ -25,6 +43,10 @@ class DistribuidorsController extends AppController {
 				break;
 			case "cam":
 				$condiciones = array('Distribuidor.pais IN ("sv","bz","cr","gt","hn","ni","pa")');
+				$order=array('Distribuidor.pais ASC');
+				break;
+			case "mx":
+				$condiciones = array('Distribuidor.tipo_distribuidor'=>'Mayorista','Distribuidor.pais'=>'mx','Distribuidor.coordenadas !='=>0);
 				$order=array('Distribuidor.pais ASC');
 				break;
 			default:

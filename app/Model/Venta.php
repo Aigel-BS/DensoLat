@@ -4,9 +4,9 @@ class Venta extends AppModel {
 	var $displayField = 'id';
 
 	var $belongsTo = array(
-		'Vendedor' => array(
-			'className' => 'User',
-			'foreignKey' => 'user_id',
+		'Tienda' => array(
+			'className' => 'DistribuidoresCertificado',
+			'foreignKey' => 'distribuidores_certificado_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

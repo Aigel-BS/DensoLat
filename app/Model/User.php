@@ -47,7 +47,7 @@ class User extends AppModel {
 		),
 		'Distribuidor' => array(
 			'className' => 'Distribuidor',
-			'foreignKey' => 'cuenta_venta_id',
+			'foreignKey' => 'distribuidor_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

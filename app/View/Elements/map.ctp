@@ -298,19 +298,48 @@
 				return marker;
 			});
 
+
+
 			const renderer = {
 				render({ count, position }) {
-					return new google.maps.Marker({
+                    const icon_tienda= "https://densoautopartes.com/img/pin_denso_tienda.png";
+                    const icon_distribuidor= "https://densoautopartes.com/img/pin_denso_distribuidor.png";
+                    var icon_display = "";
+                    var dist = false;
+                    var tc = false;
+                    console.log(getResultIndex);
+                    for (var i = 0; i < markers.length; i++) {
+                        if (icon_tienda == markers[i].getIcon().url){
+                            tc = true;
+                        }
+                        if (icon_distribuidor == markers[i].getIcon().url){
+                            dist = true;
+                        }
+
+                        if (tc && dist){
+                            icon_display = "https://densoautopartes.com/img/pin_cluster_3.png";
+                        }else if (!tc && dist){
+                            icon_display = "https://densoautopartes.com/img/pin_cluster_2.png"
+                        }else if (tc && !dist){
+                            icon_display = "https://densoautopartes.com/img/pin_cluster_1.png"
+                        }
+                    }
+
+                    return new google.maps.Marker({
 						label: { text: String(count), color: "black", fontSize: "14px" },
 						position,
-						icon: "https://densoautopartes.com/img/pin_cluster.png",
+						icon: icon_display,
 						// adjust zIndex to be above other markers
 						zIndex: Number(google.maps.Marker.MAX_ZINDEX) + count,
 					})
 				}
 			}
 
-			new markerClusterer.MarkerClusterer({map,markers,renderer});
+			new markerClusterer.MarkerClusterer({
+                map: map,
+                markers: markers,
+                renderer: renderer,
+            });
 
 			// Fit map to marker bounds.
 			locator.updateBounds = function() {
@@ -405,6 +434,7 @@
 			// Initial render of results -----------------------------------------------
 			locator.renderResultsList();
 		}
+
 
 		/** When the search input capability is enabled, initialize it. */
 		function initializeSearchInput(locator) {
@@ -556,10 +586,10 @@
 		const CONFIGURATION = {
 			"locations": [
 				<?php foreach ($tiendas_certificadas as $tienda){?>
-				{"icono":"https://densoautopartes.com/img/pin_denso_distribuidores.png","title":"<?= $tienda['DistribuidoresCertificado']['nombre']?>","address1":"<?= $tienda['DistribuidoresCertificado']['direccion']?>","address2":"<?= $tienda['DistribuidoresCertificado']['zona'].", ".$tienda['DistribuidoresCertificado']['ciudad']?>","address3":"<?= $tienda['DistribuidoresCertificado']['telefono']?>","coords":{"lat":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[0]?>,"lng":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[1]?>}},
+				{"icono":"https://densoautopartes.com/img/pin_denso_tienda.png","title":"<?= $tienda['DistribuidoresCertificado']['nombre']?>","address1":"<?= $tienda['DistribuidoresCertificado']['direccion']?>","address2":"<?= $tienda['DistribuidoresCertificado']['zona'].", ".$tienda['DistribuidoresCertificado']['ciudad']?>","address3":"<?= $tienda['DistribuidoresCertificado']['telefono']?>","coords":{"lat":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[0]?>,"lng":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[1]?>}},
 				<?php }
 				foreach ($distribuidores_marca as $dist){?>
-				{"icono":"https://densoautopartes.com/img/pin_denso.png","title":"<?= $dist['Distribuidor']['nombre']?>","address1":"<?= $dist['Distribuidor']['direccion']?>","address2":"<?= $dist['Distribuidor']['ciudad']?>","address3":"<?= $dist['Distribuidor']['telefono']?>","coords":{"lat":<?= explode(",",$dist['Distribuidor']['coordenadas'])[0]?>,"lng":<?= explode(",",$dist['Distribuidor']['coordenadas'])[1]?>}},
+				{"icono":"https://densoautopartes.com/img/pin_denso_distribuidor.png","title":"<?= $dist['Distribuidor']['nombre']?>","address1":"<?= $dist['Distribuidor']['direccion']?>","address2":"<?= $dist['Distribuidor']['ciudad']?>","address3":"<?= $dist['Distribuidor']['telefono']?>","coords":{"lat":<?= explode(",",$dist['Distribuidor']['coordenadas'])[0]?>,"lng":<?= explode(",",$dist['Distribuidor']['coordenadas'])[1]?>}},
 				<?php }?>
 			],
 			"mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},

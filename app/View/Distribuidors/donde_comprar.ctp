@@ -10,7 +10,7 @@ echo $this->Html->script(
 	array(
 		'https://polyfill.io/v3/polyfill.min.js?features=default',
 		'https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js',
-		'https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js'
+		'https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js',
 	),
 	array('inline'=>false)
 );
@@ -96,7 +96,7 @@ $paises = array(
 			<div class="u-clearfix u-expanded-width u-hidden-sm u-hidden-xs u-layout-wrap u-layout-wrap-1">
 				<div class="u-layout">
 					<div class="u-layout-row">
-						<div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+						<div class="u-container-style u-layout-cell u-size-25 u-layout-cell-1">
 							<div class="u-container-layout u-valign-bottom-xl u-container-layout-1">
 								<p class="u-custom-font u-text u-text-custom-color-4 u-text-3">
 									<?php
@@ -105,7 +105,7 @@ $paises = array(
 									}
 									?>
 								</p>
-								<p class="u-custom-font u-text u-text-custom-color-4 u-text-4">
+								<p class="u-custom-font u-text u-text-custom-color-4 u-text-4" style="margin-top: -338px;">
 									<?php
 									for ($i=(sizeof($distribuidores)/2)+1;$i<sizeof($distribuidores);$i++){
 										echo $this->Html->link($distribuidores[$i]['Distribuidor']['estado'],array('controller'=>'distribuidors','action'=>'por_estado',$distribuidores[$i]['Distribuidor']['estado'],'mx'),array('style'=>'color:#5f6367'))."<br>";
@@ -114,8 +114,8 @@ $paises = array(
 								</p>
 							</div>
 						</div>
-						<div class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-30 u-image-1" data-image-width="908" data-image-height="573">
-							<div class="u-container-layout u-container-layout-2"></div>
+						<div class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
+                            <?= $this->Element('map')?>
 						</div>
 					</div>
 				</div>

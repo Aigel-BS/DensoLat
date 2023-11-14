@@ -32,28 +32,30 @@
     <div class="outer">
         <div class="inner bg-container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-header bg-red">
-                            Crecimiento de Agentes
+                            Ranking del mes de octubre de Agentes
                         </div>
                         <div class="card-body card_block_top_align ">
                             <div id="top_x_div" style="width: 100%; height: 500px;"></div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-header bg-red">
-                            Agentes con más clientes nuevos
+                            Posiciones de Vendendores
                         </div>
                         <div class="card-body card_block_top_align ">
-                            <div id="top_z_div" style="width: 100%; height: 500px;"></div>
+                            <div id="positions_chart" style="width: 100%; height: 500px;"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-12 m-t-20">
                     <div class="card">
                         <div class="card-header bg-red">
-                            Acumulado de Ventas al <?= date ("d/m/Y")?>
+                            Histórico de Ventas al <?= date ("d/m/Y")?>
                         </div>
                         <div class="card-body card_block_top_align ">
                             <div id="top_y_div" style="width: 100%; height: 500px;"></div>
@@ -66,7 +68,9 @@
 </div>
 
 <script type="text/javascript">
-    google.charts.load('current', {'packages':['bar','corechart']});
+    google.charts.load('current', {'packages':['bar','corechart','table']});
+
+    //Gráfica de Barras
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
@@ -95,58 +99,96 @@
         chart.draw(data, options);
     }
 
+    //Tabla de Ingresos
     google.charts.setOnLoadCallback(drawChart2);
     function drawChart2() {
-        var data = google.visualization.arrayToDataTable([
-            ['Vendedor', 'Ventas'],
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Vendedor');
+        data.addColumn('number', 'Oct 23');
+        data.addColumn('number', 'Nov 23');
+        data.addColumn('number', 'Dic 23');
+        data.addColumn('number', 'Enr 24');
+        data.addColumn('number', 'Feb 24');
+        data.addColumn('number', 'Mar 25');
+        data.addColumn('number', 'Ventas Totales');
+                // Add the salesman data
+        data.addRows([
             <?php
             foreach($crecimiento as $crec):
-                echo "['".$crec['vendedor']."',".$crec['final']."],";
+                echo "['".$crec['vendedor']."',".$crec['final'].",0,0,0,0,0,".$crec['final']."],";
             endforeach;
             ?>
-        ]);
 
+            ]);
+                // Define the table options
         var options = {
-            title: 'Ventas por Vendedor',
-            subtitle: 'Crecimiento en %',
-            pieHole: 0.4,
-            legend: {
-                position: 'labeled'
-            },
-            pieSliceText: 'value',
-            'chartArea': {'width': '100%', 'height': '80%'},
-
-
+               'showRowNumber': true,
+               'width': '100%',
+               'height': '100%'
         };
-
-        var chart = new google.visualization.PieChart(document.getElementById('top_y_div'));
+                // Draw the table
+        var chart = new google.visualization.Table(document.getElementById('top_y_div'));
         chart.draw(data, options);
+
     }
 
     google.charts.setOnLoadCallback(drawChart3);
+
     function drawChart3() {
         var data = google.visualization.arrayToDataTable([
-            ['Vendedor', 'Ventas'],
+            ['Mes',
             <?php
-            foreach($crecimiento as $crec):
-                echo "['".$crec['vendedor']."',".($crec['final']/1000)."],";
-            endforeach;
+                foreach ($crecimiento as $crec){
+                    echo "'".$crec['vendedor']."',";
+                }
             ?>
+            ],
+            ['Oct 23',
+                <?php
+                foreach ($crecimiento as $crec){
+                    echo $crec['final'].",";
+                }
+                ?>
+            ],
+            //['Dic 23',
+            //    <?php
+            //    foreach ($crecimiento as $crec){
+            //        echo "0,";
+            //    }
+            //    ?>
+            //],
+            //['Ene 24',
+            //    <?php
+            //    foreach ($crecimiento as $crec){
+            //        echo "0,";
+            //    }
+            //    ?>
+            //],
+            //['Feb 24',
+            //    <?php
+            //    foreach ($crecimiento as $crec){
+            //        echo "0,";
+            //    }
+            //    ?>
+            //],
+            //['Mar 24',
+            //    <?php
+            //    foreach ($crecimiento as $crec){
+            //        echo "0,";
+            //    }
+            //    ?>
+            //]
         ]);
 
-
         var options = {
-            title: '% de Crecimiento',
-            hAxis: {title: 'Vendedor'},
-            vAxis: {title: 'Crecimiento'},
-            pointSize: 10,
-            colors: ['#d60f30'],
-            legend: 'none',
-            curveType: 'function',
+            title: 'Ventas por mes',
+            legend: { position: 'bottom' },
+            'width': '100%',
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('top_z_div'));
-        chart.draw(data, options);
+        var chart = new google.visualization.LineChart(document.getElementById('positions_chart'));
 
+        chart.draw(data, options);
     }
+
 </script>

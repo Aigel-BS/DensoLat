@@ -145,6 +145,31 @@ echo $this->Html->css(
 			</div>
 		</div>
 	</section>
+
+<?php } elseif($region == 'ec'){?>
+    <section class="banner_producto u-align-center u-clearfix u-image u-section-1" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
+        <div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
+            <h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Catálogos digitales Perú</h1>
+            <p class="u-align-left u-custom-font u-large-text u-text u-text-body-alt-color u-text-variant u-text-2">Recursos</p>
+        </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-5ed8">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-align-center u-layout-grid u-list u-list-1">
+                <div class="u-repeater u-repeater-1">
+                    <div class="u-container-align-center-sm u-container-align-center-xxl u-container-style u-list-item u-repeater-item">
+                        <div class="u-container-layout u-similar-container u-container-layout-1">
+                            <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="<?= $this->Html->url("/img/catalogo_bujias_DENSO_2023_Ecuador.png")?>" alt="" data-image-width="480" data-image-height="613">
+                            <p class="u-align-center u-custom-font u-text u-text-default u-text-1"> Catálogo de Bujías Encendido DENSO Ecuador 2023-2024
+                            </p>
+                            <a href='<?= $this->Html->url('/files/Catalogo_Bujias-Ecuador.pdf')?>' class="u-active-none u-align-center-sm u-align-center-xs u-btn u-button-style u-custom-font u-heading-font u-hover-none u-none u-text-custom-color-1 u-text-hover-palette-2-base u-btn-1"><span class="u-file-icon u-icon u-icon-1"><img src="images/Vector11.png" alt=""></span>&nbsp;Abrir catálogo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <?php } ?>
 
 <style class="u-overlap-style">

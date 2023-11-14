@@ -418,7 +418,7 @@
 		<?php break; ?>
 
 <?php
-	case('ec'): //Menú México?>
+	case('ec'): //Menú Ecuador?>
 		<nav class="u-align-right u-dropdown-icon u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-offcanvas-shift u-menu-1"
 			 data-responsive-from="MD">
 			<div class="menu-collapse u-custom-font"
@@ -454,6 +454,10 @@
 							</ul>
 						</div>
 					</li>
+                    <li class="u-nav-item"><a
+                                class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
+                                href="<?= $this->Html->url(array('action'=>'catalogos','controller'=>'pages','ec'))?>" style="padding: 32px 20px;">Catálogos</a>
+                    </li>
 					<li class="u-nav-item"><a
 								class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
 								href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages','ec'))?>" style="padding: 32px 20px;">Nosotros</a>
@@ -495,7 +499,9 @@
 									</ul>
 								</div>
 							</li>
-							<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages','ec'))?>">Nosotros</a>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'catalogos','controller'=>'pages','ec'))?>">Catálogos</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages','ec'))?>">Nosotros</a>
 							</li>
 							<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'donde_comprar','controller'=>'distribuidors','ec'))?>">Dónde
 									Comprar</a>
