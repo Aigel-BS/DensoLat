@@ -35,7 +35,7 @@
                 </li>
                 <?php if ($key == 179){?>
                         <li>
-                            <?= $this->Html->link('<i class="fa fa-dollar "></i>Bujías Estandar',array('controller'=>'ventas','action'=>'dashboard',$key,'estandar'),array('escape'=>false))?>
+                            <?= $this->Html->link('<i class="fa fa-dollar "></i>Bujías Total',array('controller'=>'ventas','action'=>'dashboard',$key,'total'),array('escape'=>false))?>
                         </li>
                         <li>
                             <?= $this->Html->link('<i class="fa fa-dollar "></i>Bujías Iridium',array('controller'=>'ventas','action'=>'dashboard',$key,'iridium'),array('escape'=>false))?>
@@ -46,7 +46,7 @@
             }else if($this->Session->read('Auth.User.distribuidor_id')==179){
         ?>
             <li>
-                <?= $this->Html->link('<i class="fa fa-dollar "></i>Bujías Estandar',array('controller'=>'ventas','action'=>'dashboard',$this->Session->read('Auth.User.distribuidor_id'),'estandar'),array('escape'=>false))?>
+                <?= $this->Html->link('<i class="fa fa-dollar "></i>Bujías Total',array('controller'=>'ventas','action'=>'dashboard',$this->Session->read('Auth.User.distribuidor_id'),'total'),array('escape'=>false))?>
             </li>
             <li>
                 <?= $this->Html->link('<i class="fa fa-dollar "></i>Bujías Iridium',array('controller'=>'ventas','action'=>'dashboard',$this->Session->read('Auth.User.distribuidor_id'),'iridium'),array('escape'=>false))?>
