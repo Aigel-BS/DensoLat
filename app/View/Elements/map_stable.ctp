@@ -1,3 +1,27 @@
+<!--
+  Copyright 2023 Google LLC
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Locator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<style>
 		html,
 		body {
@@ -404,7 +428,6 @@
 
 			// Initialize the map -------------------------------------------------------
 			locator.map = new google.maps.Map(mapEl, configuration.mapOptions);
-			const map = locator.map;
 
 			// Store selection.
 			const selectResultItem = function(locationIdx, panToMarker, scrollToResult) {
@@ -430,8 +453,8 @@
 					map: locator.map,
 					title: location.title,
 					icon: {
-						url:location.icono,
-						size:new google.maps.Size(32, 32),
+						url:'https://densoautopartes.com/img/pin_denso.png',
+						size:new google.maps.Size(32, 27),
 					}
 				});
 				marker.addListener('click', function() {
@@ -439,21 +462,6 @@
 				});
 				return marker;
 			});
-
-
-			const renderer = {
-				render({ count, position }) {
-					return new google.maps.Marker({
-						label: { text: String(count), color: "black", fontSize: "14px" },
-						position,
-						icon: "https://densoautopartes.com/img/pin_cluster.png",
-						// adjust zIndex to be above other markers
-						zIndex: Number(google.maps.Marker.MAX_ZINDEX) + count,
-					})
-				}
-			}
-
-			new markerClusterer.MarkerClusterer({map,markers,renderer});
 
 			// Fit map to marker bounds.
 			locator.updateBounds = function() {
@@ -563,8 +571,6 @@
 
 			// Initial render of results -----------------------------------------------
 			locator.renderResultsList();
-
-
 		}
 
 		/** When the search input capability is enabled, initialize it. */
@@ -850,10 +856,7 @@
 		const CONFIGURATION = {
 			"locations": [
 				<?php foreach ($tiendas_certificadas as $tienda){?>
-				{"icono":"https://densoautopartes.com/img/pin_denso_distribuidores.png","title":"<?= $tienda['DistribuidoresCertificado']['nombre']?>","address1":"<?= $tienda['DistribuidoresCertificado']['direccion']?>","address2":"<?= $tienda['DistribuidoresCertificado']['zona'].", ".$tienda['DistribuidoresCertificado']['ciudad']?>","address3":"<?= $tienda['DistribuidoresCertificado']['telefono']?>","coords":{"lat":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[0]?>,"lng":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[1]?>}},
-				<?php }
-				foreach ($distribuidores_marca as $dist){?>
-				{"icono":"https://densoautopartes.com/img/pin_denso.png","title":"<?= $dist['Distribuidor']['nombre']?>","address1":"<?= $dist['Distribuidor']['direccion']?>","address2":"<?= $dist['Distribuidor']['ciudad']?>","address3":"<?= $dist['Distribuidor']['telefono']?>","coords":{"lat":<?= explode(",",$dist['Distribuidor']['coordenadas'])[0]?>,"lng":<?= explode(",",$dist['Distribuidor']['coordenadas'])[1]?>}},
+				{"title":"<?= $tienda['DistribuidoresCertificado']['nombre']?>","address1":"<?= $tienda['DistribuidoresCertificado']['direccion']?>","address2":"<?= $tienda['DistribuidoresCertificado']['zona'].", ".$tienda['DistribuidoresCertificado']['ciudad']?>","address3":"<?= $tienda['DistribuidoresCertificado']['telefono']?>","coords":{"lat":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[0]?>,"lng":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[1]?>}},
 				<?php }?>
 			],
 			"mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
@@ -977,6 +980,8 @@
 		{{/each}}
 		{{/if}}
 	</script>
+</head>
+<body>
 <div id="map-container">
 	<div id="locations-panel">
 		<div id="locations-panel-list">
@@ -1006,3 +1011,5 @@
 	<div id="gmp-map"></div>
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtRpRVF5CuZISLN6umwOCv4gxxsw8loP8&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v7_cABCDE" async defer></script>
+</body>
+</html>

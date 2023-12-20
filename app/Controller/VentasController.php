@@ -44,14 +44,15 @@ class VentasController extends AppController {
 		}
 
 		$this->Venta->Behaviors->load('Containable');
+
 		$ventas = $this->Venta->find(
 			'all',
 			array(
 				'fields'=>array(
-					'distribuidores_certificado_id','SUM(monto) as monto'
+					'distribuidores_certificado_id','SUM(monto) as monto','fecha'
 				),
 				'conditions'=>$conditions,
-				'group'=>'Venta.distribuidores_certificado_id',
+				'group'=>array('Venta.distribuidores_certificado_id','fecha'),
 				'recursive'=>2,
 				'order'=>'Venta.monto DESC',
 				'contain'=>array(
@@ -65,16 +66,50 @@ class VentasController extends AppController {
 		);
 		$this->set('ventas',$ventas);
 
-		$crecimiento = array();
-		$i=0;
+		$tabla_ventas = array();
 		foreach ($ventas as $venta){
-			$crecimiento[$i]=array(
+			$tabla_ventas[$venta['Tienda']['nombre']][$venta['Venta']['fecha']] = round($venta[0]['monto']) ;
+		}
+
+		$this->set('tabla_ventas',$tabla_ventas);
+
+
+		$ventas_mensuales = $this->Venta->find(
+			'all',
+			array(
+				'fields'=>array(
+					'distribuidores_certificado_id','SUM(monto) as monto_total'
+				),
+				'conditions'=>$conditions,
+				'group'=>array('Venta.distribuidores_certificado_id'),
+				'recursive'=>2,
+				'order'=>'monto_total DESC',
+				'contain'=>array(
+					'Tienda'=>array(
+						'fields'=>array(
+							'nombre'
+						)
+					)
+				)
+			)
+		);
+
+		$ventas_m = array();
+		$i=0;
+		foreach ($ventas_mensuales as $venta){
+			$ventas_m[$i]=array(
 				'vendedor'=>$venta['Tienda']['nombre'],
-				'final'=>$venta[0]['monto']
+				'final'=>round($venta[0]['monto_total'])
 			);
 			$i++;
 		}
-		$this->set('crecimiento',$crecimiento);
+		$this->set('ventas_mensuales',$ventas_m);
+
+
+
+
+
+
 
 		$this->loadModel('Distribuidor');
 		$this->Distribuidor->Behaviors->load('Containable');

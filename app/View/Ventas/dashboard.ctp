@@ -35,7 +35,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header bg-red">
-                            Ranking del mes de octubre de Agentes
+                            Ranking de ventas acumuladas de Agentes
                         </div>
                         <div class="card-body card_block_top_align ">
                             <div id="top_x_div" style="width: 100%; height: 500px;"></div>
@@ -76,15 +76,15 @@
         var data = google.visualization.arrayToDataTable([
             ['Vendedor', 'Ventas'],
             <?php
-                foreach($crecimiento as $crec):
-                    echo "['".$crec['vendedor']."',".$crec['final']."],";
+                foreach($ventas_mensuales as $venta_m):
+                    echo "['".$venta_m['vendedor']."',".$venta_m['final']."],";
                 endforeach;
             ?>
         ]);
         var options = {
             chart: {
                 title: 'Ventas por Vendedor',
-                subtitle: 'Ventas del mes',
+                subtitle: 'Ventas acumuladas',
             },
             colors: ['red'],
             bars: 'horizontal', // Required for Material Bar Charts.
@@ -114,12 +114,15 @@
                 // Add the salesman data
         data.addRows([
             <?php
-            foreach($crecimiento as $crec):
-                echo "['".$crec['vendedor']."',".$crec['final'].",0,0,0,0,0,".$crec['final']."],";
+            foreach($tabla_ventas as $key=>$registro):
+                $total = floatval($registro['2023-10-01'])+floatval($registro['2023-11-01']);
+                echo "['".$key."',".$registro['2023-10-01'].",".$registro['2023-11-01'].",0,0,0,0,".$total."],";
             endforeach;
             ?>
 
             ]);
+
+        data.sort({column: 7, desc: true});
                 // Define the table options
         var options = {
                'showRowNumber': true,
@@ -138,15 +141,22 @@
         var data = google.visualization.arrayToDataTable([
             ['Mes',
             <?php
-                foreach ($crecimiento as $crec){
-                    echo "'".$crec['vendedor']."',";
+                foreach ($tabla_ventas as $key=>$registro){
+                    echo "'".$key."',";
                 }
             ?>
             ],
             ['Oct 23',
                 <?php
-                foreach ($crecimiento as $crec){
-                    echo $crec['final'].",";
+                foreach ($tabla_ventas as $key=>$registro){
+                    echo $registro['2023-10-01'].",";
+                }
+                ?>
+            ],
+            ['Nov 23',
+                <?php
+                foreach ($tabla_ventas as $key=>$registro){
+                    echo $registro['2023-11-01'].",";
                 }
                 ?>
             ],

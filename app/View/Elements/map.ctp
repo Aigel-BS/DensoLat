@@ -307,7 +307,6 @@
                     var icon_display = "";
                     var dist = false;
                     var tc = false;
-                    console.log(getResultIndex);
                     for (var i = 0; i < markers.length; i++) {
                         if (icon_tienda == markers[i].getIcon().url){
                             tc = true;
