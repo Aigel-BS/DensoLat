@@ -107,83 +107,98 @@ $tipos_pieza = array(
 		background-color: #dc0a34 !important
 	}</style>
 <script type="text/javascript">
-	//  $(document).ready(function(){
-	//      $("#anio").on('change',function() {
-	//        alert('Esto funciona');
-	//    })
-	//  });
-	$(document).ready(function() {
+    //  $(document).ready(function(){
+    //      $("#anio").on('change',function() {
+    //        alert('Esto funciona');
+    //    })
+    //  });
+    $(document).ready(function() {
 
-		$("#anio").on('change',function() {
-			var pais = $("#pais").val();
-			var anio = $(this).val();
-			$("#marca").find('option').remove();
-			$("#modelo").find('option').remove();
-			$("#motor").find('option').remove();
-			if (anio) {
-				var dataString = 'anio='+ anio + '&pais='+pais;
-				$.ajax({
-					type: "POST",
-					url: '<?php echo Router::url(array("controller" => "productos", "action" => "getMarcas")); ?>' ,
-					data: dataString,
-					cache: false,
-					success: function(html) {
-						$.each(html.marcas, function(key, value) {
-							$('#marca').append('<option value="' + key + '">' + value + '</option>');
-						});
-					}
-				});
-			}
-		});
+        $("#anio").on('change',function() {
+            var pais = $("#pais").val();
+            var anio = $(this).val();
+            $("#marca").find('option').remove();
+            $("#modelo").find('option').remove();
+            $("#motor").find('option').remove();
+            if (anio) {
+                var dataString = 'anio='+ anio + '&pais='+pais;
+                $.ajax({
+                    type: "POST",
+                    url: '<?php echo Router::url(array("controller" => "productos", "action" => "getMarcas")); ?>' ,
+                    data: dataString,
+                    cache: false,
+                    success: function(html) {
+                        $.each(html.marcas, function(key, value) {
+                            console.log("Agrega Marca");
+                            $('#marca').append('<option value="' + key + '">' + value.toUpperCase() + '</option>');
+                        });
+                        $.each(html.modelos, function(key, value) {
+                            console.log("Agrega Modelo");
+                            $('#modelo').append('<option value="' + key + '">' + value + '</option>');
+                        });
+                        $.each(html.motores, function(key, value) {
+                            console.log("Agrega Motor");
+                            $('#motor').append('<option value="' + key + '">' + value + '</option>');
+                        });
+                    }
+                });
+            }
+        });
 
-		$("#marca").on('change',function() {
-			var pais = $("#pais").val();
-			var marca = $(this).val();
-			var anio = $("#anio").val();
-			$("#modelo").find('option').remove();
-			$("#motor").find('option').remove();
-			if (marca) {
-				var dataString = 'marca='+ marca+'&anio='+anio+'&pais='+pais;
-				$.ajax({
-					type: "POST",
-					url: '<?php echo Router::url(array("controller" => "productos", "action" => "getModelos")); ?>' ,
-					data: dataString,
-					cache: false,
-					success: function(html) {
-						$.each(html.modelos, function(key, value) {
-							$('#modelo').append('<option value="' + key + '">' + value + '</option>');
-						});
-					}
-				});
-			}
+        $("#marca").on('change',function() {
+            var pais = $("#pais").val();
+            var marca = $(this).val();
+            var anio = $("#anio").val();
+            $("#modelo").find('option').remove();
+            $("#motor").find('option').remove();
+            if (marca) {
+                var dataString = 'marca='+ marca+'&anio='+anio+'&pais='+pais;
+                $.ajax({
+                    type: "POST",
+                    url: '<?php echo Router::url(array("controller" => "productos", "action" => "getModelos")); ?>' ,
+                    data: dataString,
+                    cache: false,
+                    success: function(html) {
+                        $.each(html.modelos, function(key, value) {
+                            $('#modelo').append('<option value="' + key + '">' + value + '</option>');
+                        });
+                        $.each(html.motores, function(key, value) {
+                            $('#motor').append('<option value="' + key + '">' + value + '</option>');
+                        });
+                    }
+                });
+            }
 
-		});
+        });
 
-		$("#modelo").on('change',function() {
-			var pais = $("#pais").val();
-			var modelo = $(this).val();
-			var marca = $("#marca").val();
-			var anio = $("#anio").val();
-			$("#motor").find('option').remove();
-			if (modelo) {
-				var dataString = 'marca='+ marca +'&anio='+ anio +'&modelo='+modelo+'&pais='+pais;
-				$.ajax({
-					type: "POST",
-					url: '<?php echo Router::url(array("controller" => "productos", "action" => "getMotores")); ?>' ,
-					data: dataString,
-					cache: false,
-					success: function(html) {
-						$.each(html, function(key, value) {
-							$('<option>').val('').text('select');
-							$('<option>').val(key).text(value).appendTo($("#motor"));
-							$('#motor').trigger("chosen:updated");
-						});
-					}
-				});
-			}
-
-		});
-
-
-	});
+        $("#modelo").on('change',function() {
+            var pais = $("#pais").val();
+            var modelo = $(this).val();
+            var marca = $("#marca").val();
+            var anio = $("#anio").val();
+            $("#motor").find('option').remove();
+            $("#categorias").find('option').remove();
+            if (modelo) {
+                var dataString = 'marca='+ marca +'&anio='+ anio +'&modelo='+modelo+'&pais='+pais;
+                $.ajax({
+                    type: "POST",
+                    url: '<?php echo Router::url(array("controller" => "productos", "action" => "getMotores")); ?>' ,
+                    data: dataString,
+                    cache: false,
+                    success: function(html) {
+                        $.each(html.motores, function(key, value) {
+                            $('<option>').val('').text('select');
+                            $('<option>').val(key).text(value).appendTo($("#motor"));
+                        });
+                        $('<option>').val('').text('select');
+                        $('<option>').val("").text("Todas las Piezas").appendTo($("#categorias"));
+                        $.each(html.categorias, function(key, value) {
+                            $('<option>').val('').text('select');
+                            $('<option>').val(key).text(value).appendTo($("#categorias"));
+                        });
+                    }
+                });
+            }
+        });
+    });
 </script>

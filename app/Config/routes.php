@@ -182,6 +182,21 @@
 	Router::connect('/cam/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','cam'));
 	Router::connect('/cam/contacto', array('controller' => 'pages', 'action' => 'contacto','cam'));
 
+    //Routing Venezuela
+    Router::connect('/ve', array('controller' => 'pages', 'action' => 'home','ve'));
+    Router::connect('/ve/catalogos-digitales-venezuela', array('controller' => 'pages', 'action' => 'catalogos','ve'));
+    Router::connect('/ve/quienes-somos', array('controller' => 'pages', 'action' => 'denso','ve'));
+    Router::connect('/ve/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','ve'));
+    Router::connect('/ve/bujias', array('controller' => 'pages', 'action' => 'bujias','ve'));
+    Router::connect('/ve/filtros', array('controller' => 'pages', 'action' => 'filtros','ve'));
+    Router::connect('/ve/compresores-aire-acondicionado', array('controller' => 'pages', 'action' => 'compresores','ve'));
+    Router::connect('/ve/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_estado','ve'));
+    Router::connect('/ve/buscar-mi-pieza', array('controller' => 'productos', 'action' => 'buscar','ve'));
+    Router::connect('/ve/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','ve'));
+    Router::connect('/ve/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','ve'));
+    Router::connect('/ve/contacto', array('controller' => 'pages', 'action' => 'contacto','ve'));
+
+
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

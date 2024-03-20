@@ -18,7 +18,7 @@ class DistribuidorsController extends AppController {
 		if ($region=='co'){
 			$this->loadModel('DistribuidoresCertificado');
 			$this->set('tiendas_certificadas',$this->DistribuidoresCertificado->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('region'=>$region))));
-		}else if ($region=='mx'){
+		}else if ($region=='mx' || $region=='ve'){
 			$tiendas = $this->Distribuidor->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('coordenadas !='=>0,'tipo_distribuidor'=>'Mostrador','pais'=>$region)));
 			$tiendas_array = array();
 			foreach ($tiendas as $tienda){
@@ -47,6 +47,10 @@ class DistribuidorsController extends AppController {
 				break;
 			case "mx":
 				$condiciones = array('Distribuidor.tipo_distribuidor'=>'Mayorista','Distribuidor.pais'=>'mx','Distribuidor.coordenadas !='=>0);
+				$order=array('Distribuidor.pais ASC');
+				break;
+			case "ve":
+				$condiciones = array('Distribuidor.tipo_distribuidor'=>'Mayorista','Distribuidor.pais'=>'ve','Distribuidor.coordenadas IS NOT NULL');
 				$order=array('Distribuidor.pais ASC');
 				break;
 			default:
@@ -177,18 +181,19 @@ class DistribuidorsController extends AppController {
 			array(
 				'conditions'=>array(
 					'Cuenta.region'=>$this->request->data['region']
+					//'Cuenta.region'=>'mx'
 				),
 				'order'=>array(
 					'Cuenta.nombre'
 				),
 				'fields'=>array(
-					'Cuenta.nombre','Cuenta.nombre'
+					'Cuenta.id','Cuenta.nombre'
 				)
 			)
 		);
 		header('Content-Type: application/json');
 		asort($cuentas);
-		echo json_encode(debug($cuentas));
+		echo json_encode($cuentas);
 		exit();
 
 	}

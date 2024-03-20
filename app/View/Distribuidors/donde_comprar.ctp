@@ -145,6 +145,7 @@ $paises = array(
 			'cl'=>'/img/chile.png',
 			'ec'=>'/img/ecuador.png',
 			'pe'=>'/img/peru.png',
+			've'=>'/img/venezuela.png',
 			'car'=>'/img/caribe.png',
 			'cam'=>'/img/centroamerica.png',
 		);
@@ -192,7 +193,7 @@ $paises = array(
 							</div>
 						</div>
 						<?php
-							if($region == 'co'){
+							if($region == 'co' || $region == 've'){
 						?>
 								<div class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-40 u-image-1" data-image-width="908" data-image-height="573" style="background-image: url(<?= $this->Html->url($mapa[$region])?>)">
 									<?= $this->Element('map')?>

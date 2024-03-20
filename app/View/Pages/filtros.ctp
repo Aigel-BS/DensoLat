@@ -50,7 +50,7 @@ echo $this->Html->css(
 				</div>
 				<div class="u-container-style u-list-item u-repeater-item">
 					<div class="u-container-layout u-similar-container u-container-layout-2">
-						<h3 class="u-align-left u-custom-font u-custom-item u-text u-text-default-xl u-text-4">FILTRO DE ACEITE</h3>
+						<h3 class="u-align-left u-custom-font u-custom-item u-text u-text-default-xl u-text-4">FILTRO DE AIRE</h3>
 						<h4 class="u-align-left u-custom-font u-custom-item u-text u-text-default u-text-5">¿Por qué es importante?</h4>
 						<p class="u-align-left u-custom-item u-large-text u-text u-text-variant u-text-6"> Para que el motor pueda funcionar correctamente y prevenir su desgaste, necesita trabajar con aire del medio ambiente libre de partículas contaminantes.&nbsp;<br>Entre más aire ingrese, mayor será la eficiencia del motor. Si el filtro se tapa y la cantidad de aire que entra al motor disminuye, el automóvil perderá potencia y gastará más gasolina.&nbsp;<br>Los filtros de aire <span style="font-weight: 700;">DENSO</span> cuentan con un gran caudal que mejora el rendimiento del combustible, y tres capas para obtener una máxima filtración, retener el polvo y aumentar la vida útil del filtro.
 						</p>

@@ -207,7 +207,7 @@ class PagesController extends AppController {
 					$order=array('Distribuidor.pais ASC');
 					break;
 				default:
-					$condiciones = array('Distribuidor.pais'=>$region);
+					$condiciones = array('Distribuidor.pais'=>$region,'Distribuidor.coordenadas IS NOT NULL');
 					$order=array('Distribuidor.nombre ASC');
 					break;
 			}

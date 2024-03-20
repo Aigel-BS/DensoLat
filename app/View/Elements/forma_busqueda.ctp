@@ -126,12 +126,15 @@ $tipos_pieza = array(
 					cache: false,
 					success: function(html) {
 						$.each(html.marcas, function(key, value) {
+                            console.log("Agrega Marca");
 							$('#marca').append('<option value="' + key + '">' + value.toUpperCase() + '</option>');
 						});
 						$.each(html.modelos, function(key, value) {
+                            console.log("Agrega Modelo");
 							$('#modelo').append('<option value="' + key + '">' + value + '</option>');
 						});
 						$.each(html.motores, function(key, value) {
+                            console.log("Agrega Motor");
 							$('#motor').append('<option value="' + key + '">' + value + '</option>');
 						});
 					}

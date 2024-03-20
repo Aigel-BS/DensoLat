@@ -117,7 +117,8 @@
 	}
 
 	function showDistribuidores(){
-		if(document.getElementById('UserDistribuidor').value == 1){
+        //alert(document.getElementById('UserRegion').value);
+        if(document.getElementById('UserDistribuidor').value == 1){
 			document.getElementById('distribuidores_list').style.display='';
 			document.getElementById('UserCuentaId').required = "required";
 			var dataString = 'region='+ document.getElementById('UserRegion').value;

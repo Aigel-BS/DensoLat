@@ -125,6 +125,7 @@ class UsersController extends AppController {
 		if ($this->request->is('post')){
 			$this->request->data['User']['password']=$this->Auth->password($this->request->data['User']['password']);
 			$this->request->data['User']['rol']=2;
+			$this->request->data['User']['activo']=1;
 			if($this->User->save($this->request->data)){
 				$id = $this->User->getInsertId();
 				$this->inscribir_curso($id,$this->request->data['User']['region']);
@@ -132,7 +133,7 @@ class UsersController extends AppController {
 					'key' => 'positive',
 				));
 
-				$this->Email = new CakeEmail();
+				/*$this->Email = new CakeEmail();
 				$this->Email->config(
 					array(
 						'host' => 'mail.aigelbs.com',
@@ -148,7 +149,7 @@ class UsersController extends AppController {
 				$this->Email->from(array('notificaciones@densoautopartes.com'=>'Notificación Capacitación DENSOAUTOPARTES.COM'));
 				$this->Email->subject("Confirmar Cuenta de Correo");
 				$this->Email->viewVars(array('user' => $id,'titulo_mail'=>'Confirmar Cuenta de Correo'));
-				$this->Email->send();
+				$this->Email->send();*/
 
 				return $this->redirect(array('controller'=>'users','action'=>'login'));
 			}

@@ -628,7 +628,7 @@
 			<header>
 				<h1 class="search-title">
 					<img src="https://fonts.gstatic.com/s/i/googlematerialicons/place/v15/24px.svg"/>
-					Encontrar Tienda Certificada
+					<?= $region == 'co' ? "Encontrar Tienda Certificada" : "Encontrar Distribuidor DENSO"?>
 				</h1>
 				<div class="search-input">
 					<input id="location-search-input" placeholder="Enter your address or zip code">
@@ -640,7 +640,7 @@
 				</div>
 			</header>
 			<div class="section-name" id="location-results-section-name">
-				Todas las Tiendas Certificadas
+				Todos los resultados
 			</div>
 			<div class="results">
 				<ul id="location-results-list"></ul>

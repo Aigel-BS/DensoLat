@@ -8,6 +8,7 @@
 			'cl'=>'Chile',
 			'ec'=>'Ecuador',
 			'pe'=>'Perú',
+			've'=>'Venezuela',
 			'latam'=>'LATAM',
 			'car'=>'Caribe',
 			'cam'=>'Centroamérica'
@@ -97,6 +98,18 @@
 		</script>
 	<?php } ?>
 
+    <?php if($region=='ve'){?>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-78045YBSF2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-78045YBSF2');
+        </script>
+	<?php } ?>
+
 	<?php if($region=='car'){?>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GBWW3VB20"></script>
@@ -137,9 +150,9 @@
 	<meta name="theme-color" content="#478ac9">
 	<meta name="twitter:site" content="@">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="DENSO AUTOPARTES LATAM">
+	<meta name="twitter:title" content="DENSO AUTOPARTES <?= $pais[$region]?>">
 	<meta name="twitter:description" content="DENSO">
-	<meta property="og:title" content="DENSO AUTOPARTES LATAM">
+	<meta property="og:title" content="DENSO AUTOPARTES <?= $pais[$region]?>">
 	<meta property="og:description" content="">
 	<meta property="og:type" content="website">
 	<script>

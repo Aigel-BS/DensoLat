@@ -107,7 +107,7 @@
         data.addColumn('number', 'Oct 23');
         data.addColumn('number', 'Nov 23');
         data.addColumn('number', 'Dic 23');
-        data.addColumn('number', 'Enr 24');
+        data.addColumn('number', 'Ene 24');
         data.addColumn('number', 'Feb 24');
         data.addColumn('number', 'Mar 25');
         data.addColumn('number', 'Ventas Totales');
@@ -115,8 +115,8 @@
         data.addRows([
             <?php
             foreach($tabla_ventas as $key=>$registro):
-                $total = floatval($registro['2023-10-01'])+floatval($registro['2023-11-01']);
-                echo "['".$key."',".$registro['2023-10-01'].",".$registro['2023-11-01'].",0,0,0,0,".$total."],";
+                $total = floatval($registro['2023-10-01'])+floatval($registro['2023-11-01'])+floatval($registro['2023-12-01'])+floatval($registro['2024-01-01'])+floatval($registro['2024-02-01']);
+                echo "['".$key."',".$registro['2023-10-01'].",".$registro['2023-11-01'].",".$registro['2023-12-01'].",".$registro['2024-01-01'].",".$registro['2024-02-01'].",0,".$total."],";
             endforeach;
             ?>
 
@@ -160,27 +160,27 @@
                 }
                 ?>
             ],
-            //['Dic 23',
-            //    <?php
-            //    foreach ($crecimiento as $crec){
-            //        echo "0,";
-            //    }
-            //    ?>
-            //],
-            //['Ene 24',
-            //    <?php
-            //    foreach ($crecimiento as $crec){
-            //        echo "0,";
-            //    }
-            //    ?>
-            //],
-            //['Feb 24',
-            //    <?php
-            //    foreach ($crecimiento as $crec){
-            //        echo "0,";
-            //    }
-            //    ?>
-            //],
+            ['Dic 23',
+                <?php
+                foreach ($tabla_ventas as $key=>$registro){
+                    echo $registro['2023-12-01'].",";
+                }
+                ?>
+            ],
+            ['Ene 24',
+                <?php
+                foreach ($tabla_ventas as $key=>$registro){
+                    echo $registro['2024-01-01'].",";
+                }
+                ?>
+            ],
+            ['Feb 24',
+                <?php
+                foreach ($tabla_ventas as $key=>$registro){
+                    echo $registro['2024-02-01'].",";
+                }
+                ?>
+            ],
             //['Mar 24',
             //    <?php
             //    foreach ($crecimiento as $crec){
