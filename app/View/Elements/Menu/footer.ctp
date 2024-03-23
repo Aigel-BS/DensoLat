@@ -227,9 +227,6 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													<a href="https://www.denso.com/mx/es/careers/opportunities/" target="_blank"
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">Trabaja en DENSO</a>
 													<br>
-													<a href="<?= $this->Html->url(array('action'=>'tyc_sultanes','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2">Términos y Condiciones</a>
-													<br>
 													<a href="<?= $this->Html->url(array('action'=>'privacidad','controller'=>'pages',$region))?>"
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-3">Aviso de Privacidad</a>
 													<br>

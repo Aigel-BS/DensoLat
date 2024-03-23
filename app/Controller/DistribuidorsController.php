@@ -192,7 +192,7 @@ class DistribuidorsController extends AppController {
 			)
 		);
 		header('Content-Type: application/json');
-		asort($cuentas);
+		sort($cuentas);
 		echo json_encode($cuentas);
 		exit();
 

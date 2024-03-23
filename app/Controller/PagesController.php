@@ -32,7 +32,7 @@ class PagesController extends AppController {
 
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow(array('home','imagen_tv','catalogos','denso','privacidad','terminos', 'landing','sensores_oxigeno','bujias','filtros','compresores','videos','tyc_sultanes','contacto'));
+		$this->Auth->allow(array('home','imagen_tv','catalogos','denso','privacidad','terminos', 'landing','sensores_oxigeno','bujias','filtros','compresores','videos','tyc_sultanes','contacto','producto_autentico','falsificacion_producto'));
 	}
 
 /**
@@ -501,5 +501,13 @@ class PagesController extends AppController {
 			}
 			$this->set('region',$region);
 		}
+
+        public function producto_autentico($region=null){
+            $this->set(compact('region'));
+        }
+
+        public function falsificacion_producto($region=null){
+            $this->set(compact('region'));
+        }
 
 }

@@ -70,6 +70,8 @@
 	Router::connect('/mx/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','mx'));
 	Router::connect('/mx/terminos-y-condiciones-promocion-fan-sultanes', array('controller' => 'pages', 'action' => 'tyc_sultanes','mx'));
 	Router::connect('/mx/contacto', array('controller' => 'pages', 'action' => 'contacto','mx'));
+    Router::connect('/mx/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','mx'));
+    Router::connect('/mx/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','mx'));
 
 	//Routing Colombia
 	Router::connect('/co', array('controller' => 'pages', 'action' => 'home','co'));
@@ -94,6 +96,8 @@
 	Router::connect('/co/tiendas-certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'index','co'));
 	Router::connect('/co/distribuidores_certificados/*', array('controller' => 'distribuidores_certificados', 'action' => 'view','co'));
 	Router::connect('/co/mapa_tiendas_certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'map','co'));
+    Router::connect('/co/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','co'));
+    Router::connect('/co/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','co'));
 
 	//Routing Chile
 	Router::connect('/cl', array('controller' => 'pages', 'action' => 'home','cl'));

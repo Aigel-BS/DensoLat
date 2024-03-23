@@ -56,8 +56,6 @@ echo $this->Html->script(
 	<section class="u-carousel u-slide u-block-584d-1" id="carousel_78ac" data-interval="5000" data-u-ride="carousel">
 		<ol class="u-carousel-indicators u-block-584d-5">
 			<li data-u-target="#carousel_78ac" class="u-active u-active-custom-color-1 u-grey-30 u-shape-circle"
-				data-u-slide-to="0" style="width: 8px; height: 8px;" style="background-image: url(<?= $this->Html->url('/img/Banner_Sultanes.jpg')?>) !important"></li>
-			<li data-u-target="#carousel_78ac" class="u-active u-active-custom-color-1 u-grey-30 u-shape-circle"
 				data-u-slide-to="0" style="width: 8px; height: 8px;"></li>
 			<li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle" data-u-slide-to="1"
 				style="width: 8px; height: 8px;"></li>
@@ -65,17 +63,6 @@ echo $this->Html->script(
 				style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
 		</ol>
 		<div class="u-carousel-inner" role="listbox">
-			<div class="u-align-center u-carousel-item u-clearfix u-image u-shading u-section-1-2" src=""
-				 data-image-width="1245" data-image-height="700" style="background-image: url(<?= $this->Html->url('/img/Banner_Sultanes.jpg')?>) !important">
-				<div class="u-clearfix u-sheet u-sheet-1">
-					<h2 class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-align-left-xxl u-custom-font u-subtitle u-text u-text-1">
-
-					</h2>
-					<h3 class="u-align-center-xs u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-align-left-xxl u-custom-font u-text u-text-2">
-
-					</h3>
-				</div>
-			</div>
 			<div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
 				 data-image-width="1728" data-image-height="972">
 				<div class="u-clearfix u-sheet u-sheet-1">
