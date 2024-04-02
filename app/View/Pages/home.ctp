@@ -52,6 +52,15 @@ echo $this->Html->script(
 		float: left;
 	}
 </style>
+
+<section class="u-hidden-xs u-hidden-sm" style="text-align: center">
+    <video src="<?= $this->Html->url('/videos/VideoDenso_HD_03_espanol.mp4')?>" autoplay loop preload="auto" style="max-height:90vh;width: 100%"></video>
+</section>
+
+<section class="u-hidden-md u-hidden-lg u-hidden-xl u-hidden-xxl">
+    <video src="<?= $this->Html->url('/videos/VideoDenso_Vertical_03_espanol.mp4')?>" autoplay></video>
+</section>
+
 <?php if($region == 'mx'){?>
 	<section class="u-carousel u-slide u-block-584d-1" id="carousel_78ac" data-interval="5000" data-u-ride="carousel">
 		<ol class="u-carousel-indicators u-block-584d-5">
