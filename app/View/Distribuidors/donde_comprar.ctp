@@ -93,49 +93,13 @@ $paises = array(
 		<div class="u-clearfix u-sheet u-sheet-1">
 			<h1 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-align-center-xxl u-align-left-xs u-text u-text-default u-text-1">Distribuidores DENSO</h1>
 			<p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-align-center-xxl u-align-left-xs u-custom-font u-text u-text-custom-color-4 u-text-default u-text-2">¡Solo selecciona tu estado y conoce la lista de nuestros distribuidores!</p>
-			<div class="u-clearfix u-expanded-width u-hidden-sm u-hidden-xs u-layout-wrap u-layout-wrap-1">
-				<div class="u-layout">
-					<div class="u-layout-row">
-						<div class="u-container-style u-layout-cell u-size-25 u-layout-cell-1">
-							<div class="u-container-layout u-valign-bottom-xl u-container-layout-1">
-								<p class="u-custom-font u-text u-text-custom-color-4 u-text-3">
-									<?php
-									for ($i=0;$i<(sizeof($distribuidores)/2);$i++){
-										echo $this->Html->link($distribuidores[$i]['Distribuidor']['estado'],array('controller'=>'distribuidors','action'=>'por_estado',$distribuidores[$i]['Distribuidor']['estado'],'mx'),array('style'=>'color:#5f6367'))."<br>";
-									}
-									?>
-								</p>
-								<p class="u-custom-font u-text u-text-custom-color-4 u-text-4" style="margin-top: -338px;">
-									<?php
-									for ($i=(sizeof($distribuidores)/2)+1;$i<sizeof($distribuidores);$i++){
-										echo $this->Html->link($distribuidores[$i]['Distribuidor']['estado'],array('controller'=>'distribuidors','action'=>'por_estado',$distribuidores[$i]['Distribuidor']['estado'],'mx'),array('style'=>'color:#5f6367'))."<br>";
-									}
-									?>
-								</p>
-							</div>
-						</div>
-						<div class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
-                            <?= $this->Element('map')?>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="buscar u-absolute-hcenter-lg u-absolute-hcenter-md u-absolute-hcenter-xl u-border-2 u-border-grey-25 u-border-no-left u-border-no-right u-border-no-top u-expanded-height-lg u-expanded-height-md u-expanded-height-xl u-expanded-width-sm u-expanded-width-xs u-form u-hidden-lg u-hidden-md u-hidden-xl u-hidden-xxl u-form-1">
-				<div class="buscar u-absolute-hcenter-lg u-absolute-hcenter-md u-absolute-hcenter-xl u-border-2 u-border-grey-25 u-border-no-left u-border-no-right u-border-no-top u-expanded-height-lg u-expanded-height-md u-expanded-height-xl u-expanded-width-sm u-expanded-width-xs u-form u-hidden-lg u-hidden-md u-hidden-xl u-hidden-xxl u-form-1">
-					<div class="u-form-group u-form-select u-label-none u-form-group-1">
-						<div class="u-form-select-wrapper">
-							<?php
-							$estados_movil = array();
-							foreach ($distribuidores as $estado) {
-								$estados_movil[$estado['Distribuidor']['estado']] = $estado['Distribuidor']['estado'];
-							}
-							echo $this->Form->input('estado',array('onchange'=>'javascript:buscar_estado(this.value,"mx")','empty'=>'Seleccionar Estado','type'=>'select','options'=>$estados_movil,'class'=>'u-border-grey-5 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-grey-40 u-input-1'));
-							?>
-						</div>
-					</div>
-				</div>
-			</div>
-			<img class="u-align-center-sm u-align-center-xs u-hidden-lg u-hidden-md u-hidden-xl u-hidden-xxl u-image u-image-default u-image-2" src="<?= $this->Html->url('/img/Group107.png')?>" alt="" data-image-width="908" data-image-height="573">
+            <div class="u-layout">
+                <div class="u-layout-row">
+                    <div class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
+                        <?= $this->Element('map')?>
+                    </div>
+                </div>
+            </div>
 		</div>
 	</section>
 <?php }else { ?>

@@ -54,11 +54,15 @@ echo $this->Html->script(
 </style>
 
 <section class="u-hidden-xs u-hidden-sm" style="text-align: center">
-    <video src="<?= $this->Html->url('/videos/VideoDenso_HD_03_espanol.mp4')?>" autoplay loop preload="auto" style="max-height:90vh;width: 100%"></video>
+    <video width="420" autoplay muted loop style="max-height:90vh;width: 100%">
+        <source src="<?= $this->Html->url('/videos/VideoDenso_HD_03_espanol.mp4')?>" type="video/mp4">
+    </video>
 </section>
 
 <section class="u-hidden-md u-hidden-lg u-hidden-xl u-hidden-xxl">
-    <video src="<?= $this->Html->url('/videos/VideoDenso_Vertical_03_espanol.mp4')?>" autoplay></video>
+    <video width="420" autoplay muted loop style="max-height:90vh;width: 100%">
+        <source src="<?= $this->Html->url('/videos/VideoDenso_Vertical_03_espanol.mp4')?>" type="video/mp4">
+    </video>
 </section>
 
 <?php if($region == 'mx'){?>
