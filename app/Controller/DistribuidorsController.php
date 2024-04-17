@@ -6,8 +6,53 @@ class DistribuidorsController extends AppController {
 	public function beforeFilter()
     {
         parent::beforeFilter();
-        $this->Auth->allow(array('por_estado','contacto','registrar_stat','por_marca','getByRegion','donde_comprar','por_pais'));
+        $this->Auth->allow(array('por_estado','contacto','registrar_stat','por_marca','getByRegion','donde_comprar','por_pais','falsificacion'));
     }
+
+	function falsificacion(){
+		if ($this->request->is('post')){
+			$email = $this->request->data['Formulario']['email'];
+			$telefono = $this->request->data['Formulario']['telefono'];
+			$pais = $this->request->data['Formulario']['pais'];
+			$mensaje = $this->request->data['Formulario']['mensaje'];
+
+
+
+			$html =
+				"<p>Email: ".$email."</p>".
+				"<p>Teléfono: ".$telefono."</p>".
+				"<p>País: ".$pais."</p>".
+				"<p>Mensaje: ".$mensaje."</p>";
+
+			$this->Email = new CakeEmail();
+			$this->Email->config(
+				array(
+					'host' => 'mail.aigelbs.com',
+					'port' => 587,
+					'username' => 'formulario@densoautopartes.com.mx',
+					'password' => 'Formulario.2019',
+					'transport' => 'Smtp'
+				)
+			);
+			$this->Email->emailFormat('html');
+			$this->Email->from(array('contacto@densoautopartes.com.mx'=>'Formulario de Contacto Página Web'));
+			switch($this->request->data['Formulario']['region']):
+				case('mx'):
+					//$this->Email->to('monica.guerrero@na.denso.com');
+					$this->Email->to('cesari.pineda@gmail.com');
+					break;
+				case('co'):
+					//$this->Email->to('victoria.weiss@na.denso.com');
+					$this->Email->to('cesari.pineda@outlook.com');
+					break;
+			endswitch;
+			$this->Email->bcc('cesar@aigel.com.mx');
+			$this->Email->subject("Testimonio de Falsificación");
+			$this->Email->send($html);
+			$this->Session->setFlash('Gracias por tu testimonio. Estudiaremos el caso a fondo y ten la seguridad de que seguiremos trabajando en contra de la falsificación de productos.','default',array('class'=>'success'));
+			$this->redirect(array('action'=>'falsificacion_producto','controller'=>'pages',$this->request->data['Formulario']['region']));
+		}
+	}
 
 	function donde_comprar($region = null){
 
@@ -123,7 +168,7 @@ class DistribuidorsController extends AppController {
 	   	        $this->Email->from(array('contacto@densoautopartes.com.mx'=>'Formulario de Contacto Página Web'));
 				switch($this->request->data['Distribuidor']['region']):
 					case('mx'):
-						$this->Email->to('monica.guerrero@na.denso.com');
+						$this->Email->to('deifilia.pavon@na.denso.com');
 						//$this->Email->to('cesari.pineda@gmail.com');
 					break;
 					case('co'):
