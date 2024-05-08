@@ -37,6 +37,10 @@
 											class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
 											href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','latam'))?>">Sensores</a>
 								</li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','latam'))?>">Inyectores Aftermarket</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -73,6 +77,8 @@
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','latam'))?>">Compresores</a>
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','latam'))?>">Sensores</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','latam'))?>">Sensores</a>
 										</li>
 									</ul>
 								</div>
@@ -137,6 +143,10 @@
 											class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
 											href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','mx'))?>">Sensores</a>
 								</li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','mx'))?>">Inyectores Aftermarket</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -181,6 +191,8 @@
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','mx'))?>">Compresores</a>
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','mx'))?>">Sensores</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','mx'))?>">Sensores</a>
 										</li>
 									</ul>
 								</div>
@@ -242,6 +254,10 @@
 											class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
 											href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','co'))?>">Sensores</a>
 								</li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','co'))?>">Inyectores Aftermarket</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -286,6 +302,8 @@
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','co'))?>">Compresores</a>
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','co'))?>">Sensores</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','co'))?>">Sensores</a>
 										</li>
 									</ul>
 								</div>
@@ -347,6 +365,10 @@
 											class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
 											href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','cl'))?>">Sensores</a>
 								</li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cl'))?>">Inyectores Aftermarket</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -391,6 +413,8 @@
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','cl'))?>">Compresores</a>
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','cl'))?>">Sensores</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cl'))?>">Sensores</a>
 										</li>
 									</ul>
 								</div>
@@ -451,6 +475,10 @@
 											class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
 											href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','ec'))?>">Sensores</a>
 								</li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ec'))?>">Inyectores Aftermarket</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -495,6 +523,8 @@
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','ec'))?>">Compresores</a>
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','ec'))?>">Sensores</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ec'))?>">Sensores</a>
 										</li>
 									</ul>
 								</div>
@@ -555,6 +585,10 @@
 											class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
 											href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','pe'))?>">Sensores</a>
 								</li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pe'))?>">Inyectores Aftermarket</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -599,6 +633,8 @@
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','pe'))?>">Compresores</a>
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','pe'))?>">Sensores</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pe'))?>">Sensores</a>
 										</li>
 									</ul>
 								</div>
@@ -660,6 +696,10 @@
 											class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
 											href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','car'))?>">Sensores</a>
 								</li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','car'))?>">Inyectores Aftermarket</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -700,6 +740,8 @@
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','car'))?>">Compresores</a>
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','car'))?>">Sensores</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','car'))?>">Sensores</a>
 										</li>
 									</ul>
 								</div>
@@ -759,6 +801,10 @@
 											class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
 											href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','cam'))?>">Sensores</a>
 								</li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cam'))?>">Inyectores Aftermarket</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -799,6 +845,8 @@
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','cam'))?>">Compresores</a>
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','cam'))?>">Sensores</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cam'))?>">Sensores</a>
 										</li>
 									</ul>
 								</div>
@@ -858,6 +906,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','ve'))?>">Sensores</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ve'))?>">Inyectores Aftermarket</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -902,6 +954,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','ve'))?>">Compresores</a>
                                         </li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','ve'))?>">Sensores</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ve'))?>">Sensores</a>
                                         </li>
                                     </ul>
                                 </div>

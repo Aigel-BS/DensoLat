@@ -194,7 +194,7 @@ echo $this->Html->script(
 	<section class="u-align-left u-clearfix u-hidden-xs u-image u-section-5" src="" data-image-width="1728"
 			 data-image-height="669" id="sec-ad89">
 		<h3 class="u-align-left-sm u-align-left-xs u-align-right-lg u-align-right-md u-align-right-xl u-hidden-xs u-text u-text-default-lg u-text-default-xl u-text-white u-text-1">
-			72 años innovando en<br>tecnología automotriz
+			75 años innovando en<br>tecnología automotriz
 		</h3>
 		<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 		   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">CONOCE
@@ -204,7 +204,7 @@ echo $this->Html->script(
 			class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-hidden-xxl u-image u-image-contain u-section-6"
 			src="" data-image-width="390" data-image-height="665" id="sec-e102">
 		<div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-			<h3 class="u-text u-text-default u-text-white u-text-1">72 años innovando en tecnología automotriz</h3>
+			<h3 class="u-text u-text-default u-text-white u-text-1">75 años innovando en tecnología automotriz</h3>
 			<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 			   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">conoce
 				más</a>
@@ -360,8 +360,10 @@ echo $this->Html->script(
 	<section class="u-carousel u-slide u-block-584d-1" id="carousel_78ac" data-interval="5000" data-u-ride="carousel">
 		<ol class="u-carousel-indicators u-block-584d-5">
 			<li data-u-target="#carousel_78ac" class="u-active u-active-custom-color-1 u-grey-30 u-shape-circle"
-				data-u-slide-to="0" style="width: 8px; height: 8px;"></li>
+                data-u-slide-to="0" style="width: 8px; height: 8px;"></li>
 			<li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle" data-u-slide-to="1"
+				style="width: 8px; height: 8px;"></li>
+            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle" data-u-slide-to="1"
 				style="width: 8px; height: 8px;"></li>
 			<li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
 				style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
@@ -369,7 +371,10 @@ echo $this->Html->script(
 				style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
 		</ol>
 		<div class="u-carousel-inner" role="listbox">
-			<div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
+            <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
+                 data-image-height="940" style="height:623px;background-image: url(<?= $this->Html->url('/img/banner_jersey.png')?>)">
+            </div>
+			<div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
 				 data-image-width="1728" data-image-height="972">
 				<div class="u-clearfix u-sheet u-sheet-1">
 					<div class="u-clearfix u-group-elements u-valign-middle u-group-elements-1">
@@ -490,7 +495,7 @@ echo $this->Html->script(
 	<section class="u-align-left u-clearfix u-hidden-xs u-image u-section-5" src="" data-image-width="1728"
 			 data-image-height="669" id="sec-ad89">
 		<h3 class="u-align-left-sm u-align-left-xs u-align-right-lg u-align-right-md u-align-right-xl u-hidden-xs u-text u-text-default-lg u-text-default-xl u-text-white u-text-1">
-			72 años innovando en<br>tecnología automotriz
+			75 años innovando en<br>tecnología automotriz
 		</h3>
 		<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 		   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">CONOCE
@@ -500,7 +505,7 @@ echo $this->Html->script(
 			class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-hidden-xxl u-image u-image-contain u-section-6"
 			src="" data-image-width="390" data-image-height="665" id="sec-e102">
 		<div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-			<h3 class="u-text u-text-default u-text-white u-text-1">72 años innovando en tecnología automotriz</h3>
+			<h3 class="u-text u-text-default u-text-white u-text-1">75 años innovando en tecnología automotriz</h3>
 			<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 			   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">conoce
 				más</a>
@@ -771,7 +776,7 @@ echo $this->Html->script(
 	<section class="u-align-left u-clearfix u-hidden-xs u-image u-section-5" src="" data-image-width="1728"
 			 data-image-height="669" id="sec-ad89">
 		<h3 class="u-align-left-sm u-align-left-xs u-align-right-lg u-align-right-md u-align-right-xl u-hidden-xs u-text u-text-default-lg u-text-default-xl u-text-white u-text-1">
-			72 años innovando en<br>tecnología automotriz
+			75 años innovando en<br>tecnología automotriz
 		</h3>
 		<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 		   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">CONOCE
@@ -781,7 +786,7 @@ echo $this->Html->script(
 			class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-hidden-xxl u-image u-image-contain u-section-6"
 			src="" data-image-width="390" data-image-height="665" id="sec-e102">
 		<div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-			<h3 class="u-text u-text-default u-text-white u-text-1">72 años innovando en tecnología automotriz</h3>
+			<h3 class="u-text u-text-default u-text-white u-text-1">75 años innovando en tecnología automotriz</h3>
 			<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 			   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">conoce
 				más</a>
@@ -1049,7 +1054,7 @@ echo $this->Html->script(
 	<section class="u-align-left u-clearfix u-hidden-xs u-image u-section-5" src="" data-image-width="1728"
 			 data-image-height="669" id="sec-ad89">
 		<h3 class="u-align-left-sm u-align-left-xs u-align-right-lg u-align-right-md u-align-right-xl u-hidden-xs u-text u-text-default-lg u-text-default-xl u-text-white u-text-1">
-			72 años innovando en<br>tecnología automotriz
+			75 años innovando en<br>tecnología automotriz
 		</h3>
 		<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 		   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">CONOCE
@@ -1059,7 +1064,7 @@ echo $this->Html->script(
 			class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-hidden-xxl u-image u-image-contain u-section-6"
 			src="" data-image-width="390" data-image-height="665" id="sec-e102">
 		<div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-			<h3 class="u-text u-text-default u-text-white u-text-1">72 años innovando en tecnología automotriz</h3>
+			<h3 class="u-text u-text-default u-text-white u-text-1">75 años innovando en tecnología automotriz</h3>
 			<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 			   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">conoce
 				más</a>
@@ -1328,7 +1333,7 @@ echo $this->Html->script(
 	<section class="u-align-left u-clearfix u-hidden-xs u-image u-section-5" src="" data-image-width="1728"
 			 data-image-height="669" id="sec-ad89">
 		<h3 class="u-align-left-sm u-align-left-xs u-align-right-lg u-align-right-md u-align-right-xl u-hidden-xs u-text u-text-default-lg u-text-default-xl u-text-white u-text-1">
-			72 años innovando en<br>tecnología automotriz
+			75 años innovando en<br>tecnología automotriz
 		</h3>
 		<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 		   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">CONOCE
@@ -1338,7 +1343,7 @@ echo $this->Html->script(
 			class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-hidden-xxl u-image u-image-contain u-section-6"
 			src="" data-image-width="390" data-image-height="665" id="sec-e102">
 		<div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-			<h3 class="u-text u-text-default u-text-white u-text-1">72 años innovando en tecnología automotriz</h3>
+			<h3 class="u-text u-text-default u-text-white u-text-1">75 años innovando en tecnología automotriz</h3>
 			<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 			   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">conoce
 				más</a>
@@ -1619,7 +1624,7 @@ echo $this->Html->script(
 	<section class="u-align-left u-clearfix u-hidden-xs u-image u-section-5" src="" data-image-width="1728"
 			 data-image-height="669" id="sec-ad89">
 		<h3 class="u-align-left-sm u-align-left-xs u-align-right-lg u-align-right-md u-align-right-xl u-hidden-xs u-text u-text-default-lg u-text-default-xl u-text-white u-text-1">
-			72 años innovando en<br>tecnología automotriz
+			75 años innovando en<br>tecnología automotriz
 		</h3>
 		<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 		   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">CONOCE
@@ -1629,7 +1634,7 @@ echo $this->Html->script(
 			class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-hidden-xxl u-image u-image-contain u-section-6"
 			src="" data-image-width="390" data-image-height="665" id="sec-e102">
 		<div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-			<h3 class="u-text u-text-default u-text-white u-text-1">72 años innovando en tecnología automotriz</h3>
+			<h3 class="u-text u-text-default u-text-white u-text-1">75 años innovando en tecnología automotriz</h3>
 			<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 			   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">conoce
 				más</a>
@@ -1904,7 +1909,7 @@ echo $this->Html->script(
     <section class="u-align-left u-clearfix u-hidden-xs u-image u-section-5" src="" data-image-width="1728"
              data-image-height="669" id="sec-ad89">
         <h3 class="u-align-left-sm u-align-left-xs u-align-right-lg u-align-right-md u-align-right-xl u-hidden-xs u-text u-text-default-lg u-text-default-xl u-text-white u-text-1">
-            72 años innovando en<br>tecnología automotriz
+            75 años innovando en<br>tecnología automotriz
         </h3>
         <a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
            class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">CONOCE
@@ -1914,7 +1919,7 @@ echo $this->Html->script(
             class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-hidden-xxl u-image u-image-contain u-section-6"
             src="" data-image-width="390" data-image-height="665" id="sec-e102">
         <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-            <h3 class="u-text u-text-default u-text-white u-text-1">72 años innovando en tecnología automotriz</h3>
+            <h3 class="u-text u-text-default u-text-white u-text-1">75 años innovando en tecnología automotriz</h3>
             <a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
                class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">conoce
                 más</a>
@@ -2181,7 +2186,7 @@ echo $this->Html->script(
 	<section class="u-align-left u-clearfix u-hidden-xs u-image u-section-5" src="" data-image-width="1728"
 			 data-image-height="669" id="sec-ad89">
 		<h3 class="u-align-left-sm u-align-left-xs u-align-right-lg u-align-right-md u-align-right-xl u-hidden-xs u-text u-text-default-lg u-text-default-xl u-text-white u-text-1">
-			72 años innovando en<br>tecnología automotriz
+			75 años innovando en<br>tecnología automotriz
 		</h3>
 		<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 		   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">CONOCE
@@ -2191,7 +2196,7 @@ echo $this->Html->script(
 			class="u-align-center u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-hidden-xxl u-image u-image-contain u-section-6"
 			src="" data-image-width="390" data-image-height="665" id="sec-e102">
 		<div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
-			<h3 class="u-text u-text-default u-text-white u-text-1">72 años innovando en tecnología automotriz</h3>
+			<h3 class="u-text u-text-default u-text-white u-text-1">75 años innovando en tecnología automotriz</h3>
 			<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 			   class="u-black u-border-2 u-border-black u-btn u-button-style u-custom-font u-hover-black u-text-hover-white u-btn-1">conoce
 				más</a>

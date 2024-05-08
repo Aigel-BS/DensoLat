@@ -39,6 +39,10 @@ $pais = array(
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">Por
 														qué comprar DENSO</a>
                                                     <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2">Conviértete
+                                                        en Distribuidor</a>
+                                                    <br>
 													<a href="<?= $this->Html->url(array('action'=>'donde_comprar','controller'=>'distribuidors',$region))?>"
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-3">Dónde
 														Comprar</a>
@@ -95,6 +99,8 @@ $pais = array(
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
 														de oxígeno</a>
 													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
 													<br>
 												</p>
 											</div>
@@ -211,7 +217,7 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">Por
 														qué comprar DENSO</a>
 													<br>
-													<a href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>"
+													<a href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>"
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2">Conviértete
 														en Distribuidor</a>
 													<br>
@@ -281,7 +287,9 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
 														de oxígeno</a>
 													<br>
-													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
+                                                    <br>
 												</p>
 											</div>
 										</div>
@@ -476,6 +484,9 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
 														de oxígeno</a>
 													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
+                                                    <br>
 												</p>
 											</div>
 										</div>
@@ -670,7 +681,9 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
 														de oxígeno</a>
 													<br>
-													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
+                                                    <br>
 												</p>
 											</div>
 										</div>
@@ -865,6 +878,8 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
                                                         de oxígeno</a>
                                                     <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
                                                 </p>
                                             </div>
@@ -1063,7 +1078,9 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
 														de oxígeno</a>
 													<br>
-													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
+                                                    <br>
 												</p>
 											</div>
 										</div>
@@ -1255,7 +1272,9 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
 														de oxígeno</a>
 													<br>
-													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
+                                                    <br>
 												</p>
 											</div>
 										</div>
@@ -1449,7 +1468,9 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
 														de oxígeno</a>
 													<br>
-													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
+                                                    <br>
 												</p>
 											</div>
 										</div>
@@ -1585,6 +1606,10 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													<a href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages',$region))?>"
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">Por
 														qué comprar DENSO</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2">Conviértete
+                                                        en Distribuidor</a>
 													<br>
 													<a href="<?= $this->Html->url(array('action'=>'donde_comprar','controller'=>'distribuidors',$region))?>"
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-3">Dónde
@@ -1644,7 +1669,9 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
 														de oxígeno</a>
 													<br>
-													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
+                                                    <br>
 												</p>
 											</div>
 										</div>

@@ -39,13 +39,14 @@
 	Router::connect('/quienes-somos', array('controller' => 'pages', 'action' => 'denso','latam'));
 	Router::connect('/terminos-y-condiciones', array('controller' => 'pages', 'action' => 'terminos'));
 	Router::connect('/aviso-de-privacidad', array('controller' => 'pages', 'action' => 'privacidad'));
-	Router::connect('/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing'));
+	Router::connect('/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing','latam'));
 	Router::connect('/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','latam'));
 	Router::connect('/bujias', array('controller' => 'pages', 'action' => 'bujias','latam'));
 	Router::connect('/filtros', array('controller' => 'pages', 'action' => 'filtros','latam'));
 	Router::connect('/compresores-aire-acondicionado', array('controller' => 'pages', 'action' => 'compresores','latam'));
 	Router::connect('/aprende-con-denso', array('controller' => 'pages', 'action' => 'videos','latam'));
 	Router::connect('/contacto', array('controller' => 'pages', 'action' => 'contacto','latam'));
+	Router::connect('/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','latam'));
 	Router::connect('/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_pais'));
 
 	//Routing México
@@ -57,7 +58,6 @@
 	Router::connect('/mx/quienes-somos', array('controller' => 'pages', 'action' => 'denso','mx'));
 	Router::connect('/mx/terminos-y-condiciones', array('controller' => 'pages', 'action' => 'terminos','mx'));
 	Router::connect('/mx/aviso-de-privacidad', array('controller' => 'pages', 'action' => 'privacidad','mx'));
-	Router::connect('/mx/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing','mx'));
 	Router::connect('/mx/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','mx'));
 	Router::connect('/mx/bujias', array('controller' => 'pages', 'action' => 'bujias','mx'));
 	Router::connect('/mx/filtros', array('controller' => 'pages', 'action' => 'filtros','mx'));
@@ -72,6 +72,7 @@
 	Router::connect('/mx/contacto', array('controller' => 'pages', 'action' => 'contacto','mx'));
     Router::connect('/mx/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','mx'));
     Router::connect('/mx/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','mx'));
+    Router::connect('/mx/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','mx'));
 
 	//Routing Colombia
 	Router::connect('/co', array('controller' => 'pages', 'action' => 'home','co'));
@@ -82,7 +83,6 @@
 	Router::connect('/co/quienes-somos', array('controller' => 'pages', 'action' => 'denso','co'));
 	Router::connect('/co/terminos-y-condiciones', array('controller' => 'pages', 'action' => 'terminos','co'));
 	Router::connect('/co/aviso-de-privacidad', array('controller' => 'pages', 'action' => 'privacidad','co'));
-	Router::connect('/co/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing','co'));
 	Router::connect('/co/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','co'));
 	Router::connect('/co/bujias', array('controller' => 'pages', 'action' => 'bujias','co'));
 	Router::connect('/co/filtros', array('controller' => 'pages', 'action' => 'filtros','co'));
@@ -98,6 +98,7 @@
 	Router::connect('/co/mapa_tiendas_certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'map','co'));
     Router::connect('/co/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','co'));
     Router::connect('/co/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','co'));
+    Router::connect('/co/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','co'));
 
 	//Routing Chile
 	Router::connect('/cl', array('controller' => 'pages', 'action' => 'home','cl'));
@@ -108,7 +109,6 @@
 	Router::connect('/cl/quienes-somos', array('controller' => 'pages', 'action' => 'denso','cl'));
 	Router::connect('/cl/terminos-y-condiciones', array('controller' => 'pages', 'action' => 'terminos','cl'));
 	Router::connect('/cl/aviso-de-privacidad', array('controller' => 'pages', 'action' => 'privacidad','cl'));
-	Router::connect('/cl/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing','cl'));
 	Router::connect('/cl/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','cl'));
 	Router::connect('/cl/bujias', array('controller' => 'pages', 'action' => 'bujias','cl'));
 	Router::connect('/cl/filtros', array('controller' => 'pages', 'action' => 'filtros','cl'));
@@ -119,6 +119,7 @@
 	Router::connect('/cl/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','cl'));
 	Router::connect('/cl/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','cl'));
 	Router::connect('/cl/contacto', array('controller' => 'pages', 'action' => 'contacto','cl'));
+    Router::connect('/cl/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','cl'));
 
 	//Routing Ecuador
 	Router::connect('/ec', array('controller' => 'pages', 'action' => 'home','ec'));
@@ -129,7 +130,6 @@
 	Router::connect('/ec/quienes-somos', array('controller' => 'pages', 'action' => 'denso','ec'));
 	Router::connect('/ec/terminos-y-condiciones', array('controller' => 'pages', 'action' => 'terminos','ec'));
 	Router::connect('/ec/aviso-de-privacidad', array('controller' => 'pages', 'action' => 'privacidad','ec'));
-	Router::connect('/ec/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing','ec'));
 	Router::connect('/ec/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','ec'));
 	Router::connect('/ec/bujias', array('controller' => 'pages', 'action' => 'bujias','ec'));
 	Router::connect('/ec/filtros', array('controller' => 'pages', 'action' => 'filtros','ec'));
@@ -140,12 +140,12 @@
 	Router::connect('/ec/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','ec'));
 	Router::connect('/ec/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','ec'));
 	Router::connect('/ec/contacto', array('controller' => 'pages', 'action' => 'contacto','ec'));
+    Router::connect('/ec/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','ec'));
 
 	//Routing Perú
 	Router::connect('/pe', array('controller' => 'pages', 'action' => 'home','pe'));
 	Router::connect('/pe/catalogos-digitales-peru', array('controller' => 'pages', 'action' => 'catalogos','pe'));
 	Router::connect('/pe/quienes-somos', array('controller' => 'pages', 'action' => 'denso','pe'));
-	Router::connect('/pe/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing','pe'));
 	Router::connect('/pe/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','pe'));
 	Router::connect('/pe/bujias', array('controller' => 'pages', 'action' => 'bujias','pe'));
 	Router::connect('/pe/filtros', array('controller' => 'pages', 'action' => 'filtros','pe'));
@@ -155,12 +155,12 @@
 	Router::connect('/pe/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','pe'));
 	Router::connect('/pe/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','pe'));
 	Router::connect('/pe/contacto', array('controller' => 'pages', 'action' => 'contacto','pe'));
+    Router::connect('/pe/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','pe'));
 
 	//Routing Caribe
 	Router::connect('/car', array('controller' => 'pages', 'action' => 'home','car'));
 	Router::connect('/car/catalogos-digitales-peru', array('controller' => 'pages', 'action' => 'catalogos','car'));
 	Router::connect('/car/quienes-somos', array('controller' => 'pages', 'action' => 'denso','car'));
-	Router::connect('/car/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing','car'));
 	Router::connect('/car/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','car'));
 	Router::connect('/car/bujias', array('controller' => 'pages', 'action' => 'bujias','car'));
 	Router::connect('/car/filtros', array('controller' => 'pages', 'action' => 'filtros','car'));
@@ -170,12 +170,12 @@
 	Router::connect('/car/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','car'));
 	Router::connect('/car/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','car'));
 	Router::connect('/car/contacto', array('controller' => 'pages', 'action' => 'contacto','car'));
+    Router::connect('/car/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','car'));
 
 	//Routing Centroamerica
 	Router::connect('/cam', array('controller' => 'pages', 'action' => 'home','cam'));
 	Router::connect('/cam/catalogos-digitales-peru', array('controller' => 'pages', 'action' => 'catalogos','cam'));
 	Router::connect('/cam/quienes-somos', array('controller' => 'pages', 'action' => 'denso','cam'));
-	Router::connect('/cam/conviertete-en-distribuidor', array('controller' => 'pages', 'action' => 'landing','cam'));
 	Router::connect('/cam/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','cam'));
 	Router::connect('/cam/bujias', array('controller' => 'pages', 'action' => 'bujias','cam'));
 	Router::connect('/cam/filtros', array('controller' => 'pages', 'action' => 'filtros','cam'));
@@ -185,6 +185,7 @@
 	Router::connect('/cam/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','cam'));
 	Router::connect('/cam/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','cam'));
 	Router::connect('/cam/contacto', array('controller' => 'pages', 'action' => 'contacto','cam'));
+    Router::connect('/cam/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','cam'));
 
     //Routing Venezuela
     Router::connect('/ve', array('controller' => 'pages', 'action' => 'home','ve'));
@@ -199,6 +200,7 @@
     Router::connect('/ve/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','ve'));
     Router::connect('/ve/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','ve'));
     Router::connect('/ve/contacto', array('controller' => 'pages', 'action' => 'contacto','ve'));
+    Router::connect('/ve/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','ve'));
 
 
 /**

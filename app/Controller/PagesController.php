@@ -32,7 +32,13 @@ class PagesController extends AppController {
 
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow(array('home','imagen_tv','catalogos','denso','privacidad','terminos', 'landing','sensores_oxigeno','bujias','filtros','compresores','videos','tyc_sultanes','contacto','producto_autentico','falsificacion_producto'));
+		$this->Auth->allow(
+            array(
+                'home','imagen_tv','catalogos','denso','privacidad','terminos', 'landing','sensores_oxigeno',
+                'bujias','filtros','compresores','videos','tyc_sultanes','contacto','producto_autentico',
+                'falsificacion_producto','inyectores'
+            )
+        );
 	}
 
 /**
@@ -136,14 +142,10 @@ class PagesController extends AppController {
 		}
 
 
-		public function landing() {
+		public function landing($region = null) {
 			$this->loadModel('Prospecto');
 
 			$this->layout = 'landing';
-
-			$this->set('estados', array(
-				"Aguascalientes" => "Aguascalientes", "Baja California" => "Baja California", "Baja California Sur" => "Baja California Sur", "Campeche" => "Campeche", "Chiapas" => "Chiapas", "Chihuahua" => "Chihuahua", "Ciudad de México" => "Ciudad de México", "Coahuila " => "Coahuila ", "Colima" => "Colima", "Durango" => "Durango", "Estado de México" => "Estado de México", "Guanajuato" => "Guanajuato", "Guerrero" => "Guerrero", "Hidalgo" => "Hidalgo", "Jalisco" => "Jalisco", "Michoacán" => "Michoacán", "Morelos" => "Morelos", "Nayarit" => "Nayarit", "Nuevo León" => "Nuevo León", "Oaxaca" => "Oaxaca", "Puebla" => "Puebla", "Querétaro" => "Querétaro", "Quintana Roo" => "Quintana Roo", "San Luis Potosí" => "San Luis Potosí", "Sinaloa" => "Sinaloa", "Sonora" => "Sonora", "Tabasco" => "Tabasco", "Tamaulipas" => "Tamaulipas", "Tlaxcala" => "Tlaxcala", "Veracruz" => "Veracruz", "Yucatán" => "Yucatán", "Zacatecas" => "Zacatecas"
-			));
 
 			if ($this->request->is('post')) {
 				$this->request->data['Prospecto']['fecha_alta'] = date('Y-m-d H:i:s');
@@ -174,7 +176,7 @@ class PagesController extends AppController {
 							);
 						$this->Email->emailFormat('html');
 						$this->Email->from(array('contacto@densoautopartes.com.mx'=>'Landing Page Distribuidores'));
-						$this->Email->to('monica.guerrero@na.denso.com');
+						$this->Email->to('cesar@aigel.com.mx');
 						$this->Email->bcc('cesar@aigel.com.mx');
 						$this->Email->subject('Solicitud de información para Distribución - Landing Page');
 						$this->Email->send($html);
@@ -184,6 +186,7 @@ class PagesController extends AppController {
 
 
 			}
+            $this->set('region',$region);
 		}
 
 		//Comienzan páginas regionales
@@ -504,6 +507,47 @@ class PagesController extends AppController {
 
         public function producto_autentico($region=null){
             $this->set(compact('region'));
+        }
+
+        public function inyectores($region=null){
+            if(!isset($region)){
+                $region = 'latam';
+            }
+
+            $this->loadModel('Seccion');
+            $secciones_arreglo = $this->Seccion->findAllBySeccionAndPais('compresor',$region);
+            $secciones = array();
+            foreach($secciones_arreglo as $seccion):
+                $secciones[$seccion['Seccion']['elemento']] = $seccion['Seccion']['contenido'];
+            endforeach;
+            $this->set('secciones',$secciones);
+            $this->loadModel('Producto');
+            $anios = $this->Producto->find(
+                'list',
+                array(
+                    'fields'=>array(
+                        'Producto.anio_inicio','Producto.anio_inicio'
+                    ),
+                    'order'=>'Producto.anio_inicio DESC',
+                    'conditions'=>array(
+                        'Producto.pais'=>$region
+                    )
+                )
+            );
+            //$anio_min = 0;
+            switch($region):
+                case('mx'):
+                    $anio_min=1960;
+                    break;
+                case('co'):
+                    $anio_min=1945;
+                    break;
+                case('cl'):
+                    $anio_min=1945;
+                    break;
+            endswitch;
+            $this->set('anios',$anios);
+            $this->set('region',$region);
         }
 
         public function falsificacion_producto($region=null){

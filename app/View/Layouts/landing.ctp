@@ -124,11 +124,11 @@
 </head>
 <body class="u-body u-xxl-mode" data-lang="es">
 <header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-5545 u-valign-middle-lg u-valign-middle-xl u-header"
-		id="sec-a3c4"><a href="<?= $this->Html->url(array('controller'=>'pages','action'=>'home','mx'))?>" class="u-align-left u-image u-logo u-image-1" data-image-width="1158"
+		id="sec-a3c4"><a href="<?= $this->Html->url(array('controller'=>'pages','action'=>'home'))?>" class="u-align-left u-image u-logo u-image-1" data-image-width="1158"
 						 data-image-height="387" title="HOME">
 		<img src="<?= $this->Html->url('/img/Logo_DENSO.jpg')?>" class="u-logo-image u-logo-image-1">
 	</a>
-	<?= $this->Element('Menu/menu',array('region'=>'mx'))?>
+	<?= $this->Element('Menu/menu',array('region'=>$region))?>
 </header>
 <?php echo $this->Session->flash();?>
 <?php echo $this->fetch('content'); ?>

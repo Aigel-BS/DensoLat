@@ -115,8 +115,8 @@
         data.addRows([
             <?php
             foreach($tabla_ventas as $key=>$registro):
-                $total = floatval($registro['2023-10-01'])+floatval($registro['2023-11-01'])+floatval($registro['2023-12-01'])+floatval($registro['2024-01-01'])+floatval($registro['2024-02-01']);
-                echo "['".$key."',".$registro['2023-10-01'].",".$registro['2023-11-01'].",".$registro['2023-12-01'].",".$registro['2024-01-01'].",".$registro['2024-02-01'].",0,".$total."],";
+                $total = floatval($registro['2023-10-01'])+floatval($registro['2023-11-01'])+floatval($registro['2023-12-01'])+floatval($registro['2024-01-01'])+floatval($registro['2024-02-01'])+floatval($registro['2024-03-01']);
+                echo "['".$key."',".$registro['2023-10-01'].",".$registro['2023-11-01'].",".$registro['2023-12-01'].",".$registro['2024-01-01'].",".$registro['2024-02-01'].",".$registro['2024-03-01'].",".$total."],";
             endforeach;
             ?>
 
@@ -181,13 +181,13 @@
                 }
                 ?>
             ],
-            //['Mar 24',
-            //    <?php
-            //    foreach ($crecimiento as $crec){
-            //        echo "0,";
-            //    }
-            //    ?>
-            //]
+            ['Mar 24',
+                <?php
+                foreach ($tabla_ventas as $key=>$registro){
+                    echo $registro['2024-03-01'].",";
+                }
+                ?>
+            ],
         ]);
 
         var options = {
