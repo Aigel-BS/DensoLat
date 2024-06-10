@@ -18,6 +18,7 @@ echo $this->Html->script(
 <?php
 $paises = array(
 		'ar'=>'Argentina',
+		'ag'=>'Antigua y Barbuda',
 		'bb'=>'Barbados',
 		'bo'=>'Bolivia',
 		'bs'=>'Bahamas',
@@ -28,13 +29,17 @@ $paises = array(
 		'do'=>'República Dominicana',
 		'ec'=>'Ecuador',
 		'gt'=>'Guatemala',
+		'gy'=>'Guyana',
+		'ht'=>'Haití',
 		'hn'=>'Honduras',
+		'ja'=>'Jamaica',
 		'mx'=>'México',
 		'ni'=>'Nicaragua',
 		'pa'=>'Panamá',
 		'pe'=>'Perú',
 		'pr'=>'Puerto Rico',
 		'py'=>'Paraguay',
+		'sr'=>'Suriname',
 		'sv'=>'El Salvador',
 		'tt'=>'Trinidad y Tobago',
 		'uy'=>'Uruguay',
@@ -54,11 +59,11 @@ $paises = array(
 							<div class="u-container-layout u-valign-bottom-xl u-container-layout-1">
 								<p class="u-custom-font u-text u-text-custom-color-4 u-text-3">
 									<?php
-									$mitad = (sizeof($paises)/2);
+									$mitad = round((sizeof($paises)/2));
 									$i=0;
 									foreach ($paises as $key=>$value){
 										if ($i==$mitad){
-											echo '</p><p class="u-custom-font u-text u-text-custom-color-4 u-text-4" style="margin: -43% 0 0 272px;">';
+											echo '</p><p class="u-custom-font u-text u-text-custom-color-4 u-text-4" style="margin: -52% 0 0 272px;">';
 										}
 										echo $this->Html->link($value,array('controller'=>'distribuidors','action'=>'por_pais',$key,$region),array('style'=>'color:#5f6367'))."<br>";
 										$i++;
