@@ -83,7 +83,7 @@ class DistribuidorsController extends AppController {
 
 		switch ($region){
 			case "car":
-				$condiciones = array('Distribuidor.pais IN ("bb","do","pr","tt")');
+				$condiciones = array('Distribuidor.pais IN ("ag","ja","bs","sr","gy","ht","bb","do","pr","tt")');
 				$order=array('Distribuidor.pais ASC');
 				break;
 			case "cam":
@@ -117,9 +117,9 @@ class DistribuidorsController extends AppController {
 
 	function por_marca($nombre = null,$region = null) {
 		if ($region == 'car' || $region == 'cam'){
-			$this->set('distribuidores',$this->Distribuidor->find('all',array('order'=>'nombre ASC','conditions'=>array('nombre LIKE "%'.$nombre.'%"'))));
+			$this->set('distribuidores',$this->Distribuidor->find('all',array('order'=>'nombre ASC','group'=>'nombre','conditions'=>array('nombre LIKE "%'.$nombre.'%"'))));
 		}else{
-			$this->set('distribuidores',$this->Distribuidor->find('all',array('order'=>'nombre ASC','conditions'=>array('nombre LIKE "%'.$nombre.'%"','pais'=>$region))));
+			$this->set('distribuidores',$this->Distribuidor->find('all',array('order'=>'nombre ASC','group'=>'nombre','conditions'=>array('nombre LIKE "%'.$nombre.'%"','pais'=>$region))));
 		}
 		$this->set('region',$region);
 		$this->set('nombre',$nombre);

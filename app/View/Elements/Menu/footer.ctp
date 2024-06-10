@@ -85,23 +85,28 @@ $pais = array(
 													<br>
 													<a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
 													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
+                                                        de A/C</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
+                                                        de oxígeno</a>
 												</p>
 											</div>
 										</div>
 										<div class="u-container-style u-list-item u-repeater-item">
 											<div class="u-container-layout u-similar-container u-container-layout-6">
 												<p class="u-text u-text-6">
-													<a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
-														de A/C</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
-														de oxígeno</a>
-													<br>
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
 													<br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
 												</p>
 											</div>
 										</div>
@@ -261,38 +266,39 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 								</div><!--/position-->
 								<div class="u-expanded-width u-list u-list-2">
 									<div class="u-repeater u-repeater-2">
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-5">
-												<p class="u-text u-text-5">
-													<a href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Buscar
-														mi pieza</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
-													   class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
-												</p>
-											</div>
-										</div>
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-6">
-												<p class="u-text u-text-6">
-													<a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
-														de A/C</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
-														de oxígeno</a>
-													<br>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-5">
+                                                <p class="u-text u-text-5">
+                                                    <a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
+                                                       class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
+                                                        de A/C</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
+                                                        de oxígeno</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-6">
+                                                <p class="u-text u-text-6">
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
-												</p>
-											</div>
-										</div>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
+                                                </p>
+                                            </div>
+                                        </div>
 									</div>
 								</div>
 								<div class="u-social-icons u-spacing-28 u-social-icons-1">
@@ -458,38 +464,39 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 								</div><!--/position-->
 								<div class="u-expanded-width u-list u-list-2">
 									<div class="u-repeater u-repeater-2">
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-5">
-												<p class="u-text u-text-5">
-													<a href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Buscar
-														mi pieza</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
-													   class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
-												</p>
-											</div>
-										</div>
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-6">
-												<p class="u-text u-text-6">
-													<a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
-														de A/C</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
-														de oxígeno</a>
-													<br>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-5">
+                                                <p class="u-text u-text-5">
+                                                    <a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
+                                                       class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
+                                                        de A/C</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
+                                                        de oxígeno</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-6">
+                                                <p class="u-text u-text-6">
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
-												</p>
-											</div>
-										</div>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
+                                                </p>
+                                            </div>
+                                        </div>
 									</div>
 								</div>
 								<div class="u-social-icons u-spacing-28 u-social-icons-1">
@@ -655,38 +662,39 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 								</div><!--/position-->
 								<div class="u-expanded-width u-list u-list-2">
 									<div class="u-repeater u-repeater-2">
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-5">
-												<p class="u-text u-text-5">
-													<a href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Buscar
-														mi pieza</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
-													   class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
-												</p>
-											</div>
-										</div>
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-6">
-												<p class="u-text u-text-6">
-													<a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
-														de A/C</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
-														de oxígeno</a>
-													<br>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-5">
+                                                <p class="u-text u-text-5">
+                                                    <a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
+                                                       class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
+                                                        de A/C</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
+                                                        de oxígeno</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-6">
+                                                <p class="u-text u-text-6">
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
-												</p>
-											</div>
-										</div>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
+                                                </p>
+                                            </div>
+                                        </div>
 									</div>
 								</div>
 								<div class="u-social-icons u-spacing-28 u-social-icons-1">
@@ -855,21 +863,12 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
                                         <div class="u-container-style u-list-item u-repeater-item">
                                             <div class="u-container-layout u-similar-container u-container-layout-5">
                                                 <p class="u-text u-text-5">
-                                                    <a href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos',$region))?>"
-                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Buscar
-                                                        mi pieza</a>
-                                                    <br>
                                                     <a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
                                                        class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
                                                     <br>
                                                     <a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="u-container-style u-list-item u-repeater-item">
-                                            <div class="u-container-layout u-similar-container u-container-layout-6">
-                                                <p class="u-text u-text-6">
+                                                    <br>
                                                     <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
                                                         de A/C</a>
@@ -877,10 +876,20 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
                                                     <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
                                                         de oxígeno</a>
-                                                    <br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-6">
+                                                <p class="u-text u-text-6">
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -1052,38 +1061,39 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 								</div><!--/position-->
 								<div class="u-expanded-width u-list u-list-2">
 									<div class="u-repeater u-repeater-2">
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-5">
-												<p class="u-text u-text-5">
-													<a href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Buscar
-														mi pieza</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
-													   class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
-												</p>
-											</div>
-										</div>
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-6">
-												<p class="u-text u-text-6">
-													<a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
-														de A/C</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
-														de oxígeno</a>
-													<br>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-5">
+                                                <p class="u-text u-text-5">
+                                                    <a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
+                                                       class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
+                                                        de A/C</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
+                                                        de oxígeno</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-6">
+                                                <p class="u-text u-text-6">
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
-												</p>
-											</div>
-										</div>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
+                                                </p>
+                                            </div>
+                                        </div>
 									</div>
 								</div>
 								<div class="u-social-icons u-spacing-28 u-social-icons-1">
@@ -1246,38 +1256,39 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 								</div><!--/position-->
 								<div class="u-expanded-width u-list u-list-2">
 									<div class="u-repeater u-repeater-2">
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-5">
-												<p class="u-text u-text-5">
-													<a href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Buscar
-														mi pieza</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
-													   class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
-												</p>
-											</div>
-										</div>
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-6">
-												<p class="u-text u-text-6">
-													<a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
-														de A/C</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
-														de oxígeno</a>
-													<br>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-5">
+                                                <p class="u-text u-text-5">
+                                                    <a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
+                                                       class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
+                                                        de A/C</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
+                                                        de oxígeno</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-6">
+                                                <p class="u-text u-text-6">
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
-												</p>
-											</div>
-										</div>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
+                                                </p>
+                                            </div>
+                                        </div>
 									</div>
 								</div>
 								<div class="u-social-icons u-spacing-28 u-social-icons-1">
@@ -1442,38 +1453,39 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 								</div><!--/position-->
 								<div class="u-expanded-width u-list u-list-2">
 									<div class="u-repeater u-repeater-2">
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-5">
-												<p class="u-text u-text-5">
-													<a href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Buscar
-														mi pieza</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
-													   class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
-												</p>
-											</div>
-										</div>
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-6">
-												<p class="u-text u-text-6">
-													<a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
-														de A/C</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
-														de oxígeno</a>
-													<br>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-5">
+                                                <p class="u-text u-text-5">
+                                                    <a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
+                                                       class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
+                                                        de A/C</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
+                                                        de oxígeno</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-6">
+                                                <p class="u-text u-text-6">
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
-												</p>
-											</div>
-										</div>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
+                                                </p>
+                                            </div>
+                                        </div>
 									</div>
 								</div>
 								<div class="u-social-icons u-spacing-28 u-social-icons-1">
@@ -1643,38 +1655,39 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
 								</div><!--/position-->
 								<div class="u-expanded-width u-list u-list-2">
 									<div class="u-repeater u-repeater-2">
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-5">
-												<p class="u-text u-text-5">
-													<a href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Buscar
-														mi pieza</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
-													   class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
-												</p>
-											</div>
-										</div>
-										<div class="u-container-style u-list-item u-repeater-item">
-											<div class="u-container-layout u-similar-container u-container-layout-6">
-												<p class="u-text u-text-6">
-													<a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
-														de A/C</a>
-													<br>
-													<a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
-													   class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
-														de oxígeno</a>
-													<br>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-5">
+                                                <p class="u-text u-text-5">
+                                                    <a href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages',$region))?>"
+                                                       class="u-btn u-button-link u-button-style u-none u-text-body-alt-color u-btn-5">Bujías</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">Filtros</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7">Compresores
+                                                        de A/C</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Sensores
+                                                        de oxígeno</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-list-item u-repeater-item">
+                                            <div class="u-container-layout u-similar-container u-container-layout-6">
+                                                <p class="u-text u-text-6">
                                                     <a href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages',$region))?>"
                                                        class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Inyectores Aftermarket</a>
                                                     <br>
-												</p>
-											</div>
-										</div>
+                                                    <a href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Limpiaparabrisas</a>
+                                                    <br>
+                                                    <a href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages',$region))?>"
+                                                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">Bobinas de Encendido</a>
+                                                </p>
+                                            </div>
+                                        </div>
 									</div>
 								</div>
 								<div class="u-social-icons u-spacing-28 u-social-icons-1">

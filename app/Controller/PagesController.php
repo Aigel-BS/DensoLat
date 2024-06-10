@@ -36,7 +36,7 @@ class PagesController extends AppController {
             array(
                 'home','imagen_tv','catalogos','denso','privacidad','terminos', 'landing','sensores_oxigeno',
                 'bujias','filtros','compresores','videos','tyc_sultanes','contacto','producto_autentico',
-                'falsificacion_producto','inyectores','limpiaparabrisas'
+                'falsificacion_producto','inyectores','limpiaparabrisas','bobinas'
             )
         );
 	}
@@ -591,17 +591,57 @@ class PagesController extends AppController {
         $this->set('region',$region);
     }
 
+    public function bobinas($region=null){
+        if(!isset($region)){
+            $region = 'latam';
+        }
+
+        $this->loadModel('Seccion');
+        $secciones_arreglo = $this->Seccion->findAllBySeccionAndPais('compresor',$region);
+        $secciones = array();
+        foreach($secciones_arreglo as $seccion):
+            $secciones[$seccion['Seccion']['elemento']] = $seccion['Seccion']['contenido'];
+        endforeach;
+        $this->set('secciones',$secciones);
+        $this->loadModel('Producto');
+        $anios = $this->Producto->find(
+            'list',
+            array(
+                'fields'=>array(
+                    'Producto.anio_inicio','Producto.anio_inicio'
+                ),
+                'order'=>'Producto.anio_inicio DESC',
+                'conditions'=>array(
+                    'Producto.pais'=>$region
+                )
+            )
+        );
+        //$anio_min = 0;
+        switch($region):
+            case('mx'):
+                $anio_min=1960;
+                break;
+            case('co'):
+                $anio_min=1945;
+                break;
+            case('cl'):
+                $anio_min=1945;
+                break;
+        endswitch;
+        $this->set('anios',$anios);
+        $this->set('region',$region);
+    }
+
         public function falsificacion_producto($region=null){
             $this->loadModel('Distribuidor');
-            $distribuidores = $this->Distribuidor->find('all',array('order'=>'estado ASC','fields'=>array('DISTINCT(estado)'),'conditions'=>array('Distribuidor.pais'=>$region)));
+            $distribuidores = $this->Distribuidor->find('all',array('order'=>'estado ASC','fields'=>array('DISTINCT(estado)'),'conditions'=>array('Distribuidor.pais IN ("mx","co")')));
             $this->set('distribuidores',$distribuidores);
 
-            if ($region=='co'){
-                $this->loadModel('DistribuidoresCertificado');
-                $this->set('tiendas_certificadas',$this->DistribuidoresCertificado->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('region'=>$region))));
-            }else if ($region=='mx' || $region=='ve'){
-                $tiendas = $this->Distribuidor->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('coordenadas !='=>0,'tipo_distribuidor'=>'Mostrador','pais'=>$region)));
-                $tiendas_array = array();
+            $this->loadModel('DistribuidoresCertificado');
+            $tiendas_array = $this->DistribuidoresCertificado->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('region IN ("mx","co")')));
+
+
+                $tiendas = $this->Distribuidor->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>array('coordenadas !='=>0,'tipo_distribuidor'=>'Mostrador','pais IN ("mx","co")')));
                 foreach ($tiendas as $tienda){
                     $tienda_arr['DistribuidoresCertificado'] = array(
                         'nombre'=>$tienda['Distribuidor']['nombre'],
@@ -614,7 +654,7 @@ class PagesController extends AppController {
                     array_push($tiendas_array,$tienda_arr);
                 }
                 $this->set('tiendas_certificadas',$tiendas_array);
-            }
+
 
 
             switch ($region){

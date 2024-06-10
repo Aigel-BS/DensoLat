@@ -45,6 +45,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','latam'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','latam'))?>">Bobinas de Encendido</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -85,6 +89,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','latam'))?>">Inyectores Aftermarket</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','latam'))?>">Limpiaparabrisas</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','latam'))?>">Bobinas de Encendido</a>
                                         </li>
 									</ul>
 								</div>
@@ -157,6 +163,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','mx'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','mx'))?>">Bobinas de Encendido</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -205,6 +215,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','mx'))?>">Inyectores Aftermarket</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','mx'))?>">Limpiaparabrisas</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','mx'))?>">Bobinas de Encendido</a>
 										</li>
 									</ul>
 								</div>
@@ -274,6 +286,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','co'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','co'))?>">Bobinas de Encendido</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -322,6 +338,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','co'))?>">Inyectores Aftermarket</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','co'))?>">Limpiaparabrisas</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','co'))?>">Bobinas de Encendido</a>
 										</li>
 									</ul>
 								</div>
@@ -391,6 +409,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','cl'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','cl'))?>">Bobinas de Encendido</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -439,6 +461,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cl'))?>">Inyectores Aftermarket</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','cl'))?>">Limpiaparabrisas</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','cl'))?>">Bobinas de Encendido</a>
 										</li>
 									</ul>
 								</div>
@@ -507,6 +531,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','ec'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','ec'))?>">Bobinas de Encendido</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -555,6 +583,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ec'))?>">Inyectores Aftermarket</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','ec'))?>">Limpiaparabrisas</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','ec'))?>">Bobinas de Encendido</a>
 										</li>
 									</ul>
 								</div>
@@ -623,6 +653,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','pe'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','pe'))?>">Bobinas de Encendido</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -671,6 +705,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pe'))?>">Inyectores Aftermarket</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','pe'))?>">Limpiaparabrisas</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','pe'))?>">Bobinas de Encendido</a>
 										</li>
 									</ul>
 								</div>
@@ -740,6 +776,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','car'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','car'))?>">Bobinas de Encendido</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -784,6 +824,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','car'))?>">Inyectores Aftermarket</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','car'))?>">Limpiaparabrisas</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','car'))?>">Bobinas de Encendido</a>
 										</li>
 									</ul>
 								</div>
@@ -851,6 +893,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','cam'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','cam'))?>">Bobinas de Encendido</a>
+                                </li>
 							</ul>
 						</div>
 					</li>
@@ -895,6 +941,8 @@
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cam'))?>">Inyectores Aftermarket</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','cam'))?>">Limpiaparabrisas</a>
+										</li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','cam'))?>">Bobinas de Encendido</a>
 										</li>
 									</ul>
 								</div>
@@ -962,6 +1010,10 @@
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
                                             href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','ve'))?>">Limpiaparabrisas</a>
                                 </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','ve'))?>">Bobinas de Encendido</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -1011,6 +1063,9 @@
                                         </li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','ve'))?>">Limpiaparabrisas</a>
                                         </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','ve'))?>">Bobinas de Encendido</a>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </li>

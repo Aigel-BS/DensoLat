@@ -48,7 +48,10 @@
 	Router::connect('/contacto', array('controller' => 'pages', 'action' => 'contacto','latam'));
 	Router::connect('/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','latam'));
 	Router::connect('/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','latam'));
-	Router::connect('/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_pais'));
+    Router::connect('/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','latam'));
+    Router::connect('/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_pais'));
+    Router::connect('/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','latam'));
+    Router::connect('/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','latam'));
 
 	//Routing México
 	Router::connect('/mx', array('controller' => 'pages', 'action' => 'home','mx'));
@@ -71,9 +74,8 @@
 	Router::connect('/mx/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','mx'));
 	Router::connect('/mx/terminos-y-condiciones-promocion-fan-sultanes', array('controller' => 'pages', 'action' => 'tyc_sultanes','mx'));
 	Router::connect('/mx/contacto', array('controller' => 'pages', 'action' => 'contacto','mx'));
-    Router::connect('/mx/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','mx'));
-    Router::connect('/mx/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','mx'));
     Router::connect('/mx/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','mx'));
+    Router::connect('/mx/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','mx'));
     Router::connect('/mx/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','mx'));
 
 	//Routing Colombia
@@ -98,9 +100,8 @@
 	Router::connect('/co/tiendas-certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'index','co'));
 	Router::connect('/co/distribuidores_certificados/*', array('controller' => 'distribuidores_certificados', 'action' => 'view','co'));
 	Router::connect('/co/mapa_tiendas_certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'map','co'));
-    Router::connect('/co/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','co'));
-    Router::connect('/co/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','co'));
     Router::connect('/co/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','co'));
+    Router::connect('/co/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','co'));
     Router::connect('/co/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','co'));
 
 	//Routing Chile
@@ -123,6 +124,7 @@
 	Router::connect('/cl/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','cl'));
 	Router::connect('/cl/contacto', array('controller' => 'pages', 'action' => 'contacto','cl'));
     Router::connect('/cl/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','cl'));
+    Router::connect('/cl/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','cl'));
     Router::connect('/cl/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','cl'));
 
 	//Routing Ecuador
@@ -146,6 +148,7 @@
 	Router::connect('/ec/contacto', array('controller' => 'pages', 'action' => 'contacto','ec'));
     Router::connect('/ec/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','ec'));
     Router::connect('/ec/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ec'));
+    Router::connect('/ec/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ec'));
 
 	//Routing Perú
 	Router::connect('/pe', array('controller' => 'pages', 'action' => 'home','pe'));
@@ -162,6 +165,7 @@
 	Router::connect('/pe/contacto', array('controller' => 'pages', 'action' => 'contacto','pe'));
     Router::connect('/pe/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','pe'));
     Router::connect('/pe/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','pe'));
+    Router::connect('/pe/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','pe'));
 
 	//Routing Caribe
 	Router::connect('/car', array('controller' => 'pages', 'action' => 'home','car'));
@@ -178,6 +182,7 @@
 	Router::connect('/car/contacto', array('controller' => 'pages', 'action' => 'contacto','car'));
     Router::connect('/car/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','car'));
     Router::connect('/car/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','car'));
+    Router::connect('/car/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','car'));
 
 	//Routing Centroamerica
 	Router::connect('/cam', array('controller' => 'pages', 'action' => 'home','cam'));
@@ -194,6 +199,7 @@
 	Router::connect('/cam/contacto', array('controller' => 'pages', 'action' => 'contacto','cam'));
     Router::connect('/cam/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','cam'));
     Router::connect('/cam/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','cam'));
+    Router::connect('/cam/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','cam'));
 
     //Routing Venezuela
     Router::connect('/ve', array('controller' => 'pages', 'action' => 'home','ve'));
@@ -210,6 +216,7 @@
     Router::connect('/ve/contacto', array('controller' => 'pages', 'action' => 'contacto','ve'));
     Router::connect('/ve/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','ve'));
     Router::connect('/ve/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ve'));
+    Router::connect('/ve/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ve'));
 
 
 /**
