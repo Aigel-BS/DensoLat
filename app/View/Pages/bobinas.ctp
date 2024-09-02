@@ -47,7 +47,7 @@ echo $this->Html->css(
         </div>
     </div>
 </section>
-
+<?= $this->Element('cta_compra') ?>
 <section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5 " style="height:100vh; background-image:url('../img/Group_292_bobinas.png')" src="" data-image-width="1728" data-image-height="1536" id="sec-81d9">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-body-alt-color u-text-1 header_2">Las Bobinas de Encendido DENSO</h3>

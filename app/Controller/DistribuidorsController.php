@@ -83,7 +83,7 @@ class DistribuidorsController extends AppController {
 
 		switch ($region){
 			case "car":
-				$condiciones = array('Distribuidor.pais IN ("ag","ja","bs","sr","gy","ht","bb","do","pr","tt")');
+				$condiciones = array('Distribuidor.pais IN ("ag","ja","bs","sr","gy","ht","bb","do","tt")');
 				$order=array('Distribuidor.pais ASC');
 				break;
 			case "cam":

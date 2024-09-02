@@ -46,6 +46,9 @@ echo $this->Html->css(
 		</div>
 	</div>
 </section>
+
+<?= $this->Element('cta_compra') ?>
+
 <section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5" src="" data-image-width="1590" data-image-height="721" id="sec-81d9">
 	<div class="u-clearfix u-sheet u-sheet-1">
 		<h3 class="u-text u-text-body-alt-color u-text-default u-text-1"> ¿Por qué​ son importantes las bujías? </h3>

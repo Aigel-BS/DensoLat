@@ -100,7 +100,7 @@ $paises = array(
 			<p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-align-center-xxl u-align-left-xs u-custom-font u-text u-text-custom-color-4 u-text-default u-text-2">¡Solo selecciona tu estado y conoce la lista de nuestros distribuidores!</p>
             <div class="u-layout">
                 <div class="u-layout-row">
-                    <div class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
+                    <div style="min-width: 100%;max-width: 100%;min-height: 75vh;margin-bottom: 100px;" class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
                         <?= $this->Element('map')?>
                     </div>
                 </div>
@@ -114,6 +114,7 @@ $paises = array(
 			'cl'=>'/img/chile.png',
 			'ec'=>'/img/ecuador.png',
 			'pe'=>'/img/peru.png',
+			'pr'=>'/img/puerto-rico.png',
 			've'=>'/img/venezuela.png',
 			'car'=>'/img/caribe.png',
 			'cam'=>'/img/centroamerica.png',

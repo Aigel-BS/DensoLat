@@ -14,6 +14,7 @@ echo $this->Html->css(
 	</div>
 </section>
 <?= $this->Element('forma_busqueda',array('region'=>$region))?>
+
 <section class="u-clearfix u-section-4" id="sec-5ed8">
 	<div class="u-clearfix u-sheet u-sheet-1">
 		<h2 class="u-align-center u-text u-text-default u-text-palette-5-dark-1 u-text-1"> En los compresores de aire acondicionado DENSO encontrarás:</h2>
@@ -41,6 +42,9 @@ echo $this->Html->css(
 		</div>
 	</div>
 </section>
+
+<?= $this->Element('cta_compra') ?>
+
 <section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5" src="" data-image-width="1634" data-image-height="745" id="sec-81d9">
 	<div class="u-clearfix u-sheet u-sheet-1">
 		<h3 class="u-text u-text-body-alt-color u-text-1"> El compresor es el corazón del sistema de aire acondicionado</h3>

@@ -27,6 +27,14 @@ $lead = array(
 );
 ?>
 
+<style>
+    #confirm_box{
+        background-color: green;
+        color: white;
+        padding: 5px;
+    }
+</style>
+
 <section class="u-align-center u-clearfix u-hidden-sm u-hidden-xs u-image u-section-1" src="" data-image-width="1728" data-image-height="1005" id="sec-7211">
 	<div class="u-clearfix u-sheet u-sheet-1">
 		<h1 class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-text u-text-body-alt-color u-text-1" style="text-align: left; width: 100%">Conviértete en distribuidor autorizado.*</h1>
@@ -45,22 +53,14 @@ $lead = array(
 							<div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
 								<div class="u-container-layout u-valign-top u-container-layout-1">
 									<div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-expanded-width-xs u-form u-radius-10 u-white u-form-1">
-										<form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 30px;" source="email" name="form">
-											<h3 class="u-form-group u-form-text u-text u-text-1"> Forma parte de ​nuestra red de distribuidores</h3>
+										<?= $this->Form->create('Prospecto',array('class'=>'u-clearfix u-form-spacing-15 u-form-vertical u-inner-form','style'=>'padding: 30px;'))?>
+                                        	<h3 class="u-form-group u-form-text u-text u-text-1"> Forma parte de ​nuestra red de distribuidores</h3>
 											<p class="u-form-group u-form-text u-text u-text-2"> Déjanos tus datos para que un representante DENSO te brinde la mejor asesoría de acuerdo con tus necesidades. </p>
                                             <p class="u-form-group u-form-text u-text u-text-2"> Para distribuciones fuera de Argentina, México, Paraguay o Uruguay, favor de acercarse con los distribuidores autorizados de tu país. </p>
-											<div class="u-form-group u-form-name u-label-none">
-												<label for="name-6797" class="u-label">Name</label>
-												<input type="text" placeholder="Nombre *" id="name-6797" name="name" class="u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
-											</div>
-											<div class="u-form-email u-form-group u-label-none">
-												<label for="email-6797" class="u-label">Email</label>
-												<input type="email" placeholder="E-mail*" id="email-6797" name="email" class="u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle" required="">
-											</div>
-											<div class="u-form-group u-label-none">
-												<label for="text-2788" class="u-label">Entrada</label>
-												<input type="text" placeholder="Teléfono*" id="text-2788" name="text" class="u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle">
-											</div>
+                                            <?= $this->Form->input('nombre',array('div'=>'u-form-group u-form-name u-label-none','placeholder'=>'Nombre*','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle','required'=>true, 'label'=>false))?>
+                                            <?= $this->Form->input('email',array('div'=>'u-form-email u-form-group u-label-none','placeholder'=>'Correo Electrónico*','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle','required'=>true, 'label'=>false))?>
+                                            <?= $this->Form->input('telefono',array('div'=>'u-form-group u-label-none','placeholder'=>'Teléfono*','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle','required'=>true, 'label'=>false))?>
+
 											<div class="u-form-group u-form-select u-label-none">
 												<label for="select-b86e" class="u-label">Desplegable</label>
 												<div class="u-form-select-wrapper">
@@ -72,31 +72,29 @@ $lead = array(
 											<div class="u-form-group u-form-select u-label-none">
 												<label for="select-d701" class="u-label">Desplegable</label>
 												<div class="u-form-select-wrapper">
-                                                    <?= $this->Form->input('giro',array('name'=>'Giro','type'=>'select','div'=>false,'options'=>$giros,'label'=>false,'empty'=>'Giro','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
+                                                    <?= $this->Form->input('giro',array('required'=>true,'name'=>'Giro','type'=>'select','div'=>false,'options'=>$giros,'label'=>false,'empty'=>'Giro','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
 													<svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
 												</div>
 											</div>
 											<div class="u-form-group u-form-select u-label-none">
 												<label for="select-23cb" class="u-label">Desplegable</label>
 												<div class="u-form-select-wrapper">
-                                                    <?= $this->Form->input('lead',array('name'=>'Origen','type'=>'select','div'=>false,'options'=>$lead,'label'=>false,'empty'=>'¿Cómo te enteraste de nosotros?','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
+                                                    <?= $this->Form->input('lead',array('required'=>true,'name'=>'Origen','type'=>'select','div'=>false,'options'=>$lead,'label'=>false,'empty'=>'¿Cómo te enteraste de nosotros?','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
 													<svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
 												</div>
 											</div>
 											<div class="u-align-left u-form-group u-form-submit">
-												<a href="#" class="u-black u-border-1 u-border-white u-btn u-btn-submit u-button-style u-hover-black u-text-body-alt-color u-text-hover-white u-btn-1">Quiero ser distribuidor</a>
-												<input type="submit" value="submit" class="u-form-control-hidden">
+                                                <?= $this->Form->submit('Quiero ser distribuidor',array('class'=>'u-black u-border-1 u-border-white u-btn u-btn-submit u-button-style u-hover-black u-text-body-alt-color u-text-hover-white u-btn-1'))?>
+                                                <div id="confirm_box">
+                                                    ¡Muchas gracias por ponerte en contacto con nosotros. Revisaremos la información y nos pondremos en contacto contigo a la brevedad!
+                                                </div>
 											</div>
-											<div class="u-form-send-message u-form-send-success">¡Gracias por tu mensaje! En breve nos pondremos en contacto contigo para continuar el proceso de Distribución</div>
-											<div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
-											<input type="hidden" value="" name="recaptchaResponse">
-											<input type="hidden" name="formServices" value="790b1496cfdbd7c7f815c7cba4441b38">
-											<input type="hidden" name="siteKey" value="6Ld2DqAmAAAAAJQ6zuZOAjfUPOylkki9reU846cU">
-										</form>
+										<?= $this->Form->end()?>
 									</div>
 									<img class="u-expanded-width-xl u-image u-image-default u-preserve-proportions u-image-1" src="<?= $this->Html->url('/img/image44.png')?>" alt="" data-image-width="689" data-image-height="689">
 								</div>
 							</div>
+
 							<div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
 								<div class="u-container-layout u-container-layout-2">
 									<h4 class="u-text u-text-default u-text-3"><span class="u-file-icon u-icon u-icon-1"><img src="<?= $this->Html->url('/img/Ellipse49.png')?>" alt=""></span>&nbsp;Gama de productos

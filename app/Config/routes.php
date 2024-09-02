@@ -35,7 +35,7 @@
 	Router::connect('recargate-con-denso', array('controller' => 'promosTas', 'action' => 'showLanding'));
 	Router::connect('/gracias-por-participar', array('controller' => 'promosTas', 'action' => 'thankyou'));
 	Router::connect('/tiempo-de-autopartes', array('controller' => 'pages', 'action' => 'imagen_tv'));
-	Router::connect('/catalogos-digitales-mexico', array('controller' => 'pages', 'action' => 'catalogos','latam'));
+	Router::connect('/catalogos-digitales-latam', array('controller' => 'pages', 'action' => 'catalogos','latam'));
 	Router::connect('/quienes-somos', array('controller' => 'pages', 'action' => 'denso','latam'));
 	Router::connect('/terminos-y-condiciones', array('controller' => 'pages', 'action' => 'terminos'));
 	Router::connect('/aviso-de-privacidad', array('controller' => 'pages', 'action' => 'privacidad'));
@@ -217,6 +217,23 @@
     Router::connect('/ve/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','ve'));
     Router::connect('/ve/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ve'));
     Router::connect('/ve/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ve'));
+
+    //Routing Puerto Rico
+    Router::connect('/pr', array('controller' => 'pages', 'action' => 'home','pr'));
+    Router::connect('/pr/catalogos-digitales-peru', array('controller' => 'pages', 'action' => 'catalogos','pr'));
+    Router::connect('/pr/quienes-somos', array('controller' => 'pages', 'action' => 'denso','pr'));
+    Router::connect('/pr/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','pr'));
+    Router::connect('/pr/bujias', array('controller' => 'pages', 'action' => 'bujias','pr'));
+    Router::connect('/pr/filtros', array('controller' => 'pages', 'action' => 'filtros','pr'));
+    Router::connect('/pr/compresores-aire-acondicionado', array('controller' => 'pages', 'action' => 'compresores','pr'));
+    Router::connect('/pr/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_estado','pr'));
+    Router::connect('/pr/buscar-mi-pieza', array('controller' => 'productos', 'action' => 'buscar','pr'));
+    Router::connect('/pr/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','pr'));
+    Router::connect('/pr/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','pr'));
+    Router::connect('/pr/contacto', array('controller' => 'pages', 'action' => 'contacto','pr'));
+    Router::connect('/pr/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','pr'));
+    Router::connect('/pr/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','pr'));
+    Router::connect('/pr/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','pr'));
 
 
 /**

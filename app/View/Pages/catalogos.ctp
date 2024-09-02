@@ -6,7 +6,7 @@ echo $this->Html->css(
 		array('inline'=>false)
 );
 ?>
-<?php if($region == 'mx'){?>
+<?php if($region == 'mx' || $region == 'latam'){?>
 	<section class="banner_producto u-align-center u-clearfix u-image u-section-1" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
 		<div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
 			<h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Catálogos digitales México</h1>
@@ -55,7 +55,7 @@ echo $this->Html->css(
 			</div>
 		</div>
 	</section>
-<?php } elseif($region == 'co'){?>
+<?php } if($region == 'co' || $region == 'latam'){?>
 	<section class="banner_producto u-align-center u-clearfix u-image u-section-1" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
 		<div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
 			<h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Catálogos digitales Colombia</h1>
@@ -97,7 +97,7 @@ echo $this->Html->css(
 		</div>
 	</section>
 
-<?php } elseif($region == 'cl'){?>
+<?php } if($region == 'cl' || $region == 'latam'){?>
 	<section class="banner_producto u-align-center u-clearfix u-image u-section-1" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
 		<div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
 			<h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Catálogos digitales Chile</h1>
@@ -121,7 +121,7 @@ echo $this->Html->css(
 			</div>
 		</div>
 	</section>
-<?php } elseif($region == 'pe'){?>
+<?php } if($region == 'pe' || $region == 'latam'){?>
 	<section class="banner_producto u-align-center u-clearfix u-image u-section-1" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
 		<div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
 			<h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Catálogos digitales Perú</h1>
@@ -146,7 +146,7 @@ echo $this->Html->css(
 		</div>
 	</section>
 
-<?php } elseif($region == 'ec'){?>
+<?php } if($region == 'ec' || $region == 'latam'){?>
     <section class="banner_producto u-align-center u-clearfix u-image u-section-1" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
         <div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
             <h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Catálogos digitales Ecuador</h1>
@@ -171,7 +171,7 @@ echo $this->Html->css(
         </div>
     </section>
 
-<?php } elseif($region == 've'){?>
+<?php } if($region == 've' || $region == 'latam'){?>
     <section class="banner_producto u-align-center u-clearfix u-image u-section-1" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
         <div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
             <h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Catálogos digitales Venezuela</h1>

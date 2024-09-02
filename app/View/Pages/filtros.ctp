@@ -13,6 +13,9 @@ echo $this->Html->css(
 	</div>
 </section>
 <?= $this->Element('forma_busqueda',array('region'=>$region))?>
+
+<?= $this->Element('cta_compra') ?>
+
 <section class="u-clearfix u-section-4" id="sec-af1c">
 	<div class="u-clearfix u-sheet u-sheet-1"></div>
 </section>

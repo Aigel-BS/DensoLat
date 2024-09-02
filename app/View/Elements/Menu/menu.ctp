@@ -851,6 +851,123 @@
 
 		<?php break; ?>
 
+    <?php
+    case('pr'): //Menú Puerto Rico?>
+        <nav class="u-align-right u-dropdown-icon u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-offcanvas-shift u-menu-1"
+             data-responsive-from="MD">
+            <div class="menu-collapse u-custom-font"
+                 style="font-size: 1rem; letter-spacing: 0px; font-family: DENSO-Regular; text-transform: uppercase; font-weight: 700;">
+                <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-color u-custom-color-1 u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-file-icon u-nav-link u-radius-50 u-text-active-palette-1-base u-text-hover-palette-2-base u-file-icon-1"
+                   href="#">
+                    <img src="<?= $this->Html->url('/img/Vector1.png')?>" alt="">
+                </a>
+            </div>
+            <div class="u-custom-menu u-nav-container">
+                <ul class="u-custom-font u-nav u-spacing-20 u-unstyled u-nav-1">
+                    <li class="u-nav-item"><a
+                                class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
+                                href="#" style="padding: 32px 20px;">Productos</a>
+                        <div class="u-nav-popup">
+                            <ul class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-custom-font u-h-spacing-55 u-nav u-unstyled u-v-spacing-18 u-nav-2">
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages','pr'))?>">Bujías</a>
+                                </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages','pr'))?>">Filtros</a>
+                                </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','pr'))?>">Compresores</a>
+                                </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','pr'))?>">Sensores</a>
+                                </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pr'))?>">Inyectores Aftermarket</a>
+                                </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','pr'))?>">Limpiaparabrisas</a>
+                                </li>
+                                <li class="u-nav-item"><a
+                                            class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
+                                            href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','pr'))?>">Bobinas de Encendido</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="u-nav-item"><a
+                                class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
+                                href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages','pr'))?>" style="padding: 32px 20px;">Nosotros</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                                class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
+                                href="<?= $this->Html->url(array('action'=>'donde_comprar','controller'=>'distribuidors','pr'))?>" style="padding: 32px 20px;">Dónde Comprar</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                                class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
+                                href="<?= $this->Html->url(array('action'=>'mis_cursos','controller'=>'cursos','pr'))?>" style="padding: 32px 20px;">Entrenamientos</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                                class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
+                                href="<?= $this->Html->url(array('action'=>'contacto','controller'=>'pages','pr'))?>" style="padding: 32px 20px;">Contacto</a>
+                    </li>
+                    <li class="u-nav-item black"><a
+                                class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
+                                href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos','pr'))?>" style="padding: 32px 20px;">Buscar Pieza</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-border-1 u-border-grey-75 u-container-style u-custom-color-1 u-inner-container-layout u-sidenav">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                        <div class="u-menu-close u-menu-close-1"></div>
+                        <ul class="u-align-center u-custom-font u-nav u-popupmenu-items u-unstyled u-nav-3">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Productos</a>
+                                <div class="u-nav-popup">
+                                    <ul class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-custom-font u-h-spacing-55 u-nav u-unstyled u-v-spacing-18 u-nav-4">
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bujias','controller'=>'pages','pr'))?>">Bujías</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'filtros','controller'=>'pages','pr'))?>">Filtros</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'compresores','controller'=>'pages','pr'))?>">Compresores</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','pr'))?>">Sensores</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pr'))?>">Inyectores Aftermarket</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','pr'))?>">Limpiaparabrisas</a>
+                                        </li>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'bobinas','controller'=>'pages','pr'))?>">Bobinas de Encendido</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'denso','controller'=>'pages','pr'))?>">Nosotros</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'donde_comprar','controller'=>'distribuidors','pr'))?>">Dónde
+                                    Comprar</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'mis_cursos','controller'=>'cursos','pr'))?>">Entrenamientos</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'contacto','controller'=>'pages','pr'))?>">Contacto</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'buscar','controller'=>'productos','pr'))?>">Buscar
+                                    Pieza</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+        </nav>
+
+        <?php break; ?>
+
 	<?php
 	case('cam'): //Menú Centroamérica?>
 		<nav class="u-align-right u-dropdown-icon u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-offcanvas-shift u-menu-1"

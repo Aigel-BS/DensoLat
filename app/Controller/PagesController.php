@@ -202,7 +202,7 @@ class PagesController extends AppController {
 
 			switch ($region){
 				case "car":
-					$condiciones = array('Distribuidor.pais IN ("bb","do","pr","tt")');
+					$condiciones = array('Distribuidor.pais IN ("bb","do","tt")');
 					$order=array('Distribuidor.pais ASC');
 					break;
 				case "cam":

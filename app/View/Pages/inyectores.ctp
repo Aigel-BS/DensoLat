@@ -51,6 +51,7 @@ echo $this->Html->css(
         </div>
     </div>
 </section>
+<?= $this->Element('cta_compra') ?>
 <section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5" style="background-image:url('../img/Group 300-2-2.png')" src="" data-image-width="1728" data-image-height="1536" id="sec-81d9">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-body-alt-color u-text-1" style="margin-top: 25%">¿Cómo funcionan los inyectores  Common Rail DENSO?

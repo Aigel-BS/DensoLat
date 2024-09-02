@@ -11,7 +11,8 @@
 			've'=>'Venezuela',
 			'latam'=>'LATAM',
 			'car'=>'Caribe',
-			'cam'=>'Centroamérica'
+			'cam'=>'Centroamérica',
+			'pr'=>'Puerto Rico',
 	)
 
 	?>
@@ -239,6 +240,17 @@
 	</script>
 
 	<meta data-intl-tel-input-cdn-path="intlTelInput/">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16557590999">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16557590999');
+    </script>
 
 </head>
 <body class="u-body u-xxl-mode" data-lang="es">

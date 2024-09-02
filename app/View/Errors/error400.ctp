@@ -1,29 +1,30 @@
 <?php
-/**
- * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link          https://cakephp.org CakePHP(tm) Project
- * @package       app.View.Errors
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       https://opensource.org/licenses/mit-license.php MIT License
- */
+echo $this->Html->css(
+    array(
+        'Contacto',
+    ),
+    array('inline'=>false)
+);
 ?>
-<h2><?php echo $message; ?></h2>
-<p class="error">
-	<strong><?php echo __d('cake', 'Error'); ?>: </strong>
-	<?php printf(
-		__d('cake', 'The requested address %s was not found on this server.'),
-		"<strong>'{$url}'</strong>"
-	); ?>
-</p>
-<?php
-if (Configure::read('debug') > 0):
-	echo $this->element('exception_stack_trace');
-endif;
-?>
+    <section class="u-clearfix u-section-1" id="sec-7508">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                            <div class="u-container-layout u-container-layout-1">
+                                <h1 class="u-custom-font u-text u-text-default u-text-1">¡UPS!</h1>
+                                <h2 class="u-custom-font u-text u-text-body-color u-text-default u-text-2">
+                                    La dirección que has ingresado no existe en esta página. Pero no te preocupes, aquí te dejamos una liga para que regreses a la <?= $this->Html->link('página de inicio',array('action'=>'/'),array('style'=>'color:red')) ?>.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="u-container-align-center u-container-style u-hidden-sm u-hidden-xs u-image u-image-contain u-layout-cell u-size-30 u-image-1" data-image-width="895" data-image-height="1105" style="background-image: url('../img/404.png')">
+                            <div class="u-container-layout u-container-layout-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
