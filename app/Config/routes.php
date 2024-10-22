@@ -52,6 +52,8 @@
     Router::connect('/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_pais'));
     Router::connect('/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','latam'));
     Router::connect('/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','latam'));
+	Router::connect('/producto_autentico_inyector', array('controller' => 'pages', 'action' => 'producto_autentico_inyector','latam'));
+    Router::connect('/falsificacion_producto_inyector', array('controller' => 'pages', 'action' => 'falsificacion_producto_inyector','latam'));
 
 	//Routing México
 	Router::connect('/mx', array('controller' => 'pages', 'action' => 'home','mx'));
@@ -169,7 +171,7 @@
 
 	//Routing Caribe
 	Router::connect('/car', array('controller' => 'pages', 'action' => 'home','car'));
-	Router::connect('/car/catalogos-digitales-peru', array('controller' => 'pages', 'action' => 'catalogos','car'));
+	Router::connect('/car/catalogos-digitales-caribe', array('controller' => 'pages', 'action' => 'catalogos','car'));
 	Router::connect('/car/quienes-somos', array('controller' => 'pages', 'action' => 'denso','car'));
 	Router::connect('/car/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','car'));
 	Router::connect('/car/bujias', array('controller' => 'pages', 'action' => 'bujias','car'));
@@ -186,7 +188,7 @@
 
 	//Routing Centroamerica
 	Router::connect('/cam', array('controller' => 'pages', 'action' => 'home','cam'));
-	Router::connect('/cam/catalogos-digitales-peru', array('controller' => 'pages', 'action' => 'catalogos','cam'));
+	Router::connect('/cam/catalogos-digitales-centroamerica', array('controller' => 'pages', 'action' => 'catalogos','cam'));
 	Router::connect('/cam/quienes-somos', array('controller' => 'pages', 'action' => 'denso','cam'));
 	Router::connect('/cam/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','cam'));
 	Router::connect('/cam/bujias', array('controller' => 'pages', 'action' => 'bujias','cam'));
@@ -200,6 +202,23 @@
     Router::connect('/cam/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','cam'));
     Router::connect('/cam/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','cam'));
     Router::connect('/cam/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','cam'));
+
+	//Routing El Salvador
+	Router::connect('/sv', array('controller' => 'pages', 'action' => 'home','sv'));
+	Router::connect('/sv/catalogos-digitales-el-salvador', array('controller' => 'pages', 'action' => 'catalogos','sv'));
+	Router::connect('/sv/quienes-somos', array('controller' => 'pages', 'action' => 'denso','sv'));
+	Router::connect('/sv/sensores-de-oxigeno', array('controller' => 'pages', 'action' => 'sensores_oxigeno','sv'));
+	Router::connect('/sv/bujias', array('controller' => 'pages', 'action' => 'bujias','sv'));
+	Router::connect('/sv/filtros', array('controller' => 'pages', 'action' => 'filtros','sv'));
+	Router::connect('/sv/compresores-aire-acondicionado', array('controller' => 'pages', 'action' => 'compresores','sv'));
+	Router::connect('/sv/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_estado','sv'));
+	Router::connect('/sv/buscar-mi-pieza', array('controller' => 'productos', 'action' => 'buscar','sv'));
+	Router::connect('/sv/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','sv'));
+	Router::connect('/sv/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','sv'));
+	Router::connect('/sv/contacto', array('controller' => 'pages', 'action' => 'contacto','sv'));
+    Router::connect('/sv/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','sv'));
+    Router::connect('/sv/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','sv'));
+    Router::connect('/sv/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','sv'));
 
     //Routing Venezuela
     Router::connect('/ve', array('controller' => 'pages', 'action' => 'home','ve'));

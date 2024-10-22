@@ -118,6 +118,7 @@ $paises = array(
 			've'=>'/img/venezuela.png',
 			'car'=>'/img/caribe.png',
 			'cam'=>'/img/centroamerica.png',
+			'sv'=>'/img/el-salvador.png',
 		);
 	?>
 	<section class="u-clearfix u-container-align-center-xl u-section-1" id="sec-359b">

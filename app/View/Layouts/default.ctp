@@ -13,6 +13,7 @@
 			'car'=>'Caribe',
 			'cam'=>'Centroamérica',
 			'pr'=>'Puerto Rico',
+			'sv'=>'El Salvador',
 	)
 
 	?>
@@ -134,6 +135,18 @@
 			gtag('config', 'G-GC7XC9MMB1');
 		</script>
 	<?php } ?>
+
+    <?php if($region=='pr'){?>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FE4ZP742K6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-FE4ZP742K6');
+        </script>
+    <?php } ?>
 
 	<link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 

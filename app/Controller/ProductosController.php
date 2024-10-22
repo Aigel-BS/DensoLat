@@ -233,7 +233,7 @@ class ProductosController extends AppController {
                 array_push($conditions_and,array('Producto.categoria IN ('.substr($categorias,0,-1).')'));
             }
 
-            $productos = $this->Producto->find('all',array('conditions'=>$conditions_and,'group'=>'Producto.numero_parte','order'=>'Producto.numero_parte'));
+            $productos = $this->Producto->find('all',array('conditions'=>$conditions_and,'order'=>'Producto.numero_parte'));
             $this->set('productos',$productos);
 
             $this->set('region',$region);
