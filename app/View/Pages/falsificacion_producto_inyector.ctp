@@ -22,7 +22,7 @@ echo $this->Html->script(
             <div class="u-layout-row">
                 <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                     <div class="u-container-layout u-container-layout-1">
-                        <h1 class="u-text u-text-1">Producto escaneado No Auténtico</h1>
+                        <h1 class="u-text u-text-1">Producto escaneado No Original DENSO</h1>
                         <p class="u-text u-text-default u-text-2">El producto escaneado no se encuentra dentro de los lotes fabricados por DENSO Products and Services Americas.</p>
                         <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="<?= $this->Html->url('/img/Falsificacion.png') ?>" alt="" data-image-width="1500" data-image-height="1500" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0">
                     </div>
@@ -38,14 +38,14 @@ echo $this->Html->script(
     <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
         <div class="u-layout">
             <div class="u-layout-row">
-                <div class="u-container-align-center u-container-style u-hidden-sm u-hidden-xs u-image u-image-default u-layout-cell u-size-30 u-image-1" data-image-width="695" data-image-height="320" style="background-image: url(<?= $this->Html->url('/img/forma_inyectores_falsificacion.png')?>); background-size: contain;">
+                <div class="u-container-align-center u-container-style u-hidden-sm u-hidden-xs u-image u-image-default u-layout-cell u-size-30 u-image-1" data-image-width="695" data-image-height="320" style="background-image: url(<?= $this->Html->url('/img/common_rail_bn.png')?>); background-size: contain;">
                     <div class="u-container-layout u-container-layout-1"></div>
                 </div>
                 <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
                     <div class="u-container-layout u-valign-bottom u-container-layout-2">
-                        <h1 class="u-custom-font u-text u-text-1">Ayúdanos a combatir la falsificación de autopartes.</h1>
-                        <h2 class="u-custom-font u-text u-text-body-color u-text-default u-text-2">DENSO está comprometido con ofrecer la más alta calidad en piezas y cada día búscamos nuevas formas de reducir la falsificación de autopartes que pueden poner en riesgo tu seguridad, la de tu familia y la de tu vehículo.&nbsp;<br>
-                            <br>Te pedimos nos apoyes a trabajar en contra de la falsificación y nos ayudaría mucho si nos compartes más detalles de tu compra para poder investigar a fondo y terminar con este delito.<br>
+                        <h1 class="u-custom-font u-text u-text-1">Ayúdanos a combatir las autopartes No Originales DENSO.</h1>
+                        <h2 class="u-custom-font u-text u-text-body-color u-text-default u-text-2">DENSO está comprometido con ofrecer la más alta calidad en piezas y cada día búscamos nuevas formas de reducir las autopartes No Originales DENSO que pueden poner en riesgo tu seguridad, la de tu familia y la de tu vehículo.&nbsp;<br>
+                            <br>Te pedimos nos apoyes a trabajar en contra de los productos No Originales DENSO y nos ayudaría mucho si nos compartes más detalles de tu compra para poder investigar a fondo y terminar con este delito.<br>
                             <br>Tu testimonio será confidencial y sólo si tu lo deseas, nos pondremos en contacto contigo para complementar esta investigación.
                         </h2>
                         <div class="custom-expanded u-form u-form-1">
@@ -151,7 +151,7 @@ echo $this->Html->script(
         </ul>
     </div>
 </section>
-<section class="u-clearfix u-image u-section-7" id="sec-f238" data-image-width="1728" data-image-height="720">
+<section class="u-clearfix u-image u-section-7" id="sec-f238" data-image-width="1728" data-image-height="720" style="background-image: url('<?= $this->Html->url('/img/inyector-recortado_falsificacion.png')?>')">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h4 class="u-align-left u-custom-font u-text u-text-body-alt-color u-text-1">¿Te gustaría capacitarte de manera gratuita y aprender acerca de los productos DENSO?</h4>
         <p class="u-align-left u-text u-text-body-alt-color u-text-2">Inscríbete a nuestro programa de capacitaciones y certificación, en donde te enseñaremos las características, propiedades y beneficios de productos DENSO.<br>

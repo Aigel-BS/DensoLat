@@ -80,7 +80,7 @@ echo $this->Html->css(
         </ul>
     </div>
 </section>
-<section class="u-clearfix u-image u-section-5" id="sec-f238" data-image-width="1728" data-image-height="720">
+<section class="u-clearfix u-image u-section-5" id="sec-f238" data-image-width="1728" data-image-height="720" style="background-image: url('<?= $this->Html->url('/img/inyector-recortado_falsificacion.png')?>')">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h4 class="u-align-left u-custom-font u-text u-text-body-alt-color u-text-1">¿Te gustaría capacitarte de manera gratuita y aprender acerca de los productos DENSO?</h4>
         <p class="u-align-left u-text u-text-body-alt-color u-text-2">Inscríbete a nuestro programa de capacitaciones y certificación, en donde te enseñaremos las características, propiedades y beneficios de productos DENSO.<br>

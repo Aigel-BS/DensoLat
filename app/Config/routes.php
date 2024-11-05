@@ -53,7 +53,7 @@
     Router::connect('/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','latam'));
     Router::connect('/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','latam'));
 	Router::connect('/producto_autentico_inyector', array('controller' => 'pages', 'action' => 'producto_autentico_inyector','latam'));
-    Router::connect('/falsificacion_producto_inyector', array('controller' => 'pages', 'action' => 'falsificacion_producto_inyector','latam'));
+    Router::connect('/producto_no_original_inyector', array('controller' => 'pages', 'action' => 'falsificacion_producto_inyector','latam'));
 
 	//Routing México
 	Router::connect('/mx', array('controller' => 'pages', 'action' => 'home','mx'));
