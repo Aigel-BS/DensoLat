@@ -3,6 +3,7 @@
 <head>
 	<?php
 	$pais = array(
+            'ar'=>'Argentina',
 			'mx'=>'México',
 			'co'=>'Colombia',
 			'cl'=>'Chile',
@@ -50,6 +51,18 @@
 
 			gtag('config', 'G-N2M7591Q9G');
 		</script>
+	<?php } ?>
+
+    <?php if($region=='ar'){?>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VL65FZ869"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-8VL65FZ869');
+        </script>
 	<?php } ?>
 
 	<?php if($region=='cl'){?>
@@ -145,6 +158,18 @@
             gtag('js', new Date());
 
             gtag('config', 'G-FE4ZP742K6');
+        </script>
+    <?php } ?>
+
+    <?php if($region=='sv'){?>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R94R596CC8"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-R94R596CC8');
         </script>
     <?php } ?>
 

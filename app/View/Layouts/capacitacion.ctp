@@ -14,9 +14,12 @@
 	<style>
 		@font-face {
 			font-family: Denso;
-			src: url("<?= $this->Html->url('/fonts/denso/DENSO-Italic.otf')?>") format("opentype");
-			src: local("<?= $this->Html->url('/fonts/denso/DENSO-Italic.otf')?>") format("opentype");
+			src: url("<?= $this->Html->url('/fonts/denso/DENSO-Regular.otf')?>") format("opentype");
+			src: local("<?= $this->Html->url('/fonts/denso/DENSO-Regular.otf')?>") format("opentype");
 		}
+        body{
+            font-family: Denso;
+        }
 	</style>
 </head>
 <body class="no_header">

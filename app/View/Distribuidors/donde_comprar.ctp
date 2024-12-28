@@ -110,6 +110,7 @@ $paises = array(
 <?php }else { ?>
 	<?php
 		$mapa = array(
+            'ar'=>'/img/mapa-argentina.jpg',
 			'co'=>'/img/colombia.png',
 			'cl'=>'/img/chile.png',
 			'ec'=>'/img/ecuador.png',
@@ -125,7 +126,7 @@ $paises = array(
 		<div class="u-clearfix u-sheet u-sheet-1">
 			<h1 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-align-center-xxl u-align-left-xs u-text u-text-default u-text-1">
 				<?php
-				if ($region == 'co'){
+				if ($region == 'co' || $region == 've'){
 					echo "Tiendas / Distribuidores DENSO";
 				}else{
 					echo "Distribuidores DENSO";
@@ -151,7 +152,7 @@ $paises = array(
 										<div style="margin-left: 20px; margin-bottom: 5px"><?= $this->Html->link($distribuidor['Distribuidor']['nombre'],array('action'=>'por_marca','controller'=>'distribuidors',$distribuidor['Distribuidor']['nombre'],$region),array('style'=>'color:black'))?></div>
 									<?php } ?>
 								<?php }else{
-										if ($region == 'co'){
+										if ($region == 'co' || $region == 've'){
 											echo $this->Html->link("Tiendas Certificadas",array('action'=>'index','controller'=>'distribuidoresCertificados',$region),array('style'=>'color:black'));
 										}
 										?>

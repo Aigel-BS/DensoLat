@@ -23,7 +23,7 @@ echo $this->Html->script(
                 <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                     <div class="u-container-layout u-container-layout-1">
                         <h1 class="u-text u-text-1">Producto escaneado No Original DENSO</h1>
-                        <p class="u-text u-text-default u-text-2">El producto escaneado no se encuentra dentro de los lotes fabricados por DENSO Products and Services Americas.</p>
+                        <p class="u-text u-text-default u-text-2">El producto escaneado no se encuentra dentro de los lotes comercializados por DENSO Products and Services Americas, por lo que no se garantiza la autenticidad, el desempeño ni la condición de ser nuevo</p>
                         <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="<?= $this->Html->url('/img/Falsificacion.png') ?>" alt="" data-image-width="1500" data-image-height="1500" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0">
                     </div>
                 </div>

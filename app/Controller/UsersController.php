@@ -319,9 +319,9 @@ class UsersController extends AppController {
 		$this->set('cursos',$this->Curso->find(
 			'all',
 			array(
-				'conditions'=>array(
-					'Curso.id IN (SELECT curso_id FROM users_cursos WHERE user_id = '.$this->Session->read('Auth.User.id').')'
-				),
+//				'conditions'=>array(
+//					'Curso.id IN (SELECT curso_id FROM users_cursos WHERE user_id = '.$this->Session->read('Auth.User.id').')'
+//				),
 				'contain'=>false
 			)
 		));
