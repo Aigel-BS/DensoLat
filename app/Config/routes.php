@@ -46,7 +46,7 @@
 	Router::connect('/compresores-aire-acondicionado', array('controller' => 'pages', 'action' => 'compresores','latam'));
 	Router::connect('/aprende-con-denso', array('controller' => 'pages', 'action' => 'videos','latam'));
 	Router::connect('/contacto', array('controller' => 'pages', 'action' => 'contacto','latam'));
-	Router::connect('/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','latam'));
+	Router::connect('/inyectores', array('controller' => 'pages', 'action' => 'inyectores','latam'));
 	Router::connect('/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','latam'));
     Router::connect('/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','latam'));
     Router::connect('/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_pais'));
@@ -76,7 +76,7 @@
 	Router::connect('/mx/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','mx'));
 	Router::connect('/mx/terminos-y-condiciones-promocion-fan-sultanes', array('controller' => 'pages', 'action' => 'tyc_sultanes','mx'));
 	Router::connect('/mx/contacto', array('controller' => 'pages', 'action' => 'contacto','mx'));
-    Router::connect('/mx/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','mx'));
+    Router::connect('/mx/inyectores', array('controller' => 'pages', 'action' => 'inyectores','mx'));
     Router::connect('/mx/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','mx'));
     Router::connect('/mx/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','mx'));
 
@@ -102,7 +102,7 @@
 	Router::connect('/co/tiendas-certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'index','co'));
 	Router::connect('/co/distribuidores_certificados/*', array('controller' => 'distribuidores_certificados', 'action' => 'view','co'));
 	Router::connect('/co/mapa_tiendas_certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'map','co'));
-    Router::connect('/co/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','co'));
+    Router::connect('/co/inyectores', array('controller' => 'pages', 'action' => 'inyectores','co'));
     Router::connect('/co/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','co'));
     Router::connect('/co/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','co'));
 
@@ -125,7 +125,7 @@
 	Router::connect('/cl/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','cl'));
 	Router::connect('/cl/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','cl'));
 	Router::connect('/cl/contacto', array('controller' => 'pages', 'action' => 'contacto','cl'));
-    Router::connect('/cl/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','cl'));
+    Router::connect('/cl/inyectores', array('controller' => 'pages', 'action' => 'inyectores','cl'));
     Router::connect('/cl/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','cl'));
     Router::connect('/cl/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','cl'));
 
@@ -148,7 +148,7 @@
 	Router::connect('/ec/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','ec'));
 	Router::connect('/ec/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','ec'));
 	Router::connect('/ec/contacto', array('controller' => 'pages', 'action' => 'contacto','ec'));
-    Router::connect('/ec/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','ec'));
+    Router::connect('/ec/inyectores', array('controller' => 'pages', 'action' => 'inyectores','ec'));
     Router::connect('/ec/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ec'));
     Router::connect('/ec/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ec'));
 
@@ -165,7 +165,7 @@
 	Router::connect('/pe/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','pe'));
 	Router::connect('/pe/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','pe'));
 	Router::connect('/pe/contacto', array('controller' => 'pages', 'action' => 'contacto','pe'));
-    Router::connect('/pe/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','pe'));
+    Router::connect('/pe/inyectores', array('controller' => 'pages', 'action' => 'inyectores','pe'));
     Router::connect('/pe/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','pe'));
     Router::connect('/pe/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','pe'));
 
@@ -182,7 +182,7 @@
 	Router::connect('/car/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','car'));
 	Router::connect('/car/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','car'));
 	Router::connect('/car/contacto', array('controller' => 'pages', 'action' => 'contacto','car'));
-    Router::connect('/car/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','car'));
+    Router::connect('/car/inyectores', array('controller' => 'pages', 'action' => 'inyectores','car'));
     Router::connect('/car/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','car'));
     Router::connect('/car/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','car'));
 
@@ -199,7 +199,7 @@
 	Router::connect('/cam/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','cam'));
 	Router::connect('/cam/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','cam'));
 	Router::connect('/cam/contacto', array('controller' => 'pages', 'action' => 'contacto','cam'));
-    Router::connect('/cam/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','cam'));
+    Router::connect('/cam/inyectores', array('controller' => 'pages', 'action' => 'inyectores','cam'));
     Router::connect('/cam/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','cam'));
     Router::connect('/cam/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','cam'));
 
@@ -216,7 +216,7 @@
 	Router::connect('/sv/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','sv'));
 	Router::connect('/sv/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','sv'));
 	Router::connect('/sv/contacto', array('controller' => 'pages', 'action' => 'contacto','sv'));
-    Router::connect('/sv/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','sv'));
+    Router::connect('/sv/inyectores', array('controller' => 'pages', 'action' => 'inyectores','sv'));
     Router::connect('/sv/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','sv'));
     Router::connect('/sv/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','sv'));
 
@@ -233,7 +233,7 @@
     Router::connect('/ve/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','ve'));
     Router::connect('/ve/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','ve'));
     Router::connect('/ve/contacto', array('controller' => 'pages', 'action' => 'contacto','ve'));
-    Router::connect('/ve/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','ve'));
+    Router::connect('/ve/inyectores', array('controller' => 'pages', 'action' => 'inyectores','ve'));
     Router::connect('/ve/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ve'));
     Router::connect('/ve/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ve'));
     Router::connect('/ve/tiendas-certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'index','ve'));
@@ -251,7 +251,7 @@
     Router::connect('/pr/donde-comprar', array('controller' => 'distribuidors', 'action' => 'donde_comprar','pr'));
     Router::connect('/pr/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','pr'));
     Router::connect('/pr/contacto', array('controller' => 'pages', 'action' => 'contacto','pr'));
-    Router::connect('/pr/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','pr'));
+    Router::connect('/pr/inyectores', array('controller' => 'pages', 'action' => 'inyectores','pr'));
     Router::connect('/pr/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','pr'));
     Router::connect('/pr/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','pr'));
 
@@ -271,7 +271,7 @@
     Router::connect('/ar/compresores-aire-acondicionado', array('controller' => 'pages', 'action' => 'compresores','ar'));
     Router::connect('/ar/aprende-con-denso', array('controller' => 'pages', 'action' => 'videos','ar'));
     Router::connect('/ar/contacto', array('controller' => 'pages', 'action' => 'contacto','ar'));
-    Router::connect('/ar/inyectores-aftermarket', array('controller' => 'pages', 'action' => 'inyectores','ar'));
+    Router::connect('/ar/inyectores', array('controller' => 'pages', 'action' => 'inyectores','ar'));
     Router::connect('/ar/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ar'));
     Router::connect('/ar/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ar'));
     Router::connect('/ar/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_pais'));

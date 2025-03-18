@@ -6,16 +6,19 @@ echo $this->Html->css(
     array('inline'=>false)
 );
 ?>
-<section class="banner_producto u-align-center u-clearfix u-image u-section-1" style="background-image: url('../img/Ellipse 26-2_1.png')" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
+<section class="banner_producto u-align-center u-clearfix u-image u-section-1" style="background-image: url('<?= $this->Html->url('/img/Ellipse 26-2_1.png')?>')" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
     <div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
-        <h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Inyectores Common Rail</h1>
-        <p class="u-align-left u-custom-font u-large-text u-text u-text-body-alt-color u-text-variant u-text-2"> Los Inyectores Common Rail DENSO, ofrecen calidad de equipo original y las piezas de sustitución diésel con las que obtendrá una excelente calidad y rendimiento.
+        <h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Inyectores</h1>
+        <p class="u-align-left u-custom-font u-large-text u-text u-text-body-alt-color u-text-variant u-text-2"> Los Inyectores Common Rail DENSO, ofrecen calidad de equipo auténtico y las piezas de sustitución diésel con las que obtendrá una excelente calidad y rendimiento.
         </p>
     </div>
 </section>
-<?= $this->Element('forma_busqueda',array('region'=>$region))?>
 <section class="u-clearfix u-section-4" id="sec-5ed8">
     <div class="u-clearfix u-sheet u-sheet-1">
+        <video width="100%" height="800px" autoplay muted controls>
+            <source src="<?= $this->Html->url('/videos/inyectores.mp4')?>" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
         <h2 class="u-align-center u-text u-text-default u-text-palette-5-dark-1 u-text-1">LOS INYECTORES COMMON RAIL DENSO:</h2>
         <div class="u-expanded-width u-list u-list-1">
             <div class="u-repeater u-repeater-1">
@@ -52,7 +55,7 @@ echo $this->Html->css(
     </div>
 </section>
 <?= $this->Element('cta_compra') ?>
-<section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5" style="background-image:url('../img/Group 300-2-2.png')" src="" data-image-width="1728" data-image-height="1536" id="sec-81d9">
+<section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5" style="background-image:url('<?= $this->Html->url('/img/Group 300-2-2.png')?>')" src="" data-image-width="1728" data-image-height="1536" id="sec-81d9">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-body-alt-color u-text-1" style="margin-top: 25%">¿Cómo funcionan los inyectores  Common Rail DENSO?
         </h3>
