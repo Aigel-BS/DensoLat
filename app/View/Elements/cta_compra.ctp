@@ -1,6 +1,6 @@
 <style>
     .u-section-17-3 {
-        background-image: url("../img/Bujas-Banner3.jpg");
+        background-image: url("<?= $this->Html->url('/img/Bujas-Banner3.jpg')?>");
         background-position: 0% 0%;
         background-size: cover;
         height: 60vh;

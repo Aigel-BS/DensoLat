@@ -23,6 +23,9 @@ echo $this->Html->css(
 								<span style="font-weight: 700; font-style: italic;">Número de pieza:</span>
 								<span style="font-weight: 700;"> <?= $producto['Producto']['numero_parte']?></span>
 								<br>
+                                <span style="font-weight: 700; font-style: italic;">Stock:</span>
+                                <span style="font-weight: 700;"> <?= $producto['Producto']['numero_corto']?></span>
+                                <br>
 								<span style="font-weight: 700;">MOTOR:</span> <?= $producto['Producto']['motor']?><br>
 								<span style="font-weight: 700;">OEM:</span> <?= $producto['Producto']['oem']?><br>
 								<span style="font-weight: 700;">NOTAS: </span><?= $producto['Producto']['notas']?>
