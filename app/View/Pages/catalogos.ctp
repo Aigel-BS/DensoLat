@@ -20,7 +20,7 @@ echo $this->Html->css(
 					<div class="u-container-align-center-sm u-container-align-center-xxl u-container-style u-list-item u-repeater-item">
 						<div class="u-container-layout u-similar-container u-container-layout-1">
 							<img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="<?= $this->Html->url("/img/Catalogo_Bujias-Mex.png")?>" alt="" style="border-radius: 10px"data-image-width="480" data-image-height="613">
-							<p class="u-align-center u-custom-font u-text u-text-default u-text-1"> Catálogo de Bujías DENSO México&nbsp 2024
+							<p class="u-align-center u-custom-font u-text u-text-default u-text-1"> Catálogo de Bujías DENSO México&nbsp 2025
 							</p>
 							<a href='<?= $this->Html->url('/files/Catalogo_Bujias-Mex.pdf')?>' class="u-active-none u-align-center-sm u-align-center-xs u-btn u-button-style u-custom-font u-heading-font u-hover-none u-none u-text-custom-color-1 u-text-hover-palette-2-base u-btn-1"><span class="u-file-icon u-icon u-icon-1"><img src="images/Vector11.png" alt=""></span>&nbsp;Abrir catálogo
 							</a>

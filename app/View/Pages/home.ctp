@@ -1242,9 +1242,14 @@ echo $this->Html->script(
 				style="width: 8px; height: 8px;"></li>
 			<li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
 				style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
+            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
+                style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
 		</ol>
 		<div class="u-carousel-inner" role="listbox">
-			<div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
+            <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
+                 data-image-height="700" style="height:100vh;background-image: url(<?= $this->Html->url('/img/Banner_SQUAD_Feb_25.png')?>); background-size: cover">
+            </div>
+			<div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
 				 data-image-width="1728" data-image-height="972">
 				<div class="u-clearfix u-sheet u-sheet-1">
 					<div class="u-clearfix u-group-elements u-valign-middle u-group-elements-1">
