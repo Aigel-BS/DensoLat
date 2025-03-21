@@ -192,9 +192,9 @@ class PagesController extends AppController {
 		//Comienzan páginas regionales
 		public function home($region = null){
 
-			if(!isset($region)){
-				$region = 'latam';
-			}
+		    if(!isset($region)){
+                $region = 'latam';
+            }
 
 			$this->loadModel('Distribuidor');
 			$distribuidores = $this->Distribuidor->find('all',array('order'=>'estado ASC','fields'=>array('DISTINCT(estado)'),'conditions'=>array('Distribuidor.pais'=>$region)));

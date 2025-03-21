@@ -6,7 +6,7 @@ class DistribuidorsController extends AppController {
 	public function beforeFilter()
     {
         parent::beforeFilter();
-        $this->Auth->allow(array('por_estado','contacto','registrar_stat','por_marca','getByRegion','donde_comprar','por_pais','falsificacion'));
+        $this->Auth->allow(array('por_estado','contacto','registrar_stat','por_marca','getByRegion','donde_comprar','por_pais','falsificacion','donde_reparar'));
     }
 
 	function falsificacion(){
@@ -52,6 +52,31 @@ class DistribuidorsController extends AppController {
 			$this->Session->setFlash('Gracias por tu testimonio. Estudiaremos el caso a fondo y ten la seguridad de que seguiremos trabajando en contra de la falsificación de productos.','default',array('class'=>'success'));
 			$this->redirect(array('action'=>'falsificacion_producto','controller'=>'pages',$this->request->data['Formulario']['region']));
 		}
+	}
+
+	function donde_reparar($region = null){
+		$this->set('region',$region);
+		$condiciones = array(
+			'coordenadas !='=>0,
+			'tipo_distribuidor'=>'Reparador',
+		);
+		if ($region != 'latam'){
+			array_push($condiciones,array('Distribuidor.pais'=>$region));
+		}
+		$reparadores_raw = $this->Distribuidor->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>$condiciones));
+		$reparadores_array = array();
+		foreach ($reparadores_raw as $tienda){
+			$tienda_arr['DistribuidoresCertificado'] = array(
+				'nombre'=>$tienda['Distribuidor']['nombre'],
+				'direccion'=>$tienda['Distribuidor']['direccion'],
+				'zona'=>$tienda['Distribuidor']['estado'],
+				'ciudad'=>$tienda['Distribuidor']['ciudad'],
+				'telefono'=>$tienda['Distribuidor']['telefono'],
+				'coordenadas'=>$tienda['Distribuidor']['coordenadas']
+			);
+			array_push($reparadores_array,$tienda_arr);
+		}
+		$this->set('reparadores',$reparadores_array);
 	}
 
 	function donde_comprar($region = null){

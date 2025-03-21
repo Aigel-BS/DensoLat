@@ -39,7 +39,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','latam'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','latam'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -86,7 +86,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','latam'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','latam'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','latam'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','latam'))?>">Limpiaparabrisas</a>
                                         </li>
@@ -157,7 +157,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','mx'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','mx'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -212,7 +212,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','mx'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','mx'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','mx'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','mx'))?>">Limpiaparabrisas</a>
 										</li>
@@ -280,7 +280,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','co'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','co'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -335,7 +335,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','co'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','co'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','co'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','co'))?>">Limpiaparabrisas</a>
 										</li>
@@ -403,7 +403,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cl'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cl'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -458,7 +458,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','cl'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cl'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cl'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','cl'))?>">Limpiaparabrisas</a>
 										</li>
@@ -525,7 +525,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ec'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ec'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -580,7 +580,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','ec'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ec'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ec'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','ec'))?>">Limpiaparabrisas</a>
 										</li>
@@ -647,7 +647,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pe'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pe'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -702,7 +702,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','pe'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pe'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pe'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','pe'))?>">Limpiaparabrisas</a>
 										</li>
@@ -770,7 +770,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','car'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','car'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -821,7 +821,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','car'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','car'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','car'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','car'))?>">Limpiaparabrisas</a>
 										</li>
@@ -887,7 +887,7 @@
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ar'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ar'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -938,7 +938,7 @@
                                         </li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','ar'))?>">Sensores</a>
                                         </li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ar'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ar'))?>">Inyectores</a>
                                         </li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','ar'))?>">Limpiaparabrisas</a>
                                         </li>
@@ -1004,7 +1004,7 @@
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pr'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pr'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -1055,7 +1055,7 @@
                                         </li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','pr'))?>">Sensores</a>
                                         </li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pr'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','pr'))?>">Inyectores</a>
                                         </li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','pr'))?>">Limpiaparabrisas</a>
                                         </li>
@@ -1121,7 +1121,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cam'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cam'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -1172,7 +1172,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','cam'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cam'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','cam'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','cam'))?>">Limpiaparabrisas</a>
 										</li>
@@ -1238,7 +1238,7 @@
 								</li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','sv'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','sv'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -1289,7 +1289,7 @@
 										</li>
 										<li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','sv'))?>">Sensores</a>
 										</li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','sv'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','sv'))?>">Inyectores</a>
 										</li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','sv'))?>">Limpiaparabrisas</a>
 										</li>
@@ -1355,7 +1355,7 @@
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
-                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ve'))?>">Inyectores Aftermarket</a>
+                                            href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ve'))?>">Inyectores</a>
                                 </li>
                                 <li class="u-nav-item"><a
                                             class="u-active-custom-color-1 u-button-style u-hover-custom-color-1 u-nav-link u-text-hover-white u-white"
@@ -1410,7 +1410,7 @@
                                         </li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'sensores_oxigeno','controller'=>'pages','ve'))?>">Sensores</a>
                                         </li>
-                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ve'))?>">Inyectores Aftermarket</a>
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'inyectores','controller'=>'pages','ve'))?>">Inyectores</a>
                                         </li>
                                         <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'limpiaparabrisas','controller'=>'pages','ve'))?>">Limpiaparabrisas</a>
                                         </li>

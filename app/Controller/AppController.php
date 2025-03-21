@@ -40,7 +40,7 @@ class AppController extends Controller {
                 //$this->Auth->loginAction = array('controller' => 'promosTas', 'action' => 'index');
 
                 // Allows the display action to be accessed without user login.
-                $this->Auth->allow(array('display'));
+                $this->Auth->allow('display');
 
             }
 
