@@ -5,21 +5,63 @@ echo $this->Html->css(
     ),
     array('inline'=>false)
 );
+echo $this->Html->script(
+    array(
+        'https://polyfill.io/v3/polyfill.min.js?features=default',
+        'https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js',
+        'https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js',
+    ),
+    array('inline'=>false)
+);
 ?>
-<section class="banner_producto u-align-center u-clearfix u-image u-section-1" style="background-image: url('<?= $this->Html->url('/img/Ellipse 26-2_1.png')?>')" src="" data-image-width="1728" data-image-height="534" id="sec-576a">
-    <div class="u-clearfix u-sheet u-valign-middle-xxl u-sheet-1">
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas más pequeñas */
+    }
+
+
+    .column {
+        flex: 1 1 50%; /* Crece y se encoge, ocupando el 50% del ancho */
+        box-sizing: border-box; /* Incluye padding y border en el ancho total */
+        border: 1px solid #ccc; /* Borde para visualización */
+        height: 50vh;
+    }
+
+
+    @media (max-width: 600px) {
+        .column {
+            flex: 1 1 100%; /* En pantallas pequeñas, las columnas ocupan el 100% */
+        }
+
+    }
+</style>
+<div class="container" id="autenticidad">
+    <div class="column" style="padding: 20px; /* Espaciado interno */background-color: darkgrey;background-image: url('<?= $this->Html->url('/img/inyector.png')?>'); background-size: cover; background-position-x: right;">
         <h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Inyectores</h1>
         <p class="u-align-left u-custom-font u-large-text u-text u-text-body-alt-color u-text-variant u-text-2"> Los Inyectores Common Rail DENSO, ofrecen calidad de equipo auténtico y las piezas de sustitución diésel con las que obtendrá una excelente calidad y rendimiento.
         </p>
     </div>
-</section>
-<section class="u-clearfix u-section-4" id="sec-5ed8">
-    <div class="u-clearfix u-sheet u-sheet-1">
-        <video width="100%" height="800px" autoplay muted controls>
+    <div class="column" style="background-color: #e6e6e6;">
+        <video width="100%" height="100%" autoplay muted controls>
             <source src="<?= $this->Html->url('/videos/inyectores.mp4')?>" type="video/mp4">
             Tu navegador no soporta la etiqueta de video.
         </video>
-        <h2 class="u-align-center u-text u-text-default u-text-palette-5-dark-1 u-text-1">LOS INYECTORES COMMON RAIL DENSO:</h2>
+    </div>
+</div>
+<section class="u-clearfix u-section-4" >
+    <div class="u-clearfix u-sheet u-sheet-1" >
+        <div class="u-layout" id="comprar">
+            <div class="u-layout-row">
+                <h2 class="u-align-center u-text u-text-default u-text-palette-5-dark-1 u-text-1">DONDE COMPRAR INYECTORES CON TECNOLOGÍA DE ETIQUETAS INTELIGENTES:</h2>
+
+                <div style="min-width: 100%;max-width: 100%;min-height: 75vh;margin-bottom: 100px;margin-top: 20px" class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
+                    <?= $this->Element('map_reparadores',array('title'=>'Distribuidores Autorizados Inyectores con tecnología QR'))?>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="conoce" class="u-align-center u-text u-text-default u-text-palette-5-dark-1 u-text-1">LOS INYECTORES COMMON RAIL DENSO:</h2>
         <div class="u-expanded-width u-list u-list-1">
             <div class="u-repeater u-repeater-1">
                 <div class="u-container-align-center-xl u-container-align-center-xxl u-container-style u-list-item u-repeater-item">
@@ -54,7 +96,6 @@ echo $this->Html->css(
         </div>
     </div>
 </section>
-<?= $this->Element('cta_compra') ?>
 <section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5" style="background-image:url('<?= $this->Html->url('/img/Group 300-2-2.png')?>')" src="" data-image-width="1728" data-image-height="1536" id="sec-81d9">
     <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-body-alt-color u-text-1" style="margin-top: 25%">¿Cómo funcionan los inyectores  Common Rail DENSO?
@@ -115,8 +156,6 @@ echo $this->Html->css(
             <li>Reducción de emisiones: El sistema Common Rail permite una inyección de alta presión controlada electrónicamente, reduciendo las emisiones de NOx y PM, y generando más potencia del motor.</li>
         </ul>
         </p>
-        <h3 class="m-t-40-minus u-text u-text-3">Si quieres saber más acerca de nuestros inyectores diesel common rail, puedes ir a la sección de catálogos</h3>
-        <a href="<?= $this->Html->url(array('controller'=>'pages','action'=>'catalogos',$region))?>" class="u-black u-border-2 u-border-black u-btn u-button-style u-hover-black u-text-hover-white u-btn-1">VER CATÁLOGOS</a>
         <img class="u-align-right u-expanded-width-xs u-image u-image-default u-image-1" src="<?= $this->Html->url('/img/common_rail_bn.png')?>" style="height: 100%;margin: -48% 0 2px auto;" alt="" data-image-width="651" data-image-height="720">
     </div>
 </section>
@@ -130,11 +169,9 @@ echo $this->Html->css(
             <br>Los Inyectores Common Rail de DENSO están diseñados para ofrecer un ajuste perfecto desde el primer momento, fabricados bajo especificaciones exactas que garantizan su rendimiento óptimo y durabilidad a lo largo del tiempo.
         </p>
         <h3 class="m-t-40-minus u-text u-text-3" style="width: 60%;text-align: left;/*! float: right; */margin-left: 40%;">Puedes encontrarlos con alguno de nuestros distribuidores.</h3>
-        <a href="<?= $this->Html->url(array('controller'=>'distribuidors','action'=>'donde_comprar',$region))?>" style="text-align: left;/*! float: right; */margin-left: 40%;" class="u-black u-border-2 u-border-black u-btn u-button-style u-hover-black u-text-hover-white u-btn-1">ENCONTRAR UN DISTRIBUIDOR</a>
+        <a href="#comprar" style="text-align: left;/*! float: right; */margin-left: 40%;" class="u-black u-border-2 u-border-black u-btn u-button-style u-hover-black u-text-hover-white u-btn-1">ENCONTRAR UN DISTRIBUIDOR</a>
         <img class="u-align-right u-expanded-width-xs u-image u-image-default u-image-1" src="<?= $this->Html->url('/img/Ramiro3.png')?>" style="height: 100%;margin: -24% 69% 2px auto;" alt="" data-image-width="651" data-image-height="720">
     </div>
 </section>
-<?= $this->Element('subfooter',array('section_subfooter'=>14))?>
-<style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
-        background-color: #dc0a34 !important
-    }</style>
+
+

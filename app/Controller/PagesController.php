@@ -514,43 +514,34 @@ class PagesController extends AppController {
         }
 
         public function inyectores($region=null){
+            $this->layout = 'inyectores';
             if(!isset($region)){
                 $region = 'latam';
             }
 
-            $this->loadModel('Seccion');
-            $secciones_arreglo = $this->Seccion->findAllBySeccionAndPais('compresor',$region);
-            $secciones = array();
-            foreach($secciones_arreglo as $seccion):
-                $secciones[$seccion['Seccion']['elemento']] = $seccion['Seccion']['contenido'];
-            endforeach;
-            $this->set('secciones',$secciones);
-            $this->loadModel('Producto');
-            $anios = $this->Producto->find(
-                'list',
-                array(
-                    'fields'=>array(
-                        'Producto.anio_inicio','Producto.anio_inicio'
-                    ),
-                    'order'=>'Producto.anio_inicio DESC',
-                    'conditions'=>array(
-                        'Producto.pais'=>$region
-                    )
-                )
+            $this->loadModel('Distribuidor');
+            $condiciones = array(
+                'coordenadas !='=>0,
+                'tipo_distribuidor'=>'Original',
             );
-            //$anio_min = 0;
-            switch($region):
-                case('mx'):
-                    $anio_min=1960;
-                    break;
-                case('co'):
-                    $anio_min=1945;
-                    break;
-                case('cl'):
-                    $anio_min=1945;
-                    break;
-            endswitch;
-            $this->set('anios',$anios);
+            if ($region != 'latam'){
+                array_push($condiciones,array('Distribuidor.pais'=>$region));
+            }
+            $reparadores_raw = $this->Distribuidor->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>$condiciones));
+            $reparadores_array = array();
+            foreach ($reparadores_raw as $tienda){
+                $tienda_arr['DistribuidoresCertificado'] = array(
+                    'nombre'=>$tienda['Distribuidor']['nombre'],
+                    'direccion'=>$tienda['Distribuidor']['direccion'],
+                    'zona'=>$tienda['Distribuidor']['estado'],
+                    'ciudad'=>$tienda['Distribuidor']['ciudad'],
+                    'telefono'=>$tienda['Distribuidor']['telefono'],
+                    'coordenadas'=>$tienda['Distribuidor']['coordenadas']
+                );
+                array_push($reparadores_array,$tienda_arr);
+            }
+            $this->set('reparadores',$reparadores_array);
+
             $this->set('region',$region);
         }
 

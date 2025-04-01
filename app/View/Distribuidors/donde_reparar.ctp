@@ -26,9 +26,19 @@ echo $this->Html->script(
 			<p class="texto_parrafo">
                 En DENSO, nos comprometemos a ofrecerte lo mejor en reparación y mantenimiento de tu equipo original. Por eso, hemos seleccionado cuidadosamente una red de talleres autorizados que cumplen con nuestros altos estándares de calidad.
             </p>
-            <p class="texto_parrafo">
+            <h4>
+                ¡Encuentra el taller más cercano y asegura la mejor atención para tu equipo DENSO!
+            </h4>
+            <div class="u-layout">
+                <div class="u-layout-row">
+                    <div style="min-width: 100%;max-width: 100%;min-height: 75vh;margin-bottom: 100px;" class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
+                        <?= $this->Element('map_reparadores',array('title'=>'LISTA DE CENTROS AUTORIZADOS DENSO PARA REPARACIÓN'))?>
+                    </div>
+                </div>
+            </div>
+            <h3>
                 ¿Por qué elegir un taller autorizado DENSO?
-            </p>
+            </h3>
             <ul>
                 <li style="color:black">
                     Piezas Originales: Nuestros talleres utilizan únicamente piezas originales DENSO, garantizando que cada reparación mantenga la integridad y el rendimiento de tu equipo DENSO.
@@ -43,16 +53,6 @@ echo $this->Html->script(
             <p class="texto_parrafo">
                 No arriesgues la calidad de tu vehículo. Evita llevar tus piezas a talleres no autorizados que pueden comprometer el rendimiento y la seguridad de tu equipo. Confía en DENSO y en nuestros talleres autorizados para mantener tu vehículo en óptimas condiciones.
             </p>
-            <h4>
-                ¡Encuentra el taller más cercano y asegura la mejor atención para tu equipo DENSO!
-            </h4>
-            <div class="u-layout">
-                <div class="u-layout-row">
-                    <div style="min-width: 100%;max-width: 100%;min-height: 75vh;margin-bottom: 100px;" class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
-                        <?= $this->Element('map_reparadores')?>
-                    </div>
-                </div>
-            </div>
 		</div>
 	</section>
 <script>

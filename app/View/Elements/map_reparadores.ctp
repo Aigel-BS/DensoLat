@@ -605,7 +605,7 @@
 			<header>
 				<h5 class="search-title">
 					<img src="https://fonts.gstatic.com/s/i/googlematerialicons/place/v15/24px.svg"/>
-					LISTA DE CENTROS AUTORIZADOS DENSO PARA REPARACIÓN
+					<?= $title?>
 				</h5>
 				<div class="search-input">
 					<input id="location-search-input" placeholder="Enter your address or zip code">
