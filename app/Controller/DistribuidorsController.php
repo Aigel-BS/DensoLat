@@ -66,13 +66,26 @@ class DistribuidorsController extends AppController {
 		$reparadores_raw = $this->Distribuidor->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>$condiciones));
 		$reparadores_array = array();
 		foreach ($reparadores_raw as $tienda){
-			$tienda_arr['DistribuidoresCertificado'] = array(
+			/*$tienda_arr['DistribuidoresCertificado'] = array(
 				'nombre'=>$tienda['Distribuidor']['nombre'],
 				'direccion'=>$tienda['Distribuidor']['direccion'],
 				'zona'=>$tienda['Distribuidor']['estado'],
 				'ciudad'=>$tienda['Distribuidor']['ciudad'],
 				'telefono'=>$tienda['Distribuidor']['telefono'],
-				'coordenadas'=>$tienda['Distribuidor']['coordenadas']
+				'coordenadas'=>$tienda['Distribuidor']['coordenadas'],
+				'pais'=>$tienda['Distribuidor']['pais'],
+			);*/
+
+			$tienda_arr['DistribuidoresCertificado'] = array(
+				'nombre'=>"",
+				'direccion'=>$tienda['Distribuidor']['direccion'],
+				'zona'=>$tienda['Distribuidor']['estado'],
+				'ciudad'=>$tienda['Distribuidor']['ciudad'],
+				'telefono'=>$tienda['Distribuidor']['telefono'],
+				'coordenadas'=>$tienda['Distribuidor']['coordenadas'],
+				'pais'=>$tienda['Distribuidor']['nombre'],
+				'correo'=>$tienda['Distribuidor']['correo_electronico'],
+				'web'=>$tienda['Distribuidor']['web'],
 			);
 			array_push($reparadores_array,$tienda_arr);
 		}

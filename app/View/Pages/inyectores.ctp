@@ -36,11 +36,10 @@ echo $this->Html->script(
 
     }
 </style>
+<h1 style="color: #444;font-weight: bolder;padding: 20px;font-size: 1.5em;font-family: DENSO-black;">INYECTORES AUTÉNTICOS DENSO</h1>
 <div class="container" id="autenticidad">
-    <div class="column" style="padding: 20px; /* Espaciado interno */background-color: darkgrey;background-image: url('<?= $this->Html->url('/img/inyector.png')?>'); background-size: cover; background-position-x: right;">
-        <h1 class="u-align-left u-text u-text-body-alt-color u-text-1">Inyectores</h1>
-        <p class="u-align-left u-custom-font u-large-text u-text u-text-body-alt-color u-text-variant u-text-2"> Los Inyectores Common Rail DENSO, ofrecen calidad de equipo auténtico y las piezas de sustitución diésel con las que obtendrá una excelente calidad y rendimiento.
-        </p>
+    <div class="column" style="; height:50vh ;padding: 20px; /* Espaciado interno */background-color: darkgrey;background-image: url('<?= $this->Html->url('/img/inyectores.jpg')?>'); background-size: cover; background-position-y: center">
+
     </div>
     <div class="column" style="background-color: #e6e6e6;">
         <video width="100%" height="100%" autoplay muted controls>
@@ -49,12 +48,15 @@ echo $this->Html->script(
         </video>
     </div>
 </div>
+<div style="width:100%; background-color: #dc0a34; color:white; padding: 3%">
+    <p style="font-weight: bold;font-size: 1.5rem;text-align: center !important;color: white;width: 100%">Con nuestra nueva caja y etiqueta encriptada, aseguras que tu inyector es 100% auténtico. <br><b>Evita falsificaciones, gana tranquilidad.</b></p>
+</div>
 <section class="u-clearfix u-section-4" >
     <div class="u-clearfix u-sheet u-sheet-1" >
         <div class="u-layout" id="comprar">
-            <div class="u-layout-row">
-                <h2 class="u-align-center u-text u-text-default u-text-palette-5-dark-1 u-text-1">DONDE COMPRAR INYECTORES CON TECNOLOGÍA DE ETIQUETAS INTELIGENTES:</h2>
-
+            <div class="u-layout-row u-container-align-center">
+                <p style="font-weight: bold;font-size: 1.125rem;text-align: center;color: #3c3c3c;"> Los inyectores aftermarket para Common Rail Systems (CRS) de DENSO, aseguran calidad de equipo original y las piezas de reemplazo para sistemas diesel adecuadas para extender la vida de tu unidad y reducir emisiones contaminantes, maximizando la eficiencia de tu motor.</p>
+                <h2 class="u-align-center u-text u-text-default u-text-palette-5-dark-1 u-text-1">DONDE COMPRAR INYECTORES AUTÉNTICOS CON TECNOLOGÍA DE ETIQUETAS INTELIGENTES:</h2>
                 <div style="min-width: 100%;max-width: 100%;min-height: 75vh;margin-bottom: 100px;margin-top: 20px" class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
                     <?= $this->Element('map_reparadores',array('title'=>'Distribuidores Autorizados Inyectores con tecnología QR'))?>
                 </div>
@@ -96,9 +98,9 @@ echo $this->Html->script(
         </div>
     </div>
 </section>
-<section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5" style="background-image:url('<?= $this->Html->url('/img/Group 300-2-2.png')?>')" src="" data-image-width="1728" data-image-height="1536" id="sec-81d9">
+<section class="u-align-left u-clearfix u-hidden-sm u-hidden-xs u-image u-section-5" style="background-image:url('<?= $this->Html->url('/img/Group-300-2-2.png')?>')" src="" data-image-width="1728" data-image-height="1536" id="sec-81d9">
     <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-text u-text-body-alt-color u-text-1" style="margin-top: 25%">¿Cómo funcionan los inyectores  Common Rail DENSO?
+        <h3 class="u-text u-text-body-alt-color u-text-1" style="margin-top: 25%">¿Cómo funcionan los inyectores Common Rail DENSO?
         </h3>
         <p class="u-custom-font u-large-text u-text u-text-body-alt-color u-text-variant u-text-2">
             <span style="font-weight: 700;"></span>

@@ -527,8 +527,37 @@ class PagesController extends AppController {
             if ($region != 'latam'){
                 array_push($condiciones,array('Distribuidor.pais'=>$region));
             }
-            $reparadores_raw = $this->Distribuidor->find('all',array('order'=>array('ciudad ASC','nombre ASC'),'conditions'=>$condiciones));
+            $reparadores_raw = $this->Distribuidor->find('all',array('order'=>array('pais ASC','nombre DESC'),'conditions'=>$condiciones));
             $reparadores_array = array();
+            $paises = array(
+                "mx" => "México",
+                "pe" => "Perú",
+                "bo" => "Bolivia",
+                "co" => "Colombia",
+                "ec" => "Ecuador",
+                "ve" => "Venezuela",
+                "pa" => "Panamá",
+                "cr" => "Costa Rica",
+                "hn" => "Honduras",
+                "ni" => "Nicaragua",
+                "sv" => "El Salvador",
+                "gt" => "Guatemala",
+                "bz" => "Belice",
+                "bs" => "Bahamas",
+                "bb" => "Barbados",
+                "dm" => "Dominica",
+                "gd" => "Granada",
+                "ht" => "Haití",
+                "jm" => "Jamaica",
+                "do" => "República Dominicana",
+                "lc" => "Santa Lucía",
+                "vc" => "San Vicente y las Granadinas",
+                "tt" => "Trinidad y Tobago",
+                "ar" => "Argentina",
+                "cl" => "Chile",
+                "py" => "Paraguay",
+                'uy'=>"Uruguay"
+            );
             foreach ($reparadores_raw as $tienda){
                 $tienda_arr['DistribuidoresCertificado'] = array(
                     'nombre'=>$tienda['Distribuidor']['nombre'],
@@ -536,7 +565,10 @@ class PagesController extends AppController {
                     'zona'=>$tienda['Distribuidor']['estado'],
                     'ciudad'=>$tienda['Distribuidor']['ciudad'],
                     'telefono'=>$tienda['Distribuidor']['telefono'],
-                    'coordenadas'=>$tienda['Distribuidor']['coordenadas']
+                    'coordenadas'=>$tienda['Distribuidor']['coordenadas'],
+                    'pais'=>$paises[$tienda['Distribuidor']['pais']],
+                    'correo'=>$tienda['Distribuidor']['correo_electronico'],
+                    'web'=>$tienda['Distribuidor']['web'],
                 );
                 array_push($reparadores_array,$tienda_arr);
             }

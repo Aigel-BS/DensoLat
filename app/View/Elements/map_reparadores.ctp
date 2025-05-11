@@ -183,7 +183,7 @@
 		}
 
 		#locations-panel-list .location-result .address {
-			font-size: 0.9em;
+			font-size: 0.8em;
 			margin-bottom: 0.5em;
 		}
 
@@ -215,11 +215,14 @@
 			margin: 0;
 			padding: 0;
 		}
+        .results {
+            display: none; /* Ocultar el div de resultados por defecto */
+        }
 	</style>
 	<script>
 		'use strict';
 
-		/** Helper function to generate a Google Maps directions URL */
+        /** Helper function to generate a Google Maps directions URL */
 		function generateDirectionsURL(origin, destination) {
 			const googleMapsUrlBase = 'https://www.google.com/maps/dir/?';
 			const searchParams = new URLSearchParams('api=1');
@@ -265,21 +268,33 @@
 			const map = locator.map;
 
 			// Store selection.
-			const selectResultItem = function(locationIdx, panToMarker, scrollToResult) {
-				locator.selectedLocationIdx = locationIdx;
-				for (let locationElem of resultsContainerEl.children) {
-					locationElem.classList.remove('selected');
-					if (getResultIndex(locationElem) === locator.selectedLocationIdx) {
-						locationElem.classList.add('selected');
-						if (scrollToResult) {
-							panelEl.scrollTop = locationElem.offsetTop;
-						}
-					}
-				}
-				if (panToMarker && (locationIdx != null)) {
-					locator.map.panTo(locator.locations[locationIdx].coords);
-				}
-			};
+            const selectResultItem = function(locationIdx, panToMarker, scrollToResult) {
+                // Mostrar el div de resultados cuando se selecciona un pin
+                document.querySelector('.results').style.display = 'block'; // Mostrar el div de resultados
+                // Actualiza el índice de la ubicación seleccionada
+                locator.selectedLocationIdx = locationIdx;
+
+                // Actualiza la clase de selección en los elementos de resultados
+                for (let locationElem of resultsContainerEl.children) {
+                    console.log("Entra a For");
+                    locationElem.classList.remove('selected');
+                    if (getResultIndex(locationElem) === locator.selectedLocationIdx) {
+                        console.log("Selecciona Item");
+                        locationElem.classList.add('selected');
+                        if (scrollToResult) {
+                            console.log("Entra a if scrollTo Reuslt");
+                            panelEl.scrollTop = locationElem.offsetTop;
+                        }
+                    }
+                }
+
+
+
+                // Pan a la ubicación del marcador si es necesario
+                if (panToMarker && (locationIdx != null)) {
+                    locator.map.panTo(locator.locations[locationIdx].coords);
+                }
+            };
 
 			// Create a marker for each location.
 			const markers = locator.locations.map(function(location, index) {
@@ -293,7 +308,7 @@
 					}
 				});
 				marker.addListener('click', function() {
-					selectResultItem(index, false, true);
+					selectResultItem(index, true, true);
 				});
 				return marker;
 			});
@@ -412,6 +427,7 @@
 
 			// Initial render of results -----------------------------------------------
 			locator.renderResultsList();
+
 		}
 
 
@@ -565,7 +581,7 @@
 		const CONFIGURATION = {
 			"locations": [
 				<?php foreach ($reparadores as $tienda){?>
-				    {"icono":"https://densoautopartes.com/img/pin_denso_tienda.png","title":"<?= $tienda['DistribuidoresCertificado']['nombre']?>","address1":"<?= $tienda['DistribuidoresCertificado']['direccion']?>","address2":"Teléfonos: <?= $tienda['DistribuidoresCertificado']['telefono']?>","address3":"<?= $tienda['DistribuidoresCertificado']['telefono']?>","coords":{"lat":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[0]?>,"lng":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[1]?>}},
+				    {"icono":"https://densoautopartes.com/img/pin_denso_tienda.png","pais":"<?= $tienda['DistribuidoresCertificado']['pais']?>","title":"<?= $tienda['DistribuidoresCertificado']['nombre']?>","address1":"<?= $tienda['DistribuidoresCertificado']['direccion']?>","address2":"Teléfonos: <?= $tienda['DistribuidoresCertificado']['telefono']?>","address3":"<?= $tienda['DistribuidoresCertificado']['telefono']?>","correo":"<?= $tienda['DistribuidoresCertificado']['correo']?>","web":"<?= $tienda['DistribuidoresCertificado']['web']?>","coords":{"lat":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[0]?>,"lng":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[1]?>}},
 				<?php } ?>
 			],
 			"mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
@@ -581,9 +597,9 @@
 		{{#each locations}}
 		<li class="location-result" data-location-index="{{index}}">
 			<button class="select-location">
-				<h2 class="name">{{title}}</h2>
+				<h2 class="name">{{pais}}</h2>
 			</button>
-			<div class="address">{{address1}}<br>{{address2}}</div>
+			<div class="address"><b>{{title}}</b><br>{{address1}}<br>{{address2}}<br>{{correo}}<br>{{web}}</div>
 			{{#if travelDistanceText}}
 			<div class="distance">{{travelDistanceText}}</div>
 			{{/if}}
