@@ -36,7 +36,8 @@ class PagesController extends AppController {
             array(
                 'home','imagen_tv','catalogos','denso','privacidad','terminos', 'landing','sensores_oxigeno',
                 'bujias','filtros','compresores','videos','tyc_sultanes','contacto','producto_autentico',
-                'falsificacion_producto','inyectores','limpiaparabrisas','bobinas','falsificacion_producto_inyector','producto_autentico_inyector'
+                'falsificacion_producto','inyectores','limpiaparabrisas','bobinas','falsificacion_producto_inyector','producto_autentico_inyector',
+                'balatas','producto_autentico_inyector_reparado'
             )
         );
 	}
@@ -331,6 +332,77 @@ class PagesController extends AppController {
 			endswitch;
 			$this->set('anios',$anios);
 		}
+
+    public function balatas($region = null) {
+
+        if(!isset($region)){
+            $region = 'latam';
+        }
+
+        $this->loadModel('Seccion');
+        $secciones_arreglo = $this->Seccion->findAllBySeccionAndPais('bujias',$region);
+        $secciones = array();
+        foreach($secciones_arreglo as $seccion):
+            $secciones[$seccion['Seccion']['elemento']] = $seccion['Seccion']['contenido'];
+        endforeach;
+        $this->set('secciones',$secciones);
+        $this->loadModel('Producto');
+        $anios = $this->Producto->find(
+            'list',
+            array(
+                'fields'=>array(
+                    'Producto.anio_inicio','Producto.anio_inicio'
+                ),
+                'order'=>'Producto.anio_inicio DESC',
+                'conditions'=>array(
+                    'Producto.pais'=>$region
+                )
+            )
+        );
+        //$anio_min = 0;
+        switch($region):
+            case('mx'):
+                $anio_min=1960;
+                break;
+            case('co'):
+                $anio_min=1945;
+                break;
+            case('cl'):
+                $anio_min=1945;
+                break;
+        endswitch;
+        $this->set('anios',$anios);
+
+
+        $this->set('region',$region);
+
+        $this->loadModel('Producto');
+        $anios = $this->Producto->find(
+            'list',
+            array(
+                'fields'=>array(
+                    'Producto.anio_inicio','Producto.anio_inicio'
+                ),
+                'order'=>'Producto.anio_inicio DESC',
+                'conditions'=>array(
+                    'Producto.pais'=>$region
+                )
+            )
+        );
+        //$anio_min = 0;
+        switch($region):
+            case('mx'):
+                $anio_min=1960;
+                break;
+            case('co'):
+                $anio_min=1945;
+                break;
+            case('cl'):
+                $anio_min=1945;
+                break;
+        endswitch;
+        $this->set('anios',$anios);
+    }
 
 		public function compresores($region = null) {
 			if(!isset($region)){
@@ -761,6 +833,10 @@ class PagesController extends AppController {
             $distribuidores_marca = $this->Distribuidor->find('all',array('order'=>$order,'fields'=>array('DISTINCT(nombre)','pais','coordenadas','direccion','ciudad','telefono'),'conditions'=>$condiciones));
             $this->set('distribuidores_marca',$distribuidores_marca);
             $this->set('region',$region);
+        }
+
+        public function producto_autentico_inyector_reparado() {
+
         }
 
 }

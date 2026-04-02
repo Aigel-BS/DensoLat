@@ -87,19 +87,9 @@ echo $this->Html->script(
 				style="width: 8px; height: 8px;"></li>
 			<li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
 				style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
-            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
-                style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
-            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
-                style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
 		</ol>
 		<div class="u-carousel-inner" role="listbox">
-            <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
-                 data-image-height="700" style="height:100vh;background-image: url(<?= $this->Html->url('/img/banner-commics.png')?>); background-size: cover">
-            </div>
-            <div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
-                 data-image-height="700" style="height:100vh;background-image: url(<?= $this->Html->url('/img/BANNER_ROMPE_MX.png')?>); background-size: cover">
-            </div>
-			<div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
+			<div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
 				 data-image-width="1728" data-image-height="972">
 				<div class="u-clearfix u-sheet u-sheet-1">
 					<div class="u-clearfix u-group-elements u-valign-middle u-group-elements-1">
@@ -370,7 +360,7 @@ echo $this->Html->script(
 						<div class="u-container-layout u-similar-container u-container-layout-3">
 							<img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
 								 src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
 							<p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
 								QUIERO SER DISTRIBUIDOR</p>
 						</div>
@@ -388,8 +378,6 @@ echo $this->Html->script(
 				style="width: 8px; height: 8px;"></li>
 			<li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
 				style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
-            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
-				style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
 		</ol>
 		<div class="u-carousel-inner" role="listbox">
 			<div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
@@ -429,9 +417,7 @@ echo $this->Html->script(
 						catálogos</a>
 				</div>
 			</div>
-            <div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
-                 data-image-height="940" style="height:623px;background-image: url(<?= $this->Html->url('/img/5_vasos_banner.png')?>)">
-            </div>
+
 		</div>
 		<a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-584d-3"
 		   href="#carousel_78ac" role="button" data-u-slide="prev">
@@ -656,7 +642,7 @@ echo $this->Html->script(
 						<div class="u-container-layout u-similar-container u-container-layout-3">
 							<img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
 								 src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
 							<p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
 								QUIERO SER DISTRIBUIDOR</p	>
 						</div>
@@ -675,8 +661,6 @@ echo $this->Html->script(
                 style="width: 8px; height: 8px;"></li>
             <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
                 style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
-            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
-                style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
         </ol>
         <div class="u-carousel-inner" role="listbox">
             <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
@@ -715,9 +699,6 @@ echo $this->Html->script(
                        class="u-align-right u-black u-border-none u-btn u-button-style u-hover-black u-btn-1">ver
                         catálogos</a>
                 </div>
-            </div>
-            <div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
-                 data-image-height="940" style="height:623px;background-image: url(<?= $this->Html->url('/img/5_vasos_banner.png')?>)">
             </div>
         </div>
         <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-584d-3"
@@ -943,7 +924,7 @@ echo $this->Html->script(
                         <div class="u-container-layout u-similar-container u-container-layout-3">
                             <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
                                  src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-                                 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+                                 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
                             <p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
                                 QUIERO SER DISTRIBUIDOR</p	>
                         </div>
@@ -1223,7 +1204,7 @@ echo $this->Html->script(
                         <div class="u-container-layout u-similar-container u-container-layout-3">
                             <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
                                  src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-                                 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+                                 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
                             <p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
                                 QUIERO SER DISTRIBUIDOR</p	>
                         </div>
@@ -1242,14 +1223,9 @@ echo $this->Html->script(
 				style="width: 8px; height: 8px;"></li>
 			<li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
 				style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
-            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
-                style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
 		</ol>
 		<div class="u-carousel-inner" role="listbox">
-            <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
-                 data-image-height="700" style="height:100vh;background-image: url(<?= $this->Html->url('/img/Banner_SQUAD_Feb_25.png')?>); background-size: cover">
-            </div>
-			<div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
+            <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
 				 data-image-width="1728" data-image-height="972">
 				<div class="u-clearfix u-sheet u-sheet-1">
 					<div class="u-clearfix u-group-elements u-valign-middle u-group-elements-1">
@@ -1506,7 +1482,7 @@ echo $this->Html->script(
 						<div class="u-container-layout u-similar-container u-container-layout-3">
 							<img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
 								 src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
 							<p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
 								QUIERO SER DISTRIBUIDOR</p>
 						</div>
@@ -1786,7 +1762,7 @@ echo $this->Html->script(
 						<div class="u-container-layout u-similar-container u-container-layout-3">
 							<img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
 								 src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
 							<p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
 								QUIERO SER DISTRIBUIDOR</p>
 						</div>
@@ -2080,7 +2056,7 @@ echo $this->Html->script(
 						<div class="u-container-layout u-similar-container u-container-layout-3">
 							<img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
 								 src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
 							<p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
 								QUIERO SER DISTRIBUIDOR</p>
 						</div>
@@ -2100,8 +2076,7 @@ echo $this->Html->script(
 				style="width: 8px; height: 8px;"></li>
 			<li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
 				style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
-            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
-                style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
+
 		</ol>
 		<div class="u-carousel-inner" role="listbox">
 			<div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
@@ -2141,9 +2116,7 @@ echo $this->Html->script(
 						catálogos</a>
 				</div>
 			</div>
-            <div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
-                 data-image-height="700" style="height:100vh;background-image: url(<?= $this->Html->url('/img/banner-playeras.png')?>); background-size: cover">
-            </div>
+
 		</div>
 		<a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-584d-3"
 		   href="#carousel_78ac" role="button" data-u-slide="prev">
@@ -2375,7 +2348,7 @@ echo $this->Html->script(
 						<div class="u-container-layout u-similar-container u-container-layout-3">
 							<img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
 								 src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
 							<p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
 								QUIERO SER DISTRIBUIDOR</p>
 						</div>
@@ -2394,14 +2367,9 @@ echo $this->Html->script(
                 style="width: 8px; height: 8px;"></li>
             <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
                 style="width: 8px; height: 8px;" data-u-slide-to="2"></li>
-            <li data-u-target="#carousel_78ac" class="u-active-custom-color-1 u-grey-30 u-shape-circle"
-                style="width: 8px; height: 8px;" data-u-slide-to="3"></li>
         </ol>
         <div class="u-carousel-inner" role="listbox">
-            <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-3" src="" data-image-width="1728"
-                 data-image-height="940" style="height:940px;background-image: url(<?= $this->Html->url('/img/banner_pr.png')?>)">
-            </div>
-            <div class="u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
+            <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-1-1" src=""
                  data-image-width="1728" data-image-height="972">
                 <div class="u-clearfix u-sheet u-sheet-1">
                     <div class="u-clearfix u-group-elements u-valign-middle u-group-elements-1">
@@ -2672,7 +2640,7 @@ echo $this->Html->script(
                         <div class="u-container-layout u-similar-container u-container-layout-3">
                             <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
                                  src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-                                 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+                                 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
                             <p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
                                 QUIERO SER DISTRIBUIDOR</p>
                         </div>
@@ -2955,7 +2923,7 @@ echo $this->Html->script(
 						<div class="u-container-layout u-similar-container u-container-layout-3">
 							<img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
 								 src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+								 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
 							<p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
 								QUIERO SER DISTRIBUIDOR</p>
 						</div>
@@ -3239,7 +3207,7 @@ echo $this->Html->script(
                         <div class="u-container-layout u-similar-container u-container-layout-3">
                             <img class="u-align-center u-image u-image-contain u-image-default u-preserve-proportions u-image-3"
                                  src="<?= $this->Html->url('/img/Group100.png')?>" alt="" data-image-width="165" data-image-height="165"
-                                 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages',$region))?>">
+                                 data-href="<?= $this->Html->url(array('action'=>'landing','controller'=>'pages','latam'))?>">
                             <p class="u-align-center u-custom-font u-text u-text-default u-text-palette-5-dark-3 u-text-3">
                                 QUIERO SER DISTRIBUIDOR</p	>
                         </div>

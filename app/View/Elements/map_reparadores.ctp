@@ -216,7 +216,7 @@
 			padding: 0;
 		}
         .results {
-            display: none; /* Ocultar el div de resultados por defecto */
+            display: block; /* Mostrar el div de resultados por defecto */
         }
 	</style>
 	<script>
@@ -268,7 +268,7 @@
 			const map = locator.map;
 
 			// Store selection.
-            const selectResultItem = function(locationIdx, panToMarker, scrollToResult) {
+            locator.selectResultItem = function(locationIdx, panToMarker, scrollToResult) {
                 // Mostrar el div de resultados cuando se selecciona un pin
                 document.querySelector('.results').style.display = 'block'; // Mostrar el div de resultados
                 // Actualiza el índice de la ubicación seleccionada
@@ -276,13 +276,10 @@
 
                 // Actualiza la clase de selección en los elementos de resultados
                 for (let locationElem of resultsContainerEl.children) {
-                    console.log("Entra a For");
                     locationElem.classList.remove('selected');
                     if (getResultIndex(locationElem) === locator.selectedLocationIdx) {
-                        console.log("Selecciona Item");
                         locationElem.classList.add('selected');
                         if (scrollToResult) {
-                            console.log("Entra a if scrollTo Reuslt");
                             panelEl.scrollTop = locationElem.offsetTop;
                         }
                     }
@@ -308,7 +305,7 @@
 					}
 				});
 				marker.addListener('click', function() {
-					selectResultItem(index, true, true);
+					locator.selectResultItem(index, true, true);
 				});
 				return marker;
 			});
@@ -405,7 +402,7 @@
 					item.addEventListener('click', resultSelectionHandler);
 					item.querySelector('.select-location')
 						.addEventListener('click', function(e) {
-							resultSelectionHandler();
+							locator.selectResultItem(resultIndex, true, false);
 							e.stopPropagation();
 						});
 
@@ -439,7 +436,7 @@
 			const searchInputEl = document.getElementById('location-search-input');
 			const searchButtonEl = document.getElementById('location-search-button');
 
-			const updateSearchLocation = function(address, location) {
+			locator.updateSearchLocation = function(address, location) {
 				if (locator.searchLocationMarker) {
 					locator.searchLocationMarker.setMap(null);
 				}
@@ -472,6 +469,13 @@
 
 				// Update the result list so we can sort it by proximity.
 				locator.renderResultsList();
+
+                // Auto-select the first (closest) result
+                if (resultsContainerEl.children.length > 0) {
+                    const firstItem = resultsContainerEl.children[0];
+                    const firstIndex = parseInt(firstItem.getAttribute('data-location-index'));
+                    locator.selectResultItem(firstIndex, true, true);
+                }
 
 				locator.updateTravelTimes();
 			};
@@ -510,7 +514,7 @@
 
 			// Initialize Autocomplete.
 			initializeSearchInputAutocomplete(
-				locator, searchInputEl, geocodeSearch, updateSearchLocation);
+				locator, searchInputEl, geocodeSearch, locator.updateSearchLocation);
 		}
 
 		/** Add Autocomplete to the search input. */
@@ -590,7 +594,21 @@
 		};
 
 		function initMap() {
-			new LocatorPlus(CONFIGURATION);
+			const locator = new LocatorPlus(CONFIGURATION);
+
+            // Intentar obtener la ubicación del usuario automáticamente
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const userPos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                    // Centrarmos y buscamos el más cercano
+                    locator.updateSearchLocation('Tu ubicación', userPos);
+                }, function() {
+                    console.warn("Geolocalización denegada o fallida.");
+                });
+            }
 		}
 	</script>
 	<script id="locator-result-items-tmpl" type="text/x-handlebars-template">

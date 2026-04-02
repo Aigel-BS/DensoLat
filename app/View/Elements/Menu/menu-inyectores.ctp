@@ -28,6 +28,10 @@
             </li>
             <li class="u-nav-item"><a
                         class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
+                        href="#instalacion" style="padding: 32px 20px;">Guía de Instalación</a>
+            </li>
+            <li class="u-nav-item"><a
+                        class="u-active-custom-color-1 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-white u-nav-link u-text-active-white u-text-hover-palette-2-base"
                         href="<?= $this->Html->url(array('action'=>'home','controller'=>'pages',$region))?>" style="padding: 32px 20px;">Regresar a sitio DENSO LATAM</a>
             </li>
         </ul>
@@ -44,6 +48,8 @@
                         <a class="u-button-style u-nav-link" href="#comprar">Dónde Comprar</a>
                     </li>
                     <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#conoce">Conoce los Inyectores DENSO</a>
+                    </li>
+                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#instalacion">Guía de Instalación</a>
                     </li>
                     <li class="u-nav-item"><a class="u-button-style u-nav-link" href="<?= $this->Html->url(array('action'=>'home','controller'=>'pages',$region))?>">Regresar a sitio DENSO LATAM</a>
                     </li>

@@ -47,6 +47,7 @@
 	Router::connect('/aprende-con-denso', array('controller' => 'pages', 'action' => 'videos','latam'));
 	Router::connect('/contacto', array('controller' => 'pages', 'action' => 'contacto','latam'));
 	Router::connect('/inyectores', array('controller' => 'pages', 'action' => 'inyectores','latam'));
+	Router::connect('/balatas', array('controller' => 'pages', 'action' => 'balatas','latam'));
 	Router::connect('/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','latam'));
     Router::connect('/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','latam'));
     Router::connect('/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','latam'));
@@ -54,6 +55,7 @@
     Router::connect('/producto_autentico', array('controller' => 'pages', 'action' => 'producto_autentico','latam'));
     Router::connect('/falsificacion_producto', array('controller' => 'pages', 'action' => 'falsificacion_producto','latam'));
 	Router::connect('/producto_autentico_inyector', array('controller' => 'pages', 'action' => 'producto_autentico_inyector','latam'));
+	Router::connect('/producto_autentico_inyector_reparado', array('controller' => 'pages', 'action' => 'producto_autentico_inyector_reparado','latam'));
     Router::connect('/producto_no_original_inyector', array('controller' => 'pages', 'action' => 'falsificacion_producto_inyector','latam'));
 
 	//Routing México
@@ -79,6 +81,7 @@
 	Router::connect('/mx/terminos-y-condiciones-promocion-fan-sultanes', array('controller' => 'pages', 'action' => 'tyc_sultanes','mx'));
 	Router::connect('/mx/contacto', array('controller' => 'pages', 'action' => 'contacto','mx'));
     Router::connect('/mx/inyectores', array('controller' => 'pages', 'action' => 'inyectores','mx'));
+    Router::connect('/mx/balatas', array('controller' => 'pages', 'action' => 'balatas','mx'));
     Router::connect('/mx/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','mx'));
     Router::connect('/mx/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','mx'));
     Router::connect('/mx/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','mx'));
@@ -106,6 +109,7 @@
 	Router::connect('/co/distribuidores_certificados/*', array('controller' => 'distribuidores_certificados', 'action' => 'view','co'));
 	Router::connect('/co/mapa_tiendas_certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'map','co'));
     Router::connect('/co/inyectores', array('controller' => 'pages', 'action' => 'inyectores','co'));
+    Router::connect('/co/balatas', array('controller' => 'pages', 'action' => 'balatas','co'));
     Router::connect('/co/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','co'));
     Router::connect('/co/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','co'));
     Router::connect('/co/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','co'));
@@ -130,6 +134,7 @@
 	Router::connect('/cl/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','cl'));
 	Router::connect('/cl/contacto', array('controller' => 'pages', 'action' => 'contacto','cl'));
     Router::connect('/cl/inyectores', array('controller' => 'pages', 'action' => 'inyectores','cl'));
+    Router::connect('/cl/balatas', array('controller' => 'pages', 'action' => 'balatas','cl'));
     Router::connect('/cl/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','cl'));
     Router::connect('/cl/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','cl'));
     Router::connect('/cl/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','cl'));
@@ -154,6 +159,7 @@
 	Router::connect('/ec/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','ec'));
 	Router::connect('/ec/contacto', array('controller' => 'pages', 'action' => 'contacto','ec'));
     Router::connect('/ec/inyectores', array('controller' => 'pages', 'action' => 'inyectores','ec'));
+    Router::connect('/ec/balatas', array('controller' => 'pages', 'action' => 'balatas','ec'));
     Router::connect('/ec/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ec'));
     Router::connect('/ec/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ec'));
     Router::connect('/ec/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','ec'));
@@ -172,6 +178,7 @@
 	Router::connect('/pe/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','pe'));
 	Router::connect('/pe/contacto', array('controller' => 'pages', 'action' => 'contacto','pe'));
     Router::connect('/pe/inyectores', array('controller' => 'pages', 'action' => 'inyectores','pe'));
+    Router::connect('/pe/balatas', array('controller' => 'pages', 'action' => 'balatas','pe'));
     Router::connect('/pe/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','pe'));
     Router::connect('/pe/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','pe'));
     Router::connect('/pe/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','pe'));
@@ -190,6 +197,7 @@
 	Router::connect('/car/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','car'));
 	Router::connect('/car/contacto', array('controller' => 'pages', 'action' => 'contacto','car'));
     Router::connect('/car/inyectores', array('controller' => 'pages', 'action' => 'inyectores','car'));
+    Router::connect('/car/balatas', array('controller' => 'pages', 'action' => 'balatas','car'));
     Router::connect('/car/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','car'));
     Router::connect('/car/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','car'));
     Router::connect('/car/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','car'));
@@ -208,6 +216,7 @@
 	Router::connect('/cam/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','cam'));
 	Router::connect('/cam/contacto', array('controller' => 'pages', 'action' => 'contacto','cam'));
     Router::connect('/cam/inyectores', array('controller' => 'pages', 'action' => 'inyectores','cam'));
+    Router::connect('/cam/balatas', array('controller' => 'pages', 'action' => 'balatas','cam'));
     Router::connect('/cam/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','cam'));
     Router::connect('/cam/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','cam'));
     Router::connect('/cam/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','cam'));
@@ -226,6 +235,7 @@
 	Router::connect('/sv/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','sv'));
 	Router::connect('/sv/contacto', array('controller' => 'pages', 'action' => 'contacto','sv'));
     Router::connect('/sv/inyectores', array('controller' => 'pages', 'action' => 'inyectores','sv'));
+    Router::connect('/sv/balatas', array('controller' => 'pages', 'action' => 'balatas','sv'));
     Router::connect('/sv/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','sv'));
     Router::connect('/sv/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','sv'));
     Router::connect('/sv/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','sv'));
@@ -244,6 +254,7 @@
     Router::connect('/ve/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','ve'));
     Router::connect('/ve/contacto', array('controller' => 'pages', 'action' => 'contacto','ve'));
     Router::connect('/ve/inyectores', array('controller' => 'pages', 'action' => 'inyectores','ve'));
+    Router::connect('/ve/balatas', array('controller' => 'pages', 'action' => 'balatas','ve'));
     Router::connect('/ve/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ve'));
     Router::connect('/ve/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ve'));
     Router::connect('/ve/tiendas-certificadas', array('controller' => 'distribuidores_certificados', 'action' => 'index','ve'));
@@ -263,6 +274,7 @@
     Router::connect('/pr/productos/buscar-avanzado', array('controller' => 'productos', 'action' => 'buscar_avanzado','pr'));
     Router::connect('/pr/contacto', array('controller' => 'pages', 'action' => 'contacto','pr'));
     Router::connect('/pr/inyectores', array('controller' => 'pages', 'action' => 'inyectores','pr'));
+    Router::connect('/pr/balatas', array('controller' => 'pages', 'action' => 'balatas','pr'));
     Router::connect('/pr/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','pr'));
     Router::connect('/pr/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','pr'));
     Router::connect('/pr/centros-reparacion', array('controller' => 'distribuidors', 'action' => 'donde_reparar','latam'));
@@ -284,6 +296,7 @@
     Router::connect('/ar/aprende-con-denso', array('controller' => 'pages', 'action' => 'videos','ar'));
     Router::connect('/ar/contacto', array('controller' => 'pages', 'action' => 'contacto','ar'));
     Router::connect('/ar/inyectores', array('controller' => 'pages', 'action' => 'inyectores','ar'));
+    Router::connect('/ar/balatas', array('controller' => 'pages', 'action' => 'balatas','ar'));
     Router::connect('/ar/limpiaparabrisas', array('controller' => 'pages', 'action' => 'limpiaparabrisas','ar'));
     Router::connect('/ar/bobinas-encendido', array('controller' => 'pages', 'action' => 'bobinas','ar'));
     Router::connect('/ar/distribuidores/*', array('controller' => 'distribuidors', 'action' => 'por_pais'));

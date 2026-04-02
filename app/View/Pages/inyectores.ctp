@@ -176,4 +176,13 @@ echo $this->Html->script(
     </div>
 </section>
 
+<div style="width:100%; padding: 3%" id="instalacion">
+    <h2 class="m-t-40-minus u-text u-text-body-color u-text-1" style="width:100%;text-align: left;"> Guía de Instalación
+    </h2>
+    <video width="100%" height="100%" controls preload="metadata" style="display: block;" autoplay muted playsinline>
+        <source src="<?= $this->Html->url('/videos/instalacion_inyector.mp4')?>" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video HTML5. Por favor, actualiza o intenta con otro navegador.
+    </video>
+</div>
+
 

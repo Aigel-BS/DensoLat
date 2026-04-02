@@ -2455,3 +2455,1370 @@ Request URL: /denso/img/Group-300-2-2
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2025-05-30 15:03:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-05-30 15:03:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-05-30 15:03:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-05-30 15:03:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-05-30 15:03:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:01:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:01:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:01:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:01:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:01:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:14:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:14:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:14:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:14:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 15:14:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 19:41:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 19:41:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 19:41:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 19:41:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 19:41:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 19:42:26 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/balatas/mx
+Stack Trace:
+#0 [internal function]: PagesController->display('balatas', 'mx')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-07-23 19:42:26 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/img/404.png
+Stack Trace:
+#0 [internal function]: PagesController->display('img', '404.png')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-07-23 20:22:11 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/balatas/mx
+Stack Trace:
+#0 [internal function]: PagesController->display('balatas', 'mx')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-07-23 20:22:12 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/img/404.png
+Stack Trace:
+#0 [internal function]: PagesController->display('img', '404.png')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-07-23 20:24:45 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/balatas/mx
+Stack Trace:
+#0 [internal function]: PagesController->display('balatas', 'mx')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-07-23 20:24:46 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/img/404.png
+Stack Trace:
+#0 [internal function]: PagesController->display('img', '404.png')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-07-23 20:24:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 20:24:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/img/Banner-website.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 20:24:54 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /Denso/users/img/login2.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2025-07-23 20:24:54 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /Denso/users/img/logo1.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2025-07-23 20:25:11 Warning: Warning (2): Invalid argument supplied for foreach() in [/Applications/XAMPP/xamppfiles/htdocs/Denso/app/View/Elements/map_reparadores.ctp, line 583]
+Trace:
+ErrorHandler::handleError() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/map_reparadores.ctp, line 583
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::_renderElement() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 1224
+View::element() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 418
+include - APP/View/Pages/balatas.ctp, line 61
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 473
+Controller::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 117
+
+2025-07-23 20:42:39 Warning: Warning (2): Invalid argument supplied for foreach() in [/Applications/XAMPP/xamppfiles/htdocs/Denso/app/View/Elements/map_reparadores.ctp, line 583]
+Trace:
+ErrorHandler::handleError() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/map_reparadores.ctp, line 583
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::_renderElement() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 1224
+View::element() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 418
+include - APP/View/Pages/balatas.ctp, line 58
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 473
+Controller::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 117
+
+2025-07-23 20:42:46 Warning: Warning (2): Invalid argument supplied for foreach() in [/Applications/XAMPP/xamppfiles/htdocs/Denso/app/View/Elements/map_reparadores.ctp, line 583]
+Trace:
+ErrorHandler::handleError() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/map_reparadores.ctp, line 583
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::_renderElement() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 1224
+View::element() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 418
+include - APP/View/Pages/balatas.ctp, line 58
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 473
+Controller::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 117
+
+2025-07-23 20:42:53 Warning: Warning (2): Invalid argument supplied for foreach() in [/Applications/XAMPP/xamppfiles/htdocs/Denso/app/View/Elements/map_reparadores.ctp, line 583]
+Trace:
+ErrorHandler::handleError() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/map_reparadores.ctp, line 583
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::_renderElement() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 1224
+View::element() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 418
+include - APP/View/Pages/balatas.ctp, line 58
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 473
+Controller::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 117
+
+2025-07-23 20:42:59 Warning: Warning (2): Invalid argument supplied for foreach() in [/Applications/XAMPP/xamppfiles/htdocs/Denso/app/View/Elements/map_reparadores.ctp, line 583]
+Trace:
+ErrorHandler::handleError() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/map_reparadores.ctp, line 583
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::_renderElement() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 1224
+View::element() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 418
+include - APP/View/Pages/balatas.ctp, line 58
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 473
+Controller::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 117
+
+2025-07-23 20:49:18 Warning: Warning (2): Invalid argument supplied for foreach() in [/Applications/XAMPP/xamppfiles/htdocs/Denso/app/View/Elements/map_reparadores.ctp, line 583]
+Trace:
+ErrorHandler::handleError() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/map_reparadores.ctp, line 583
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::_renderElement() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 1224
+View::element() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 418
+include - APP/View/Pages/balatas.ctp, line 58
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 473
+Controller::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 117
+
+2025-07-23 20:50:52 Warning: Warning (2): Invalid argument supplied for foreach() in [/Applications/XAMPP/xamppfiles/htdocs/Denso/app/View/Elements/map_reparadores.ctp, line 583]
+Trace:
+ErrorHandler::handleError() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/map_reparadores.ctp, line 583
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::_renderElement() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 1224
+View::element() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 418
+include - APP/View/Pages/balatas.ctp, line 58
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 473
+Controller::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 117
+
+2025-07-23 21:15:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/img/Group20.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-23 21:15:50 Error: [MissingControllerException] Controller class MxController could not be found.
+Exception Attributes: array (
+  'class' => 'MxController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/mx/images/Group300.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-31 20:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-31 20:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-31 20:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-31 20:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-07-31 20:03:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-08-22 14:35:19 Error: [MissingControllerException] Controller class InyectoresController could not be found.
+Exception Attributes: array (
+  'class' => 'InyectoresController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/inyectores/producto_autentico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-08-22 14:35:57 Error: [MissingControllerException] Controller class MxController could not be found.
+Exception Attributes: array (
+  'class' => 'MxController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/mx/producto_autentico_inyector
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-09-25 16:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-09-25 16:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-09-25 16:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-09-25 16:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-09-25 16:54:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:06:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:06:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:06:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:06:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:06:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:15:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:15:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:15:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:15:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:15:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:48:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:48:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:48:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:48:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 20:48:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 21:07:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 21:07:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 21:07:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 21:07:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-04 21:07:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:10:12 Error: [MissingControllerException] Controller class MxController could not be found.
+Exception Attributes: array (
+  'class' => 'MxController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/mx/images/Group2802.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:10:12 Error: [MissingControllerException] Controller class MxController could not be found.
+Exception Attributes: array (
+  'class' => 'MxController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/mx/images/Ellipse49.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:10:12 Error: [MissingControllerException] Controller class MxController could not be found.
+Exception Attributes: array (
+  'class' => 'MxController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/mx/images/image44.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:25 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Ellipse49.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:25 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/image44.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:25 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Group2802.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:11:31 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/landing/ec
+Stack Trace:
+#0 [internal function]: PagesController->display('landing', 'ec')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-11-05 14:11:32 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/img/404.png
+Stack Trace:
+#0 [internal function]: PagesController->display('img', '404.png')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-11-05 14:12:13 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/landing/ec
+Stack Trace:
+#0 [internal function]: PagesController->display('landing', 'ec')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-11-05 14:12:14 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/img/404.png
+Stack Trace:
+#0 [internal function]: PagesController->display('img', '404.png')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-11-05 14:12:50 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Ellipse49.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:12:50 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/image44.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:12:50 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Group2802.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:13:32 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/landing/ec
+Stack Trace:
+#0 [internal function]: PagesController->display('landing', 'ec')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-11-05 14:13:33 Error: [NotFoundException] Not Found
+Request URL: /Denso/pages/img/404.png
+Stack Trace:
+#0 [internal function]: PagesController->display('img', '404.png')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2025-11-05 14:13:37 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Ellipse49.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:13:37 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Group2802.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:13:37 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/image44.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:14:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Ellipse49.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:14:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Group2802.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:14:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/image44.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:40:02 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Ellipse49.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:40:02 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Group2802.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:40:02 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/image44.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:40:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Ellipse49.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:40:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Group2802.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:40:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/image44.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:40:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/images/Ellipse49.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 14:58:31 Warning: Warning (512): Method HtmlHelper::img does not exist in [/Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/Helper.php, line 231]
+Trace:
+ErrorHandler::handleError() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Error/ErrorHandler.php, line 230
+Helper::__call() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/Helper.php, line 231
+include - APP/View/Elements/Menu/footer.ctp, line 143
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::_renderElement() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 1224
+View::element() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 418
+include - APP/View/Layouts/default.ctp, line 305
+View::_evaluate() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 971
+View::_render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 933
+View::renderLayout() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 546
+View::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php, line 481
+Controller::render() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php, line 968
+Dispatcher::_invoke() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 200
+Dispatcher::dispatch() - /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 117
+
+2025-11-05 18:12:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:12:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:12:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:12:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:12:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:25:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:25:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:25:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:25:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-05 18:25:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-21 08:56:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-21 08:56:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-21 08:56:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-21 08:56:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2025-11-21 08:56:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /Denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-01-09 14:50:14 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /denso/users/img/logo1.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-02-17 13:59:06 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /denso/users/img/logo1.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-02-25 13:33:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 13:33:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 13:33:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 13:33:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 13:33:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 14:01:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 14:01:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 14:01:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 14:01:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 14:01:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 16:41:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 16:41:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 16:41:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 16:41:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 16:41:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-02-25 16:43:11 Error: [ParseError] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /denso/mx/donde-comprar
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php(1224): View->_render('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php(418): View->_renderElement('/Applications/X...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/app/View/Distribuidors/donde_comprar.ctp(104): View->element('map')
+#4 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php(971): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#8 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(DistribuidorsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2026-04-01 21:04:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-01 21:04:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-01 21:04:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-01 21:04:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-01 21:04:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

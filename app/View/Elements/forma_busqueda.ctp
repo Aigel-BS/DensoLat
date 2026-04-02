@@ -1,4 +1,4 @@
-<?php if ($region!="latam"){?>
+<?php if ($region!="latam" && $region !="ar"){?>
 <section class="u-clearfix u-container-align-center u-section-2" id="sec-e0e3">
 	<div class="u-clearfix u-sheet u-sheet-1">
 		<div class="u-clearfix u-custom-color-3 u-expanded-width-sm u-expanded-width-xs u-gutter-0 u-layout-wrap u-layout-wrap-1">

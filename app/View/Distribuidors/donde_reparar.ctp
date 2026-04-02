@@ -32,7 +32,7 @@ echo $this->Html->script(
             <div class="u-layout">
                 <div class="u-layout-row">
                     <div style="min-width: 100%;max-width: 100%;min-height: 75vh;margin-bottom: 100px;" class="u-container-align-center u-container-style u-image u-image-contain u-layout-cell u-size-35 u-image-1" data-image-width="908" data-image-height="573">
-                        <?= $this->Element('map_reparadores',array('title'=>'LISTA DE CENTROS AUTORIZADOS DENSO PARA REPARACIÓN'))?>
+                        <?= $this->Element('map_reparadores')?>
                     </div>
                 </div>
             </div>

@@ -71,13 +71,28 @@
 		@media only screen and (max-width: 876px) {
 			#gmp-map {
 				left: 0;
-				bottom: 50%;
+				bottom: 40%; /* Menos espacio al mapa para dar más a la lista */
+				height: 40%;
+				width: 100%;
 			}
 
 			#locations-panel {
-				top: 50%;
+				top: 40%; /* Empieza antes */
 				right: 0;
-				width: unset;
+				width: 100%;
+				bottom: 0;
+				border-radius: 20px 20px 0 0; /* Efecto de "hoja" moderna */
+				box-shadow: 0 -10px 20px rgba(0,0,0,0.1);
+				z-index: 3;
+			}
+			
+			#locations-panel-list > header {
+				padding: 1.2em 1.2em 0.8em 1.2em;
+			}
+
+			#locations-panel-list .search-input input {
+				height: 3.5em; /* Input más alto para mejor toque */
+				font-size: 16px; /* Evita que iOS haga zoom automático al enfocar */
 			}
 		}
 
@@ -157,6 +172,11 @@
 			padding: 0.8em 3.5em 0.8em 1.4em;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 			cursor: pointer;
+			transition: background-color 0.2s ease;
+		}
+		
+		.location-result:active {
+			background-color: #f1f3f4;
 		}
 
 		#locations-panel-list .location-result:first-of-type {
@@ -204,16 +224,119 @@
 		#locations-panel-list .location-result .distance {
 			position: absolute;
 			top: 0.9em;
-			right: 0;
-			text-align: center;
-			font-size: 0.9em;
-			width: 5em;
+			right: 0.5em;
+			text-align: right;
+			font-size: 0.8em;
+			width: 6em;
+			color: #70757a;
 		}
 
 		#location-results-list {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+		}
+
+		#map-legend {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background: rgba(255, 255, 255, 0.95);
+			backdrop-filter: blur(4px);
+			padding: 12px 16px;
+			border-radius: 12px;
+			box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
+		#map-legend h3 {
+			margin: 0 0 4px 0;
+			font-size: 11px;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			color: #70757a;
+			font-weight: 600;
+		}
+
+		.legend-item {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			white-space: nowrap;
+		}
+
+		.legend-item img {
+			width: 24px;
+			height: 24px;
+			object-fit: contain;
+			filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+		}
+
+		.legend-item span {
+			font-size: 13px;
+			font-weight: 500;
+			color: #3c4043;
+		}
+
+		@media only screen and (max-width: 876px) {
+			#map-legend {
+				top: 10px;
+				bottom: auto;
+				right: 20px;
+				left: 20px;
+				flex-direction: column; /* Cambiado a columna para 2 líneas */
+				align-items: flex-start;
+				padding: 10px 15px;
+				font-size: 11px; /* Un poco más grande para legibilidad */
+				z-index: 4;
+				gap: 8px;
+				width: fit-content;
+				margin: 0 auto;
+			}
+			
+			#map-legend h3 {
+				display: none;
+			}
+
+			.legend-item {
+				gap: 10px;
+			}
+
+			.legend-item img {
+				width: 20px;
+				height: 20px;
+			}
+
+			.legend-item span {
+				font-size: 11px;
+				white-space: nowrap;
+			}
+		}
+
+		.type-badge {
+			display: inline-block;
+			padding: 2px 8px;
+			border-radius: 4px;
+			font-size: 10px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-top: 4px;
+		}
+
+		.badge-tienda {
+			background: #ffebee;
+			color: #c62828;
+			border: 1px solid #ffcdd2;
+		}
+
+		.badge-distribuidor {
+			background: #e3f2fd;
+			color: #1565c0;
+			border: 1px solid #bbdefb;
 		}
 	</style>
 	<script>
@@ -225,8 +348,6 @@
 			const searchParams = new URLSearchParams('api=1');
 			searchParams.append('origin', origin);
 			const destinationParam = [];
-			// Add title to destinationParam except in cases where Quick Builder set
-			// the title to the first line of the address
 			if (destination.title !== destination.address1) {
 				destinationParam.push(destination.title);
 			}
@@ -252,6 +373,9 @@
 				document.getElementById('location-results-section-name');
 			const resultsContainerEl = document.getElementById('location-results-list');
 
+			Handlebars.registerHelper('eq', function (a, b) {
+				return a === b;
+			});
 			const itemsTemplate = Handlebars.compile(
 				document.getElementById('locator-result-items-tmpl').innerHTML);
 
@@ -264,7 +388,6 @@
 			locator.map = new google.maps.Map(mapEl, configuration.mapOptions);
 			const map = locator.map;
 
-			// Store selection.
 			const selectResultItem = function(locationIdx, panToMarker, scrollToResult) {
 				locator.selectedLocationIdx = locationIdx;
 				for (let locationElem of resultsContainerEl.children) {
@@ -281,7 +404,6 @@
 				}
 			};
 
-			// Create a marker for each location.
 			const markers = locator.locations.map(function(location, index) {
 				const marker = new google.maps.Marker({
 					position: location.coords,
@@ -297,8 +419,6 @@
 				});
 				return marker;
 			});
-
-
 
 			const renderer = {
 				render({ count, position }) {
@@ -328,7 +448,6 @@
 						label: { text: String(count), color: "black", fontSize: "14px" },
 						position,
 						icon: icon_display,
-						// adjust zIndex to be above other markers
 						zIndex: Number(google.maps.Marker.MAX_ZINDEX) + count,
 					})
 				}
@@ -340,7 +459,6 @@
                 renderer: renderer,
             });
 
-			// Fit map to marker bounds.
 			locator.updateBounds = function() {
 				const bounds = new google.maps.LatLngBounds();
 				if (locator.searchLocationMarker) {
@@ -355,23 +473,16 @@
 				locator.updateBounds();
 			}
 
-			// Get the distance of a store location to the user's location,
-			// used in sorting the list.
 			const getLocationDistance = function(location) {
 				if (!locator.searchLocation) return null;
-
-				// Use travel distance if available (from Distance Matrix).
 				if (location.travelDistanceValue != null) {
 					return location.travelDistanceValue;
 				}
-
-				// Fall back to straight-line distance.
 				return google.maps.geometry.spherical.computeDistanceBetween(
 					new google.maps.LatLng(location.coords),
 					locator.searchLocation.location);
 			};
 
-			// Render the results list --------------------------------------------------
 			const getResultIndex = function(elem) {
 				return parseInt(elem.getAttribute('data-location-index'));
 			};
@@ -382,8 +493,7 @@
 					locations[i].index = i;
 				}
 				if (locator.searchLocation) {
-					sectionNameEl.textContent =
-						'Nearest locations (' + locations.length + ')';
+					sectionNameEl.textContent = 'Nearest locations (' + locations.length + ')';
 					locations.sort(function(a, b) {
 						return getLocationDistance(a) - getLocationDistance(b);
 					});
@@ -404,9 +514,6 @@
 						}
 					};
 
-					// Clicking anywhere on the item selects this location.
-					// Additionally, create a button element to make this behavior
-					// accessible under tab navigation.
 					item.addEventListener('click', resultSelectionHandler);
 					item.querySelector('.select-location')
 						.addEventListener('click', function(e) {
@@ -414,8 +521,6 @@
 							e.stopPropagation();
 						});
 
-					// Clicking the directions button will open Google Maps directions in a
-					// new tab
 					const origin = (locator.searchLocation != null) ?
 						locator.searchLocation.location :
 						'';
@@ -426,20 +531,14 @@
 				}
 			};
 
-			// Optional capability initialization --------------------------------------
 			initializeSearchInput(locator);
 			initializeDistanceMatrix(locator);
-
-			// Initial render of results -----------------------------------------------
 			locator.renderResultsList();
 		}
 
-
-		/** When the search input capability is enabled, initialize it. */
 		function initializeSearchInput(locator) {
 			const geocodeCache = new Map();
 			const geocoder = new google.maps.Geocoder();
-
 			const searchInputEl = document.getElementById('location-search-input');
 			const searchButtonEl = document.getElementById('location-search-button');
 
@@ -465,30 +564,18 @@
 					}
 				});
 
-				// Update the locator's idea of the user's country, used for units. Use
-				// `formatted_address` instead of the more structured `address_components`
-				// to avoid an additional billed call.
 				const addressParts = address.split(' ');
 				locator.userCountry = addressParts[addressParts.length - 1];
-
-				// Update map bounds to include the new location marker.
 				locator.updateBounds();
-
-				// Update the result list so we can sort it by proximity.
 				locator.renderResultsList();
-
 				locator.updateTravelTimes();
 			};
 
 			const geocodeSearch = function(query) {
-				if (!query) {
-					return;
-				}
-
+				if (!query) return;
 				const handleResult = function(geocodeResult) {
 					searchInputEl.value = geocodeResult.formatted_address;
-					updateSearchLocation(
-						geocodeResult.formatted_address, geocodeResult.geometry.location);
+					updateSearchLocation(geocodeResult.formatted_address, geocodeResult.geometry.location);
 				};
 
 				if (geocodeCache.has(query)) {
@@ -497,30 +584,22 @@
 				}
 				const request = {address: query, bounds: locator.map.getBounds()};
 				geocoder.geocode(request, function(results, status) {
-					if (status === 'OK') {
-						if (results.length > 0) {
-							const result = results[0];
-							geocodeCache.set(query, result);
-							handleResult(result);
-						}
+					if (status === 'OK' && results.length > 0) {
+						const result = results[0];
+						geocodeCache.set(query, result);
+						handleResult(result);
 					}
 				});
 			};
 
-			// Set up geocoding on the search input.
 			searchButtonEl.addEventListener('click', function() {
 				geocodeSearch(searchInputEl.value.trim());
 			});
 
-			// Initialize Autocomplete.
-			initializeSearchInputAutocomplete(
-				locator, searchInputEl, geocodeSearch, updateSearchLocation);
+			initializeSearchInputAutocomplete(locator, searchInputEl, geocodeSearch, updateSearchLocation);
 		}
 
-		/** Add Autocomplete to the search input. */
-		function initializeSearchInputAutocomplete(
-			locator, searchInputEl, fallbackSearch, searchLocationUpdater) {
-			// Set up Autocomplete on the search input. Bias results to map viewport.
+		function initializeSearchInputAutocomplete(locator, searchInputEl, fallbackSearch, searchLocationUpdater) {
 			const autocomplete = new google.maps.places.Autocomplete(searchInputEl, {
 				types: ['geocode'],
 				fields: ['place_id', 'formatted_address', 'geometry.location']
@@ -529,32 +608,23 @@
 			autocomplete.addListener('place_changed', function() {
 				const placeResult = autocomplete.getPlace();
 				if (!placeResult.geometry) {
-					// Hitting 'Enter' without selecting a suggestion will result in a
-					// placeResult with only the text input value as the 'name' field.
 					fallbackSearch(placeResult.name);
 					return;
 				}
-				searchLocationUpdater(
-					placeResult.formatted_address, placeResult.geometry.location);
+				searchLocationUpdater(placeResult.formatted_address, placeResult.geometry.location);
 			});
 		}
 
-		/** Initialize Distance Matrix for the locator. */
 		function initializeDistanceMatrix(locator) {
 			const distanceMatrixService = new google.maps.DistanceMatrixService();
-
-			// Annotate travel times to the selected location using Distance Matrix.
 			locator.updateTravelTimes = function() {
 				if (!locator.searchLocation) return;
-
 				const units = (locator.userCountry === 'USA') ?
 					google.maps.UnitSystem.IMPERIAL :
 					google.maps.UnitSystem.METRIC;
 				const request = {
 					origins: [locator.searchLocation.location],
-					destinations: locator.locations.map(function(x) {
-						return x.coords;
-					}),
+					destinations: locator.locations.map(function(x) { return x.coords; }),
 					travelMode: google.maps.TravelMode.DRIVING,
 					unitSystem: units,
 				};
@@ -572,8 +642,6 @@
 							location.travelDistanceText = travelDistanceText;
 							location.travelDistanceValue = travelDistanceValue;
 						}
-
-						// Re-render the results list, in case the ordering has changed.
 						locator.renderResultsList();
 					}
 				};
@@ -585,10 +653,10 @@
 		const CONFIGURATION = {
 			"locations": [
 				<?php foreach ($tiendas_certificadas as $tienda){?>
-				{"icono":"https://densoautopartes.com/img/pin_denso_tienda.png","title":"<?= $tienda['DistribuidoresCertificado']['nombre']?>","address1":"<?= $tienda['DistribuidoresCertificado']['direccion']?>","address2":"<?= $tienda['DistribuidoresCertificado']['zona'].", ".$tienda['DistribuidoresCertificado']['ciudad']?>","address3":"<?= $tienda['DistribuidoresCertificado']['telefono']?>","coords":{"lat":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[0]?>,"lng":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[1]?>}},
+				{"tipo":"tienda","icono":"https://densoautopartes.com/img/pin_denso_tienda.png","title":"<?= $tienda['DistribuidoresCertificado']['nombre']?>","address1":"<?= $tienda['DistribuidoresCertificado']['direccion']?>","address2":"<?= $tienda['DistribuidoresCertificado']['zona'].", ".$tienda['DistribuidoresCertificado']['ciudad']?>","address3":"<?= $tienda['DistribuidoresCertificado']['telefono']?>","coords":{"lat":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[0]?>,"lng":<?= explode(",",$tienda['DistribuidoresCertificado']['coordenadas'])[1]?>}},
 				<?php }
 				foreach ($distribuidores_marca as $dist){?>
-				{"icono":"https://densoautopartes.com/img/pin_denso_distribuidor.png","title":"<?= $dist['Distribuidor']['nombre']?>","address1":"<?= $dist['Distribuidor']['direccion']?>","address2":"<?= $dist['Distribuidor']['ciudad']?>","address3":"<?= $dist['Distribuidor']['telefono']?>","coords":{"lat":<?= explode(",",$dist['Distribuidor']['coordenadas'])[0]?>,"lng":<?= explode(",",$dist['Distribuidor']['coordenadas'])[1]?>}},
+				{"tipo":"distribuidor","icono":"https://densoautopartes.com/img/pin_denso_distribuidor.png","title":"<?= $dist['Distribuidor']['nombre']?>","address1":"<?= $dist['Distribuidor']['direccion']?>","address2":"<?= $dist['Distribuidor']['ciudad']?>","address3":"<?= $dist['Distribuidor']['telefono']?>","coords":{"lat":<?= explode(",",$dist['Distribuidor']['coordenadas'])[0]?>,"lng":<?= explode(",",$dist['Distribuidor']['coordenadas'])[1]?>}},
 				<?php }?>
 			],
 			"mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
@@ -604,7 +672,15 @@
 		{{#each locations}}
 		<li class="location-result" data-location-index="{{index}}">
 			<button class="select-location">
-				<h2 class="name">{{title}}</h2>
+				<h2 class="name">
+					<img src="{{icono}}" style="width: 20px; vertical-align: middle; margin-right: 8px;" alt="">
+					{{title}}
+				</h2>
+				{{#if (eq tipo "tienda")}}
+					<div class="type-badge badge-tienda">Tienda Oficial</div>
+				{{else}}
+					<div class="type-badge badge-distribuidor">Distribuidor Mayorista</div>
+				{{/if}}
 			</button>
 			<div class="address">{{address1}}<br>{{address2}}</div>
 			{{#if travelDistanceText}}
@@ -645,6 +721,17 @@
 			<div class="results">
 				<ul id="location-results-list"></ul>
 			</div>
+		</div>
+	</div>
+	<div id="map-legend">
+		<h3>Leyenda</h3>
+		<div class="legend-item">
+			<img src="https://densoautopartes.com/img/pin_denso_tienda.png" alt="Tienda">
+			<span>Tiendas con Productos Oficiales</span>
+		</div>
+		<div class="legend-item">
+			<img src="https://densoautopartes.com/img/pin_denso_distribuidor.png" alt="Distribuidor">
+			<span>Distribuidores Mayoristas</span>
 		</div>
 	</div>
 	<div id="gmp-map"></div>

@@ -5,6 +5,11 @@ echo $this->Html->css(
 		),
 		array('inline'=>false)
 );
+
+$regiones = array(
+	'co'=>'Colombia',
+	've'=>'Venezuela'
+);
 ?>
 <style>
 	.pill_cat {
@@ -20,7 +25,7 @@ echo $this->Html->css(
 </style>
 <section class="u-clearfix u-container-align-center-xl u-section-1" id="sec-359b">
 	<div class="u-clearfix u-sheet u-sheet-1">
-		<h1 class="u-align-center u-custom-font u-text u-text-default u-text-1">Tiendas Certificadas DENSO Colombia</h1>
+		<h1 class="u-align-center u-custom-font u-text u-text-default u-text-1">Tiendas Certificadas DENSO <?= $regiones[$region]?></h1>
 		<p class="u-align-center u-custom-font u-text u-text-custom-color-4 u-text-default u-text-2">Conoce a las tiendas que han sido certificadas por DENSO. Garantizan la autenticidad de productos DENSO y tu compra.</p>
 		<?php
 			$ciudad = "";
