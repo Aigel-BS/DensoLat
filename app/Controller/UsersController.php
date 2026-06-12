@@ -349,5 +349,42 @@ class UsersController extends AppController {
 		$this->set('calificacion',$calificacion);
 	}
 
+	public function register($region = 'latam') {
+		$this->set('region', $region);
+		if ($this->Auth->user('id')) {
+			return $this->redirect(array('action' => 'dashboard'));
+		}
+		if ($this->request->is('post')) {
+			$this->User->create();
+			$this->request->data['User']['role'] = 'customer';
+			$this->request->data['User']['point_balance'] = 0;
+			
+			if ($this->User->save($this->request->data)) {
+				$this->Session->setFlash('Registro exitoso. Ahora puedes iniciar sesión.', 'default', array('class' => 'alert alert-success'));
+				return $this->redirect(array('action' => 'login'));
+			} else {
+				$this->Session->setFlash('Error en el registro. Por favor verifica tus datos.', 'default', array('class' => 'alert alert-danger'));
+			}
+		}
+	}
+
+	public function dashboard($region = 'latam') {
+		$this->set('region', $region);
+		$user_id = $this->Auth->user('id');
+		if (!$user_id) {
+			$this->Session->setFlash('Por favor inicia sesión.');
+			return $this->redirect(array('action' => 'login'));
+		}
+		$this->loadModel('PointLog');
+		$user = $this->User->findById($user_id);
+		$logs = $this->PointLog->find('all', array(
+			'conditions' => array('user_id' => $user_id),
+			'order' => array('PointLog.created' => 'DESC')
+		));
+		
+		$this->set('user', $user);
+		$this->set('logs', $logs);
+	}
+
 }
 ?>

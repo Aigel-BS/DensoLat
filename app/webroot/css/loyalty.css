@@ -1,0 +1,123 @@
+/* Mobile-First Loyalty System Styles */
+
+/* General and Utility */
+.loyalty-container {
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-points {
+    color: #e50000; /* Denso Red or similar */
+    font-weight: bold;
+}
+
+/* Dashboard Logs */
+.log-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log-date {
+    font-size: 0.85em;
+    color: #666;
+}
+
+/* Store Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #f8f9fa;
+}
+
+.product-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.product-cost {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.btn-add-cart {
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Cart Styles */
+.cart-list {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-total {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #ccc;
+}

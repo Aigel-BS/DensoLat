@@ -3822,3 +3822,352 @@ Request URL: /denso/css/images/compresores.jpg
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2026-04-03 23:24:23 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /denso/img/Banner-website.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-03 23:24:23 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /denso/users/img/login2.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-04-03 23:24:28 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /denso/users/img/logo1.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-04-03 23:24:45 Error: [MissingTableException] Table point_logs for model PointLog was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'point_logs',
+  'class' => 'PointLog',
+  'ds' => 'default',
+)
+Request URL: /denso/users/dashboard
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3686): Model->setSource('point_logs')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(2663): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1886): DboSource->fields(Object(PointLog), 'PointLog', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1377): DboSource->generateAssociationQuery(Object(User), Object(PointLog), 'hasMany', 'PointLog', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(PointLog), 'hasMany', 'PointLog', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/Controller/UsersController.php(377): Model->__call('findById', Array)
+#11 [internal function]: UsersController->dashboard()
+#12 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2026-04-03 23:25:02 Error: [MissingTableException] Table point_logs for model PointLog was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'point_logs',
+  'class' => 'PointLog',
+  'ds' => 'default',
+)
+Request URL: /denso/users/dashboard
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3686): Model->setSource('point_logs')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(2663): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1886): DboSource->fields(Object(PointLog), 'PointLog', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1377): DboSource->generateAssociationQuery(Object(User), Object(PointLog), 'hasMany', 'PointLog', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(PointLog), 'hasMany', 'PointLog', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Denso/app/Controller/UsersController.php(377): Model->__call('findById', Array)
+#11 [internal function]: UsersController->dashboard()
+#12 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2026-04-03 23:25:17 Error: [MissingTableException] Table point_logs for model PointLog was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'point_logs',
+  'class' => 'PointLog',
+  'ds' => 'default',
+)
+Request URL: /denso/users/dashboard
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3686): Model->setSource('point_logs')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(2663): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1886): DboSource->fields(Object(PointLog), 'PointLog', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1377): DboSource->generateAssociationQuery(Object(User), Object(PointLog), 'hasMany', 'PointLog', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(PointLog), 'hasMany', 'PointLog', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/denso/app/Controller/UsersController.php(377): Model->__call('findById', Array)
+#11 [internal function]: UsersController->dashboard()
+#12 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2026-04-03 23:26:03 Error: [MissingTableException] Table point_logs for model PointLog was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'point_logs',
+  'class' => 'PointLog',
+  'ds' => 'default',
+)
+Request URL: /denso/users/dashboard
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3686): Model->setSource('point_logs')
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(2663): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1886): DboSource->fields(Object(PointLog), 'PointLog', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1377): DboSource->generateAssociationQuery(Object(User), Object(PointLog), 'hasMany', 'PointLog', Array, Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->queryAssociation(Object(User), Object(PointLog), 'hasMany', 'PointLog', Array, Array, true, Array, 0, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3053): DboSource->read(Object(User), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(636): Model->find('first', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(834): DboSource->query('findById', Array, Object(User))
+#10 /Applications/XAMPP/xamppfiles/htdocs/denso/app/Controller/UsersController.php(377): Model->__call('findById', Array)
+#11 [internal function]: UsersController->dashboard()
+#12 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2026-04-05 21:09:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-05 21:09:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-05 21:09:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-05 21:09:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-05 21:09:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-05 21:09:36 Error: [MissingControllerException] Controller class CartController could not be found.
+Exception Attributes: array (
+  'class' => 'CartController',
+  'plugin' => NULL,
+)
+Request URL: /denso/cart
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-07 09:08:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /denso/img/Banner-website.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-04-07 09:08:05 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /denso/users/img/login2.png
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-05-25 20:32:20 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /denso/users/img/logo1.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-05-28 00:09:04 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /denso/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(278): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3686): Model->setSource('distribuidors')
+#5 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/denso/app/Controller/PagesController.php(201): Model->find('all', Array)
+#8 [internal function]: PagesController->home('latam')
+#9 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2026-05-28 00:09:18 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /denso/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Datasource/DboSource.php(278): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3659): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3686): Model->setSource('distribuidors')
+#5 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/denso/app/Controller/PagesController.php(201): Model->find('all', Array)
+#8 [internal function]: PagesController->home('latam')
+#9 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2026-05-28 00:12:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/compresores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-05-28 00:12:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/sensores.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-05-28 00:12:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/catalogos.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-05-28 00:12:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/filtros.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-05-28 00:12:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /denso/css/images/011.jpg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-05-28 00:12:29 Error: [MissingActionException] Action DistribuidorsController::distribuidors() could not be found.
+Exception Attributes: array (
+  'controller' => 'DistribuidorsController',
+  'action' => 'distribuidors',
+)
+Request URL: /denso/distribuidors/distribuidors/por_estado/gt/mx
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(DistribuidorsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-05-28 00:15:07 Error: [MissingActionException] Action DistribuidorsController::distribuidores() could not be found.
+Exception Attributes: array (
+  'controller' => 'DistribuidorsController',
+  'action' => 'distribuidores',
+)
+Request URL: /denso/distribuidors/distribuidores/gt/latam
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(DistribuidorsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-05-28 00:15:43 Error: [MissingActionException] Action DistribuidorsController::distribuidores() could not be found.
+Exception Attributes: array (
+  'controller' => 'DistribuidorsController',
+  'action' => 'distribuidores',
+)
+Request URL: /denso/distribuidors/distribuidores/gt/latam
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(DistribuidorsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2026-05-28 00:16:18 Error: [MissingActionException] Action DistribuidorsController::distribuidores() could not be found.
+Exception Attributes: array (
+  'controller' => 'DistribuidorsController',
+  'action' => 'distribuidores',
+)
+Request URL: /denso/distribuidors/distribuidores/ht/latam
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/denso/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(DistribuidorsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

@@ -17,6 +17,21 @@ class User extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
+		'PointLog' => array(
+			'className' => 'PointLog',
+			'foreignKey' => 'user_id',
+			'dependent' => true
+		),
+		'Cart' => array(
+			'className' => 'Cart',
+			'foreignKey' => 'user_id',
+			'dependent' => true
+		),
+		'Order' => array(
+			'className' => 'Order',
+			'foreignKey' => 'user_id',
+			'dependent' => true
+		),
 	);
 
 	public $hasAndBelongsToMany = array(
@@ -51,9 +66,32 @@ class User extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		),
-	);
+		),	);
 
+	public $validate = array(
+		'email' => array(
+			'required' => array(
+				'rule' => 'notBlank',
+				'message' => 'A email is required'
+			),
+			'unique' => array(
+				'rule' => 'isUnique',
+				'message' => 'This email has already been taken.'
+			)
+		),
+		'password' => array(
+			'required' => array(
+				'rule' => 'notBlank',
+				'message' => 'A password is required'
+			)
+		),
+		'full_name' => array(
+			'required' => array(
+				'rule' => 'notBlank',
+				'message' => 'Full name is required'
+			)
+		)
+	);
 
 }
 ?>
