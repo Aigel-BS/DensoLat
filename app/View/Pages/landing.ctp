@@ -7,28 +7,10 @@ echo $this->Html->css(
 );
 
 $estados = array(
-        'Argentina'=>'Argentina',
-        'Barbados'=>'Barbados',
-        'Bolivia'=>'Bolivia',
-        'Bahamas'=>'Bahamas',
-        'Belice'=>'Belice',
-        'Chile'=>'Chile',
-        'Colombia'=>'Colombia',
-        'Costa Rica'=>'Costa Rica',
-        'República Dominicana'=>'República Dominicana',
-        'Ecuador'=>'Ecuador',
-        'Guatemala'=>'Guatemala',
-        'Honduras'=>'Honduras',
-        'México'=>'México',
-        'Nicaragua'=>'Nicaragua',
-        'Panamá'=>'Panamá',
-        'Perú'=>'Perú',
-        'Puerto Rico'=>'Puerto Rico',
-        'Paraguay'=>'Paraguay',
-        'El Salvador'=>'El Salvador',
-        'Trinidad y Tobago'=>'Trinidad y Tobago',
-        'Uruguay'=>'Uruguay',
-        'Venezuela'=>'Venezuela',
+	'Argentina'=>'Argentina',
+    'México'=>'México',
+    'Paraguay'=>'Paraguay',
+    'Uruguay'=>'Uruguay'
         );
 
 $giros = array(
@@ -48,6 +30,7 @@ $lead = array(
 <section class="u-align-center u-clearfix u-hidden-sm u-hidden-xs u-image u-section-1" src="" data-image-width="1728" data-image-height="1005" id="sec-7211">
 	<div class="u-clearfix u-sheet u-sheet-1">
 		<h1 class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-text u-text-body-alt-color u-text-1" style="text-align: left; width: 100%">Conviértete en distribuidor autorizado.*</h1>
+        <p style="margin: 0px 0px 0 29px;text-align: left; width: 100%; color:white">*Válido para Argentina, Uruguay, Paraguay y México.</p>
 		<h2 class="u-align-left u-custom-font u-text u-text-body-alt-color u-text-2"> Aumenta tu línea de productos con bujías y refacciones originales de fácil instalación y obtén el respaldo de la marca DENSO</h2>
 
 	</div>
@@ -81,7 +64,7 @@ $lead = array(
 											<div class="u-form-group u-form-select u-label-none">
 												<label for="select-b86e" class="u-label">Desplegable</label>
 												<div class="u-form-select-wrapper">
-													<?= $this->Form->input('estado',array('name'=>'País','type'=>'select','div'=>false,'options'=>$estados,'required'=>true,'label'=>false,'empty'=>'Selecciona el País de interés','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
+													<?= $this->Form->input('estado',array('name'=>'País','type'=>'select','div'=>false,'options'=>$estados,'label'=>false,'empty'=>'Selecciona el País de interés','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
 
 													<svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
 												</div>
@@ -89,14 +72,14 @@ $lead = array(
 											<div class="u-form-group u-form-select u-label-none">
 												<label for="select-d701" class="u-label">Desplegable</label>
 												<div class="u-form-select-wrapper">
-                                                    <?= $this->Form->input('giro',array('required'=>true,'name'=>'Giro','type'=>'select','div'=>false,'options'=>$giros,'label'=>false,'required'=>true,'empty'=>'Giro','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
+                                                    <?= $this->Form->input('giro',array('required'=>true,'name'=>'Giro','type'=>'select','div'=>false,'options'=>$giros,'label'=>false,'empty'=>'Giro','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
 													<svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
 												</div>
 											</div>
 											<div class="u-form-group u-form-select u-label-none">
 												<label for="select-23cb" class="u-label">Desplegable</label>
 												<div class="u-form-select-wrapper">
-                                                    <?= $this->Form->input('lead',array('required'=>true,'name'=>'Origen','type'=>'select','div'=>false,'options'=>$lead,'label'=>false,'required'=>true,'empty'=>'¿Cómo te enteraste de nosotros?','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
+                                                    <?= $this->Form->input('lead',array('required'=>true,'name'=>'Origen','type'=>'select','div'=>false,'options'=>$lead,'label'=>false,'empty'=>'¿Cómo te enteraste de nosotros?','class'=>'u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle'))?>
 													<svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
 												</div>
 											</div>

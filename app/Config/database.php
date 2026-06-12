@@ -69,10 +69,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'denso',
+		'host' => 'db',
+		'login' => 'denso_user',
+		'password' => 'denso_password',
+		'database' => 'denso_latam',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);

@@ -3822,3 +3822,93 @@ Request URL: /denso/css/images/compresores.jpg
 Stack Trace:
 #0 /Applications/XAMPP/xamppfiles/htdocs/denso/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2026-06-11 20:49:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/011.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:49:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/sensores.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:49:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/catalogos.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:49:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/compresores.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:49:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/filtros.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:55:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/011.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:55:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/filtros.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:55:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/sensores.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:55:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/compresores.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2026-06-11 20:55:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/catalogos.jpg
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
