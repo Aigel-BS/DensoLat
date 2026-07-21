@@ -872,8 +872,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 <div class="hero-divider"></div>
                 <p class="hero-desc">Calidad OEM, rendimiento confiable y duradero.</p>
                 <div class="denso-corporate-logo">
-                    <div class="denso-corporate-box">DENSO</div>
-                    <span class="denso-tagline">Crafting the Core</span>
+                    <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo" style="height: 40px; object-fit: contain; margin-top: 10px;">
                 </div>
             </div>
 
@@ -1285,8 +1284,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             </div>
             <div class="footer-right">
                 <div class="denso-corporate-logo">
-                    <div class="denso-corporate-box">DENSO</div>
-                    <span class="denso-tagline">Crafting the Core</span>
+                    <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo" style="height: 40px; object-fit: contain; margin-bottom: 10px;">
                 </div>
                 <span class="footer-copyright">&copy; 2024 DENSO CORPORATION. Todos los derechos reservados.</span>
             </div>
