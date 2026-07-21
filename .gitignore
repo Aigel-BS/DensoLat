@@ -71,3 +71,4 @@ app/tmp/cache/persistent/myapp_cake_core_method_cache
 app/tmp/logs/error.log
 app/webroot/.DS_Store
 app/webroot/img/.DS_Store
+/app/tmp
