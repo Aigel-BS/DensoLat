@@ -350,7 +350,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         /* Grid Action Cards */
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             margin-bottom: 30px;
         }
@@ -464,7 +464,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         }
 
         .collapsible-section.active {
-            max-height: 2000px;
+            max-height: 5000px;
             margin-bottom: 30px;
         }
 
@@ -889,9 +889,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 </svg>
                 <span>PRODUCTO AUTENTICADO CORRECTAMENTE</span>
             </div>
-            <div class="banner-serial">
-                Número de serie: <strong><?= $serialNumber ?></strong>
-            </div>
+
         </div>
 
         <!-- Tech Hero Showcase -->
@@ -1039,7 +1037,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             </div>
 
             <!-- Card 3: Ficha Técnica -->
-            <a href="#" class="action-card card-blue">
+            <div id="btn-ficha-toggle" class="action-card card-blue" style="cursor: pointer;">
                 <div class="card-content-left">
                     <div class="card-icon-container">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1061,29 +1059,9 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                     </div>
                 </div>
                 <span class="card-arrow">&gt;</span>
-            </a>
+            </div>
 
-            <!-- Card 4: Guía Rápida -->
-            <a href="#" class="action-card card-blue">
-                <div class="card-content-left">
-                    <div class="card-icon-container">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                        </svg>
-                    </div>
-                    <div class="card-text-info">
-                        <span class="card-title">Guía Rápida</span>
-                        <ul class="card-bullets">
-                            <li>Identificación rápida</li>
-                            <li>Especificaciones básicas</li>
-                            <li>Recomendaciones de uso</li>
-                        </ul>
-                    </div>
-                </div>
-                <span class="card-arrow">&gt;</span>
-            </a>
+
 
             <!-- Card 5: Garantía Proceso -->
             <div id="btn-garantia-toggle" class="action-card card-red">
@@ -1112,10 +1090,15 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         <div id="video-collapsible-wrapper" class="collapsible-section">
             <div class="video-container-box">
                 <h3 class="video-title">Guía de instalación de inyectores auténticos DENSO</h3>
-                <video class="video-player" controls>
-                    <source src="<?= $this->Html->url('/videos/blurplaca.mp4') ?>" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
+                <iframe class="video-player" src="https://www.youtube.com/embed/TCMJbxbrTko?start=6" title="Guía de instalación de inyectores auténticos DENSO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="aspect-ratio: 16/9; border: none;"></iframe>
+            </div>
+        </div>
+
+        <!-- Hidden Section: Ficha Técnica (PDF iframe) -->
+        <div id="ficha-collapsible-wrapper" class="collapsible-section">
+            <div class="video-container-box" style="height: 80vh; max-height: 800px; padding-bottom: 2rem;">
+                <h3 class="video-title">Ficha Técnica</h3>
+                <iframe src="<?= $this->Html->url('/files/DENSO_ Boletín_ Injector 1 (1).pdf') ?>" width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
             </div>
         </div>
 
@@ -1361,16 +1344,20 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         document.addEventListener("DOMContentLoaded", function () {
             const btnVideo = document.getElementById("btn-video-toggle");
             const btnGarantia = document.getElementById("btn-garantia-toggle");
+            const btnFicha = document.getElementById("btn-ficha-toggle");
+            
             const wrapperVideo = document.getElementById("video-collapsible-wrapper");
             const wrapperGarantia = document.getElementById("garantia-collapsible-wrapper");
+            const wrapperFicha = document.getElementById("ficha-collapsible-wrapper");
 
             function toggleSection(wrapper) {
                 if (wrapper.classList.contains("active")) {
                     wrapper.classList.remove("active");
                 } else {
                     // Close other sections first
-                    wrapperVideo.classList.remove("active");
-                    wrapperGarantia.classList.remove("active");
+                    if(wrapperVideo) wrapperVideo.classList.remove("active");
+                    if(wrapperGarantia) wrapperGarantia.classList.remove("active");
+                    if(wrapperFicha) wrapperFicha.classList.remove("active");
 
                     wrapper.classList.add("active");
 
@@ -1381,15 +1368,26 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 }
             }
 
-            btnVideo.addEventListener("click", function (e) {
-                e.preventDefault();
-                toggleSection(wrapperVideo);
-            });
+            if(btnVideo) {
+                btnVideo.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    toggleSection(wrapperVideo);
+                });
+            }
 
-            btnGarantia.addEventListener("click", function (e) {
-                e.preventDefault();
-                toggleSection(wrapperGarantia);
-            });
+            if(btnGarantia) {
+                btnGarantia.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    toggleSection(wrapperGarantia);
+                });
+            }
+
+            if(btnFicha) {
+                btnFicha.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    toggleSection(wrapperFicha);
+                });
+            }
         });
     </script>
 </body>
