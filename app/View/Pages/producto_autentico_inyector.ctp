@@ -4,6 +4,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,8 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             font-family: 'Outfit', sans-serif;
         }
 
-        html, body {
+        html,
+        body {
             max-width: 100%;
             overflow-x: hidden;
         }
@@ -124,7 +126,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             justify-content: space-between;
             align-items: center;
             margin-bottom: 24px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         .banner-message {
@@ -160,7 +162,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             position: relative;
             overflow: hidden;
             margin-bottom: 30px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
         }
 
         .hero-showcase::before {
@@ -168,7 +170,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             position: absolute;
             width: 300px;
             height: 300px;
-            background: radial-gradient(circle, rgba(14,84,171,0.2) 0%, rgba(0,0,0,0) 70%);
+            background: radial-gradient(circle, rgba(14, 84, 171, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
             bottom: -50px;
             left: -50px;
             pointer-events: none;
@@ -248,20 +250,22 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             width: 280px;
             height: 280px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(14,84,171,0.3) 0%, rgba(14,84,171,0.05) 50%, rgba(0,0,0,0) 70%);
-            border: 1px dashed rgba(14,84,171,0.4);
+            background: radial-gradient(circle, rgba(14, 84, 171, 0.3) 0%, rgba(14, 84, 171, 0.05) 50%, rgba(0, 0, 0, 0) 70%);
+            border: 1px dashed rgba(14, 84, 171, 0.4);
             animation: rotateGlow 20s linear infinite;
             pointer-events: none;
         }
 
         @keyframes rotateGlow {
-            100% { transform: rotate(360deg); }
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .injector-image {
             height: 290px;
             object-fit: contain;
-            filter: drop-shadow(0 0 20px rgba(14,84,171,0.5));
+            filter: drop-shadow(0 0 20px rgba(14, 84, 171, 0.5));
             transition: transform 0.3s;
         }
 
@@ -277,12 +281,12 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         }
 
         .badge-distribuidor {
-            border: 1px solid rgba(255,255,255,0.4);
+            border: 1px solid rgba(255, 255, 255, 0.4);
             padding: 4px 10px;
             font-size: 10px;
             font-weight: bold;
             letter-spacing: 0.5px;
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0, 0, 0, 0.3);
             text-transform: uppercase;
         }
 
@@ -313,7 +317,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         }
 
         .benefit-icon-wrapper {
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
             width: 28px;
             height: 28px;
             border-radius: 50%;
@@ -321,7 +325,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .benefit-content {
@@ -362,13 +366,13 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             cursor: pointer;
             text-decoration: none;
             color: inherit;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
             transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
         }
 
         .action-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
             border-color: #ccd1d9;
         }
 
@@ -470,7 +474,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             padding: 30px;
             border-radius: 12px;
             border: 1px solid #e1e4e8;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             text-align: center;
         }
 
@@ -486,7 +490,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             width: 100%;
             max-width: 800px;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             outline: none;
         }
 
@@ -496,7 +500,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             padding: 40px;
             border-radius: 12px;
             border: 1px solid #e1e4e8;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
         .garantia-form-section-title {
@@ -548,7 +552,9 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             font-weight: 600;
         }
 
-        .form-field input, .form-field select, .form-field textarea {
+        .form-field input,
+        .form-field select,
+        .form-field textarea {
             padding: 10px 12px;
             border: 1px solid #ccc;
             border-radius: 6px;
@@ -557,7 +563,9 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             transition: border-color 0.2s;
         }
 
-        .form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+        .form-field input:focus,
+        .form-field select:focus,
+        .form-field textarea:focus {
             border-color: #e31837;
         }
 
@@ -706,124 +714,158 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             .hero-showcase {
                 grid-template-columns: 1fr 1fr;
             }
+
             .hero-benefits {
                 grid-column: span 2;
             }
+
             .cards-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
+
             .footer-right {
                 grid-column: span 2;
                 align-items: center;
             }
+
             .footer-copyright {
                 text-align: center;
             }
         }
 
         @media (max-width: 768px) {
-            html, body {
+
+            html,
+            body {
                 overflow-x: hidden;
             }
+
             .portal-header {
                 padding: 10px 12px;
             }
+
             .portal-title {
                 font-size: 13px;
                 line-height: 1.2;
             }
+
             .header-left {
                 gap: 8px;
             }
+
             .denso-logo-img {
                 height: 26px;
             }
+
             .header-right {
                 gap: 10px;
             }
+
             .nav-item span {
                 display: none;
             }
+
             .nav-item svg {
                 width: 20px;
                 height: 20px;
             }
+
             .nav-item svg:last-child {
                 display: none;
             }
+
             .auth-banner {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 8px;
                 padding: 12px 16px;
             }
+
             .banner-message {
                 font-size: 14px;
             }
+
             .banner-serial {
                 font-size: 13px;
             }
+
             .hero-showcase {
                 grid-template-columns: 1fr;
                 padding: 20px;
             }
+
             .hero-title {
                 font-size: 26px;
                 text-align: center;
             }
+
             .hero-subtitle {
                 font-size: 16px;
                 text-align: center;
             }
+
             .hero-divider {
                 margin: 15px auto;
             }
+
             .hero-desc {
                 text-align: center;
                 margin-bottom: 20px;
             }
+
             .denso-corporate-logo {
                 align-items: center;
                 margin-bottom: 20px;
             }
+
             .injector-image {
                 height: auto;
                 max-height: 200px;
                 max-width: 100%;
             }
+
             .glow-circle {
                 width: 200px;
                 height: 200px;
             }
+
             .hero-benefits {
                 grid-column: span 1;
             }
+
             .benefit-desc {
                 word-break: break-word;
             }
+
             .cards-grid {
                 grid-template-columns: 1fr;
             }
+
             .footer-grid {
                 grid-template-columns: 1fr;
                 gap: 25px;
             }
+
             .footer-right {
                 grid-column: span 1;
                 align-items: center;
             }
+
             .form-grid {
                 grid-template-columns: 1fr;
             }
+
             .form-field-full {
                 grid-column: span 1;
             }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header Navbar -->
@@ -832,22 +874,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo">
             <span class="portal-title">Portal de Inyectores IAM DENSO</span>
         </div>
-        <div class="header-right">
-            <div class="nav-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                <span>Ayuda</span>
-            </div>
-            <div class="nav-item badge-container">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-                <div class="notification-badge">3</div>
-                <span>Notificaciones</span>
-            </div>
-            <div class="nav-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                <span>Bienvenido, Técnico</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </div>
-        </div>
+
     </header>
 
     <!-- Main Content -->
@@ -856,7 +883,10 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         <!-- Verification Banner -->
         <div class="auth-banner">
             <div class="banner-message">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="#548235" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#548235" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg>
                 <span>PRODUCTO AUTENTICADO CORRECTAMENTE</span>
             </div>
             <div class="banner-serial">
@@ -872,7 +902,8 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 <div class="hero-divider"></div>
                 <p class="hero-desc">Calidad OEM, rendimiento confiable y duradero.</p>
                 <div class="denso-corporate-logo">
-                    <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo" style="height: 40px; object-fit: contain; margin-top: 10px;">
+                    <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo"
+                        style="height: 40px; object-fit: contain; margin-top: 10px;">
                 </div>
             </div>
 
@@ -890,47 +921,67 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 <div class="benefit-list">
                     <div class="benefit-item">
                         <div class="benefit-icon-wrapper">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
                         </div>
                         <div class="benefit-content">
                             <span class="benefit-name">Calidad OEM</span>
-                            <span class="benefit-desc">Diseñados con los mismos estándares de calidad que los equipos originales.</span>
+                            <span class="benefit-desc">Diseñados con los mismos estándares de calidad que los equipos
+                                originales.</span>
                         </div>
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon-wrapper">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
                         </div>
                         <div class="benefit-content">
                             <span class="benefit-name">Rendimiento Confiable</span>
-                            <span class="benefit-desc">Optimiza el desempeño del motor y garantiza una operación eficiente.</span>
+                            <span class="benefit-desc">Optimiza el desempeño del motor y garantiza una operación
+                                eficiente.</span>
                         </div>
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon-wrapper">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
                         </div>
                         <div class="benefit-content">
                             <span class="benefit-name">Durabilidad Superior</span>
-                            <span class="benefit-desc">Componentes de alta calidad para una mayor vida útil y menor mantenimiento.</span>
+                            <span class="benefit-desc">Componentes de alta calidad para una mayor vida útil y menor
+                                mantenimiento.</span>
                         </div>
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon-wrapper">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
                         </div>
                         <div class="benefit-content">
                             <span class="benefit-name">Compatibilidad Garantizada</span>
-                            <span class="benefit-desc">Amplia cobertura para las principales aplicaciones del mercado.</span>
+                            <span class="benefit-desc">Amplia cobertura para las principales aplicaciones del
+                                mercado.</span>
                         </div>
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon-wrapper">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
                         </div>
                         <div class="benefit-content">
                             <span class="benefit-name">Eficiencia y Menor Emisión</span>
-                            <span class="benefit-desc">Contribuye a una mejor combustión, reduciendo emisiones contaminantes.</span>
+                            <span class="benefit-desc">Contribuye a una mejor combustión, reduciendo emisiones
+                                contaminantes.</span>
                         </div>
                     </div>
                 </div>
@@ -939,48 +990,41 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
 
         <!-- Actions Cards Grid -->
         <section class="cards-grid">
-            
-            <!-- Card 1: Guía Rápida -->
-            <a href="#" class="action-card card-blue">
+
+            <!-- Card 1: Programa Rewards -->
+            <a href="#" class="action-card card-red">
                 <div class="card-content-left">
                     <div class="card-icon-container">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                            <rect x="2" y="7" width="20" height="5"></rect>
+                            <line x1="12" y1="22" x2="12" y2="7"></line>
+                            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                        </svg>
                     </div>
                     <div class="card-text-info">
-                        <span class="card-title">Guía Rápida</span>
+                        <span class="card-title">Programa Rewards</span>
                         <ul class="card-bullets">
-                            <li>Identificación rápida</li>
-                            <li>Especificaciones básicas</li>
-                            <li>Recomendaciones de uso</li>
+                            <li>Acumula puntos valiosos</li>
+                            <li>Consulta tu saldo actual</li>
+                            <li>Catálogo de premios</li>
                         </ul>
                     </div>
                 </div>
                 <span class="card-arrow">&gt;</span>
             </a>
 
-            <!-- Card 2: Ficha Técnica -->
-            <a href="#" class="action-card card-blue">
-                <div class="card-content-left">
-                    <div class="card-icon-container">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                    </div>
-                    <div class="card-text-info">
-                        <span class="card-title">Ficha Técnica</span>
-                        <ul class="card-bullets">
-                            <li>Descargar PDF</li>
-                            <li>Características técnicas</li>
-                            <li>Torque y calibraciones</li>
-                        </ul>
-                    </div>
-                </div>
-                <span class="card-arrow">&gt;</span>
-            </a>
-
-            <!-- Card 3: Guía de Instalación (Video) -->
+            <!-- Card 2: Guía de Instalación (Video) -->
             <div id="btn-video-toggle" class="action-card card-blue">
                 <div class="card-content-left">
                     <div class="card-icon-container">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
                     </div>
                     <div class="card-text-info">
                         <span class="card-title">Guía de Instalación</span>
@@ -994,11 +1038,61 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 <span class="card-arrow">&gt;</span>
             </div>
 
-            <!-- Card 4: Garantía Proceso -->
+            <!-- Card 3: Ficha Técnica -->
+            <a href="#" class="action-card card-blue">
+                <div class="card-content-left">
+                    <div class="card-icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="card-text-info">
+                        <span class="card-title">Ficha Técnica</span>
+                        <ul class="card-bullets">
+                            <li>Descargar PDF</li>
+                            <li>Características técnicas</li>
+                            <li>Torque y calibraciones</li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="card-arrow">&gt;</span>
+            </a>
+
+            <!-- Card 4: Guía Rápida -->
+            <a href="#" class="action-card card-blue">
+                <div class="card-content-left">
+                    <div class="card-icon-container">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <div class="card-text-info">
+                        <span class="card-title">Guía Rápida</span>
+                        <ul class="card-bullets">
+                            <li>Identificación rápida</li>
+                            <li>Especificaciones básicas</li>
+                            <li>Recomendaciones de uso</li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="card-arrow">&gt;</span>
+            </a>
+
+            <!-- Card 5: Garantía Proceso -->
             <div id="btn-garantia-toggle" class="action-card card-red">
                 <div class="card-content-left">
                     <div class="card-icon-container">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
                     </div>
                     <div class="card-text-info">
                         <span class="card-title">Garantía Proceso</span>
@@ -1011,42 +1105,6 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 </div>
                 <span class="card-arrow">&gt;</span>
             </div>
-
-            <!-- Card 5: Código de Instalación -->
-            <a href="#" class="action-card card-red">
-                <div class="card-content-left">
-                    <div class="card-icon-container">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="3"></rect><rect x="14" y="7" width="3" height="3"></rect><rect x="7" y="14" width="3" height="3"></rect><rect x="14" y="14" width="3" height="3"></rect></svg>
-                    </div>
-                    <div class="card-text-info">
-                        <span class="card-title">Código Instalación</span>
-                        <ul class="card-bullets">
-                            <li>Código único de instalación</li>
-                            <li>Registro del producto</li>
-                            <li>Validación para garantía</li>
-                        </ul>
-                    </div>
-                </div>
-                <span class="card-arrow">&gt;</span>
-            </a>
-
-            <!-- Card 6: Programa Rewards -->
-            <a href="#" class="action-card card-red">
-                <div class="card-content-left">
-                    <div class="card-icon-container">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>
-                    </div>
-                    <div class="card-text-info">
-                        <span class="card-title">Programa Rewards</span>
-                        <ul class="card-bullets">
-                            <li>Acumula puntos valiosos</li>
-                            <li>Consulta tu saldo actual</li>
-                            <li>Catálogo de premios</li>
-                        </ul>
-                    </div>
-                </div>
-                <span class="card-arrow">&gt;</span>
-            </a>
 
         </section>
 
@@ -1065,8 +1123,11 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         <div id="garantia-collapsible-wrapper" class="collapsible-section">
             <section class="garantia-form-section">
                 <h2 class="garantia-form-section-title">Formato de Garantía</h2>
-                <p class="garantia-form-section-subtitle">Si adquiriste tu inyector con alguno de nuestros distribuidores autorizados y presenta alguna falla, nuestro equipo técnico te ayudará a hacer válida tu garantía. Completa el siguiente formulario y nos pondremos en contacto contigo en un lapso máximo de 24 horas hábiles.</p>
-                
+                <p class="garantia-form-section-subtitle">Si adquiriste tu inyector con alguno de nuestros
+                    distribuidores autorizados y presenta alguna falla, nuestro equipo técnico te ayudará a hacer válida
+                    tu garantía. Completa el siguiente formulario y nos pondremos en contacto contigo en un lapso máximo
+                    de 24 horas hábiles.</p>
+
                 <?php if ($this->Session->check('Message.flash')): ?>
                     <div class="garantia-alert garantia-alert-success">
                         <?= $this->Session->flash(); ?>
@@ -1074,7 +1135,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 <?php endif; ?>
 
                 <?= $this->Form->create('Garantia', array('url' => array('controller' => 'pages', 'action' => 'producto_autentico_inyector', $region), 'class' => 'garantia-form')) ?>
-                
+
                 <div class="form-group-title">1. Datos del Cliente</div>
                 <div class="form-grid">
                     <div class="form-field">
@@ -1195,7 +1256,8 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                     </div>
                     <div class="form-field">
                         <label>Componentes reemplazados</label>
-                        <input type="text" name="instalacion_componentes" placeholder="Ej. Filtro de combustible, cañerías">
+                        <input type="text" name="instalacion_componentes"
+                            placeholder="Ej. Filtro de combustible, cañerías">
                     </div>
                     <div class="form-field">
                         <label>Tipo de combustible</label>
@@ -1211,7 +1273,8 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                     </div>
                     <div class="form-field-full form-field">
                         <label>Descripción detallada</label>
-                        <textarea name="falla_descripcion" rows="4" placeholder="Detalla el problema o falla presentada..."></textarea>
+                        <textarea name="falla_descripcion" rows="4"
+                            placeholder="Detalla el problema o falla presentada..."></textarea>
                     </div>
                 </div>
 
@@ -1251,7 +1314,8 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                     </div>
                     <div class="form-field">
                         <label>Fecha de declaración *</label>
-                        <input type="date" name="declaracion_fecha" required value="<?= date('Y-m-d') ?>" readonly style="background-color: #e9ecef; cursor: not-allowed;">
+                        <input type="date" name="declaracion_fecha" required value="<?= date('Y-m-d') ?>" readonly
+                            style="background-color: #e9ecef; cursor: not-allowed;">
                     </div>
                 </div>
 
@@ -1284,7 +1348,8 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             </div>
             <div class="footer-right">
                 <div class="denso-corporate-logo">
-                    <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo" style="height: 40px; object-fit: contain; margin-bottom: 10px;">
+                    <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo"
+                        style="height: 40px; object-fit: contain; margin-bottom: 10px;">
                 </div>
                 <span class="footer-copyright">&copy; 2024 DENSO CORPORATION. Todos los derechos reservados.</span>
             </div>
@@ -1293,7 +1358,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
 
     <!-- Interactive script for sliding toggles -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const btnVideo = document.getElementById("btn-video-toggle");
             const btnGarantia = document.getElementById("btn-garantia-toggle");
             const wrapperVideo = document.getElementById("video-collapsible-wrapper");
@@ -1306,9 +1371,9 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                     // Close other sections first
                     wrapperVideo.classList.remove("active");
                     wrapperGarantia.classList.remove("active");
-                    
+
                     wrapper.classList.add("active");
-                    
+
                     // Smooth scroll to the toggled section
                     setTimeout(() => {
                         wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -1316,16 +1381,17 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 }
             }
 
-            btnVideo.addEventListener("click", function(e) {
+            btnVideo.addEventListener("click", function (e) {
                 e.preventDefault();
                 toggleSection(wrapperVideo);
             });
 
-            btnGarantia.addEventListener("click", function(e) {
+            btnGarantia.addEventListener("click", function (e) {
                 e.preventDefault();
                 toggleSection(wrapperGarantia);
             });
         });
     </script>
 </body>
+
 </html>
