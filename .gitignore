@@ -72,3 +72,5 @@ app/tmp/logs/error.log
 app/webroot/.DS_Store
 app/webroot/img/.DS_Store
 /app/tmp
+app/Config/database.php
+app/Config/core.php

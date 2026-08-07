@@ -1090,7 +1090,10 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         <div id="video-collapsible-wrapper" class="collapsible-section">
             <div class="video-container-box">
                 <h3 class="video-title">Guía de instalación de inyectores auténticos DENSO</h3>
-                <iframe class="video-player" src="https://www.youtube.com/embed/TCMJbxbrTko?start=6" title="Guía de instalación de inyectores auténticos DENSO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="aspect-ratio: 16/9; border: none;"></iframe>
+                <iframe class="video-player" src="https://www.youtube.com/embed/TCMJbxbrTko?start=6"
+                    title="Guía de instalación de inyectores auténticos DENSO" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="aspect-ratio: 16/9; border: none;"></iframe>
             </div>
         </div>
 
@@ -1098,7 +1101,8 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         <div id="ficha-collapsible-wrapper" class="collapsible-section">
             <div class="video-container-box" style="height: 80vh; max-height: 800px; padding-bottom: 2rem;">
                 <h3 class="video-title">Ficha Técnica</h3>
-                <iframe src="<?= $this->Html->url('/files/DENSO_ Boletín_ Injector 1 (1).pdf') ?>" width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+                <iframe src="<?= $this->Html->url('/files/DENSO_Injector.pdf') ?>" width="100%" height="100%"
+                    style="border: none; border-radius: 8px;"></iframe>
             </div>
         </div>
 
@@ -1345,7 +1349,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
             const btnVideo = document.getElementById("btn-video-toggle");
             const btnGarantia = document.getElementById("btn-garantia-toggle");
             const btnFicha = document.getElementById("btn-ficha-toggle");
-            
+
             const wrapperVideo = document.getElementById("video-collapsible-wrapper");
             const wrapperGarantia = document.getElementById("garantia-collapsible-wrapper");
             const wrapperFicha = document.getElementById("ficha-collapsible-wrapper");
@@ -1355,9 +1359,9 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                     wrapper.classList.remove("active");
                 } else {
                     // Close other sections first
-                    if(wrapperVideo) wrapperVideo.classList.remove("active");
-                    if(wrapperGarantia) wrapperGarantia.classList.remove("active");
-                    if(wrapperFicha) wrapperFicha.classList.remove("active");
+                    if (wrapperVideo) wrapperVideo.classList.remove("active");
+                    if (wrapperGarantia) wrapperGarantia.classList.remove("active");
+                    if (wrapperFicha) wrapperFicha.classList.remove("active");
 
                     wrapper.classList.add("active");
 
@@ -1368,21 +1372,21 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 }
             }
 
-            if(btnVideo) {
+            if (btnVideo) {
                 btnVideo.addEventListener("click", function (e) {
                     e.preventDefault();
                     toggleSection(wrapperVideo);
                 });
             }
 
-            if(btnGarantia) {
+            if (btnGarantia) {
                 btnGarantia.addEventListener("click", function (e) {
                     e.preventDefault();
                     toggleSection(wrapperGarantia);
                 });
             }
 
-            if(btnFicha) {
+            if (btnFicha) {
                 btnFicha.addEventListener("click", function (e) {
                     e.preventDefault();
                     toggleSection(wrapperFicha);
