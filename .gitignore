@@ -74,3 +74,5 @@ app/webroot/img/.DS_Store
 /app/tmp
 app/Config/database.php
 app/Config/core.php
+app/Config/core.php
+app/Config/database.php

@@ -99,7 +99,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -271,7 +272,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -316,7 +318,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -347,7 +350,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -390,7 +394,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -421,7 +426,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -463,7 +469,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -506,7 +513,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -549,7 +557,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -805,7 +814,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
@@ -848,7 +858,8 @@ class PagesController extends AppController
 				'order' => 'Producto.anio_inicio DESC',
 				'conditions' => array(
 					'Producto.pais' => $region
-				)
+				),
+				'group' => array('Producto.anio_inicio')
 			)
 		);
 		//$anio_min = 0;
