@@ -8,9 +8,8 @@ echo $this->Html->css(
 
 echo $this->Html->script(
     array(
-        'https://cdnjs.cloudflare.com/polyfill.min.js?features=default',
-        'https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js',
-        'https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js'
+        'handlebars.min',
+        'markerclusterer.min'
     ),
     array('inline'=>false)
 );

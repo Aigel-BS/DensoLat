@@ -1,8 +1,9 @@
-# Uncomment the following to prevent the httpoxy vulnerability
-# See: https://httpoxy.org/
-#<IfModule mod_headers.c>
-#	RequestHeader unset Proxy
-#</IfModule>
+<IfModule mod_headers.c>
+	# RequestHeader unset Proxy
+	Header set X-Content-Type-Options "nosniff"
+	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	Header set Content-Security-Policy "default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https: blob:; font-src 'self' https: data:;"
+</IfModule>
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On

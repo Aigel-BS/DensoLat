@@ -35,14 +35,14 @@ App::uses('CakeEmail', 'Network/Email');
 class AppController extends Controller {
 
     function beforeFilter(){
-        // loginAction defines the action which should be used to login. By default users/login
-                // loginRedirect defines the action called after user is logged in first time.
-                //$this->Auth->loginAction = array('controller' => 'promosTas', 'action' => 'index');
+        // Security headers
+        $this->response->header('X-Content-Type-Options', 'nosniff');
+        $this->response->header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+        $this->response->header('Content-Security-Policy', "default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https: blob:; font-src 'self' https: data:;");
 
-                // Allows the display action to be accessed without user login.
-                $this->Auth->allow('display');
-
-            }
+        // Allows the display action to be accessed without user login.
+        $this->Auth->allow('display');
+    }
 
     public $components = array(
         //'DebugKit.Toolbar',

@@ -1338,7 +1338,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                     <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo"
                         style="height: 40px; object-fit: contain; margin-bottom: 10px;">
                 </div>
-                <span class="footer-copyright">&copy; 2024 DENSO CORPORATION. Todos los derechos reservados.</span>
+                <span class="footer-copyright">&copy; 2024 DENSO CORPORATION. Todos los derechos reservados. | Desarrollado por Aigel</span>
             </div>
         </div>
     </footer>

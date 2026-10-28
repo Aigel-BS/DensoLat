@@ -1,8 +1,7 @@
 <html>
 <head>
 	<title>Marker Clustering</title>
-	<script src="https://cdnjs.cloudflare.com/polyfill.min.js?features=default"></script>
-	<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+	<script src="/js/markerclusterer.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./style.css" />
 	<script type="module" src="./index.js"></script>
 	<style>

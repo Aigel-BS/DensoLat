@@ -200,7 +200,7 @@ c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
                                     </div>
                                 </div>
                             </div>
-                            <p class="u-text u-text-default u-text-10">© <?= date("Y")?> DENSO Autopartes <?= $pais[$region]?></p>
+                            <p class="u-text u-text-default u-text-10">© <?= date("Y")?> DENSO Autopartes <?= $pais[$region]?> | Desarrollado por Aigel</p>
                             <p>
                                 <?= $region == 'ar' ? "" :$this->Html->link($this->Html->image('bandera_argentina.png',array('style'=>'width:20px')),'/ar',array('escape'=>false))?>
                                 <?= $region == 'co' ? "" :$this->Html->link($this->Html->image('bandera_colombia.png',array('style'=>'width:20px')),'/co',array('escape'=>false))?>
