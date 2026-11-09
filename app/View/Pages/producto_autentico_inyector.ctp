@@ -990,7 +990,7 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
         <section class="cards-grid">
 
             <!-- Card 1: Programa Rewards -->
-            <a href="#" class="action-card card-red">
+            <a href="https://rewards.densoautopartes.com" class="action-card card-red">
                 <div class="card-content-left">
                     <div class="card-icon-container">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1338,7 +1338,8 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                     <img class="denso-logo-img" src="<?= $this->Html->url('/img/Logo_DENSO.jpg') ?>" alt="DENSO Logo"
                         style="height: 40px; object-fit: contain; margin-bottom: 10px;">
                 </div>
-                <span class="footer-copyright">&copy; 2024 DENSO CORPORATION. Todos los derechos reservados. | Desarrollado por Aigel</span>
+                <span class="footer-copyright">&copy; 2024 DENSO CORPORATION. Todos los derechos reservados. |
+                    Desarrollado por Aigel</span>
             </div>
         </div>
     </footer>

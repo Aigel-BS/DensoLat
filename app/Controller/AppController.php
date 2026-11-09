@@ -37,7 +37,6 @@ class AppController extends Controller {
     function beforeFilter(){
         // Security headers
         $this->response->header('X-Content-Type-Options', 'nosniff');
-        $this->response->header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
         $this->response->header('Content-Security-Policy', "default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https: blob:; font-src 'self' https: data:;");
 
         // Allows the display action to be accessed without user login.
