@@ -909,8 +909,9 @@ $serialNumber = isset($this->request->query['serial']) ? h($this->request->query
                 <div class="glow-circle"></div>
                 <img class="injector-image" src="<?= $this->Html->url('/img/inyector.png') ?>" alt="Inyector DENSO">
                 <div class="hero-badge-overlay">
-                    <div class="badge-distribuidor">DISTRIBUIDOR OFICIAL</div>
-                    <img src="<?= $this->Html->url('/img/favicon.png') ?>" alt="DENSO logo small" height="20">
+                    <div class="badge-distribuidor"><a style="color:white; font-size:1.5em"
+                            href="https://rewards.densoautopartes.com">!CANJEA TUS
+                            PUNTOS!</a></div>
                 </div>
             </div>
 
