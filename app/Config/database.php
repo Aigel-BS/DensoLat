@@ -70,13 +70,12 @@ class DATABASE_CONFIG
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'db',
-		'login' => 'denso_user',
-		'password' => 'denso_password',
-		'database' => 'denso_latam',
+		'host' => 'localhost',
+		'login' => 'denso',
+		'password' => 'Denso.2026!',
+		'database' => 'denso',
 		'prefix' => '',
 		'encoding' => 'utf8',
-		'port' => '3306'
 	);
 
 	public $test = array(
